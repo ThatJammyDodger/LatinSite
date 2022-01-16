@@ -16,7 +16,12 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0.1
+        dotnet-version: '2.2.106'
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.100-preview.4.21255.9'
+        include-prerelease: true
+
       # publishes Blazor project to the release-folder
     - name: Publish .NET Project
       run: dotnet publish LatinVocabTest.csproj -c Release -o release --nologo
