@@ -87,7 +87,7 @@ else
     {
         foreach(string x in testWordAnswer)
         {
-            if (remove_chars(x.Trim()) == remove_chars(enteredValue.Trim()))
+            if (remove_chars(x.Trim()).ToUpper() == remove_chars(enteredValue.Trim()).ToUpper())
             {
                 questions_right++;
                 return true;
