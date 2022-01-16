@@ -1,0 +1,138 @@
+﻿@page "/vocab-test"
+@inject HttpClient Http
+@using LatinVocabTest.Data
+
+
+
+<PageTitle>Vocab Test</PageTitle>
+
+<h1>Vocab Test</h1>
+<p>Test yourself here</p>
+
+@if (words == null)
+{
+    <h5><em>Loading...</em></h5>
+}
+else
+{
+    <button class="btn btn-outline-primary" style="display: @(InPlay ? "none" : "block"); margin-bottom:10px  " @onclick="Start">Start</button>
+    <div style=' display: @(!InPlay ? "none" : "block");'>
+        <h6 style="font-weight: bold">@testWord</h6>
+        <input type="text" @bind="@enteredValue" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter"/>
+        <a style="margin-left: 5px">@correction</a>
+        <Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">
+            <div>
+                <img src="@imgSource" height="35" width="35"/>
+            </div>
+        </Animate>
+        <p>@questions_right/@questions_asked</p>
+    </div>
+    
+}
+
+
+
+@code {
+    public Random rnd = new Random();
+    private string? enteredValue;
+    private string? testWord;
+    private List<string> testWordAnswer = new List<string>();
+    private int randNum = 0;
+    private bool InPlay = false;
+    private bool Q_Asked = false;
+    private bool Q_Answered = false;
+    private any_word[]? words;
+    private string? imgSource = @"images/null.png";
+    private int questions_asked = 0;
+    private int questions_right = 0;
+    private string correction = "";
+
+    private char[] forbidden_chars = { '.',',','/','?',';','#','[',']'};
+
+    private string remove_chars(string x)
+    {
+        return String.Join("", x.Split(forbidden_chars));
+    }
+
+    private Animate imgAnim;
+
+    protected override async Task OnInitializedAsync()
+    {
+        words = await Http.GetFromJsonAsync<any_word[]>("data/anywords_latin.json");
+    }
+
+    private void Start()
+    {
+        if (!InPlay)
+        {
+            NextWord();
+            InPlay = true;
+        }
+    }
+
+    private void NextWord()
+    {
+        questions_asked++;
+        Q_Answered = false;
+        imgSource = @"images/null.png";
+        randNum = rnd.Next(0, words.Length);
+        testWord = words[randNum].In_Latin;
+        testWordAnswer = new List<string>(words[randNum].In_English.Split(','));
+        correction = String.Empty;
+    }
+
+
+
+    private bool check()
+    {
+        foreach(string x in testWordAnswer)
+        {
+            if (remove_chars(x.Trim()) == remove_chars(enteredValue.Trim()))
+            {
+                questions_right++;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public async void Enter(KeyboardEventArgs e)
+    {
+        if ((e.Code == "Enter" || e.Code == "NumpadEnter")&&(!String.IsNullOrWhiteSpace(enteredValue)))
+        {
+            if (!Q_Answered)
+            {
+                bool right = check();
+                Q_Answered = true;
+                if (right)
+                {
+                    resultAnim("correct");
+                }
+                else
+                {
+                    resultAnim("incorrect");
+                    correction = $"Correct: {words[randNum].In_English}";
+
+                }
+            }
+            else
+            {
+                enteredValue = String.Empty;
+                NextWord();
+            }
+        }
+    }
+
+    private void resultAnim(string result)
+    {
+        imgSource = $@"images/{result}.png";
+        imgAnim.Run();
+    }
+
+
+    public class any_word
+    {
+        public string? In_Latin { get; set; }
+        public string? In_English { get; set; }
+    }
+}

@@ -1,0 +1,253 @@
+﻿@inject HttpClient Http
+@page "/vocab-list"
+@using LatinVocabTest.Data
+
+<PageTitle>Vocab List</PageTitle>
+
+<h1>Vocab List</h1>
+
+
+
+@if (verbs == null)
+{
+    <h5><em>Loading...</em></h5>
+}
+else
+{
+    <p>Find the OCR J282 vocabulary list separated by category here:</p>
+
+    <nav>
+        <p>Quick links: </p>
+        @foreach(string x in page_sections)
+        {
+            <button style="margin: 0px 10px 20px 10px" class="btn btn-secondary" type="button" onclick="document.getElementById('@x').scrollIntoView({behavior:'smooth'})">@Capitalize(x)</button>
+        }
+        
+    </nav>
+
+
+    <h3 id="adjectives">Adjectives</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latin</th>
+                <th>Other forms</th>
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in adjectives)
+            {
+                <tr>
+                    <td>@word.In_Latin</td>
+                    <td>@word.Other_Forms</td>
+                    <td>@word.In_English</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3 id="adverbs">Adverbs</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latin</th>                
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in adverbs)
+            {
+                <tr>
+                    <td>@word.In_Latin</td>
+                    <td>@word.In_English</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <h3  id="conjunctions">Conjunctions</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latin</th>                
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in conjunctions)
+            {
+                <tr>
+                    <td>@word.In_Latin</td>
+                    <td>@word.In_English</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3 id="nouns">Nouns</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latin</th>                
+                <th>English</th>
+                <th>Gender</th>
+                <th>Declension</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in nouns)
+            {
+                <tr>
+                    <td>@word.In_Latin, @word.Other_Forms</td>
+                    <td>@word.In_English</td>
+                    @switch (word.Gender)
+                    {
+                        case "m":
+                            <td>Masculine</td>
+                            break;
+                        case "f":
+                            <td>Feminine</td>
+                            break;
+                        case "n":
+                            <td>Neuter</td>
+                            break;
+                        default:
+                            <td>@word.Gender</td>
+                            break;
+                    }
+                    <td>@word.Declension</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3  id="particles">Particles</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latin</th>                
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in particles)
+            {
+                <tr>
+                    <td>@word.In_Latin</td>
+                    <td>@word.In_English</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3  id="prepositions">Prepositions</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latin</th>                
+                <th>English</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in prepositions)
+            {
+                <tr>
+                    <td>@word.In_Latin @word.Usage</td>
+                    <td>@word.In_English</td>
+                    <td>@word.Other_Notes</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3 id="pronouns">Pronouns</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latin</th>                
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in pronouns)
+            {
+                <tr>
+                    <td>@word.In_Latin, @word.Other_Forms</td>
+                    <td>@word.In_English</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3 id="verbs">Verbs</h3>
+    <p>(PP = Principal Part)</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>PP1</th>                
+                <th>PP2</th>
+                <th>PP3</th>
+                <th>PP4</th>
+                <th>English</th>
+                <th>Conjugation</th>
+                <th>Other Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in verbs)
+            {
+                <tr>
+                    <td>@word.PP1</td>
+                    <td>@word.PP2</td>
+                    <td>@word.PP3</td>
+                    <td>@word.PP4</td>
+                    <td>@word.In_English</td>
+                    <td>@word.Conjugation</td>
+                    <td>@word.Other_Info</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private string[] page_sections = { "adjectives", "adverbs", "conjunctions", "nouns", "particles", "prepositions", "pronouns", "verbs" };
+
+    private adjective[]? adjectives;
+    private adverb[]? adverbs;
+    private conjunction[]? conjunctions;
+    private noun[]? nouns;
+    private particle[]? particles;
+    private preposition[]? prepositions;
+    private pronoun[]? pronouns;
+    private verb[]? verbs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        adjectives = await Http.GetFromJsonAsync<adjective[]>("data/word_types/adjectives_latin.json");
+        adverbs = await Http.GetFromJsonAsync<adverb[]>("data/word_types/adverbs_latin.json");
+        conjunctions = await Http.GetFromJsonAsync<conjunction[]>("data/word_types/conjunctions_latin.json");
+        nouns = await Http.GetFromJsonAsync<noun[]>("data/word_types/nouns_latin.json");
+        particles = await Http.GetFromJsonAsync<particle[]>("data/word_types/particles_latin.json");
+        prepositions = await Http.GetFromJsonAsync<preposition[]>("data/word_types/prepositions_latin.json");
+        pronouns = await Http.GetFromJsonAsync<pronoun[]>("data/word_types/pronouns_latin.json");
+        verbs = await Http.GetFromJsonAsync<verb[]>("data/word_types/verbs_latin.json");
+    }
+
+    private string Capitalize(string x)
+    {
+        if (x.Length == 0)
+        { return string.Empty; }
+        else if (x.Length == 1)
+        { return char.ToUpper(x[0]).ToString(); }
+        else
+        { return char.ToUpper(x[0]) + x.Substring(1); }
+    }
+    
+    
+
+}

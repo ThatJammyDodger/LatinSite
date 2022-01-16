@@ -1,0 +1,92 @@
+[
+  {
+    "In_Latin": "ego",
+    "In_English": "I, me",
+    "Other_Forms": "mei"
+  },
+  {
+    "In_Latin": "hic",
+    "In_English": "this, he, she, it",
+    "Other_Forms": "haec, hoc"
+  },
+  {
+    "In_Latin": "idem",
+    "In_English": "the same",
+    "Other_Forms": "eadem, idem"
+  },
+  {
+    "In_Latin": "ille",
+    "In_English": "that, he, she, it",
+    "Other_Forms": "illa, illud"
+  },
+  {
+    "In_Latin": "ipse",
+    "In_English": "himself, herself, itself, themselves",
+    "Other_Forms": "ipsa, ipsum"
+  },
+  {
+    "In_Latin": "is",
+    "In_English": "this, that, he, she, it, them",
+    "Other_Forms": "ea, id"
+  },
+  {
+    "In_Latin": "meus",
+    "In_English": "my",
+    "Other_Forms": "mea, meum"
+  },
+  {
+    "In_Latin": "nos",
+    "In_English": "we, us",
+    "Other_Forms": "nostrum"
+  },
+  {
+    "In_Latin": "noster",
+    "In_English": "our",
+    "Other_Forms": "nostra, nostrum"
+  },
+  {
+    "In_Latin": "qui",
+    "In_English": "who, which",
+    "Other_Forms": "quae, quod"
+  },
+  {
+    "In_Latin": "quidam",
+    "In_English": "one, a certain, some",
+    "Other_Forms": "quaedam, quoddam"
+  },
+  {
+    "In_Latin": "quis?",
+    "In_English": "who? what?",
+    "Other_Forms": "quid?"
+  },
+  {
+    "In_Latin": "se",
+    "In_English": "himself, herself, itself, themselves",
+    "Other_Forms": "sui"
+  },
+  {
+    "In_Latin": "suus",
+    "In_English": "his, er, its, their (own)",
+    "Other_Forms": "sua, suum"
+  },
+  {
+    "In_Latin": "tu",
+    "In_English": "you (singular)",
+    "Other_Forms": "tui"
+  },
+  {
+    "In_Latin": "tuus",
+    "In_English": "your (singular), yours",
+    "Other_Forms": "tua, tuum"
+  },
+  {
+    "In_Latin": "vester",
+    "In_English": "your (plural), yours",
+    "Other_Forms": "vestra, vestrum"
+  },
+  {
+    "In_Latin": "vos",
+    "In_English": "you (plural)",
+    "Other_Forms": "vestrum"
+  }
+]

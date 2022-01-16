@@ -1,0 +1,870 @@
+[
+  {
+    "In_Latin": "ager",
+    "In_English": "field",
+    "Other_Forms": "agri",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "amicus",
+    "In_English": "friend",
+    "Other_Forms": "amici",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "amor",
+    "In_English": "love",
+    "Other_Forms": "amoris",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "ancilla",
+    "In_English": "slave-girl, slave-woman",
+    "Other_Forms": "ancillae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "animus",
+    "In_English": "spirit, soul, mind",
+    "Other_Forms": "animi",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "annus",
+    "In_English": "year",
+    "Other_Forms": "anni",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "aqua",
+    "In_English": "water",
+    "Other_Forms": "aquae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "arma",
+    "In_English": "arms, weapons",
+    "Other_Forms": "armorum",
+    "Gender": "n plural",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "ars",
+    "In_English": "art, skill",
+    "Other_Forms": "artis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "auxilium",
+    "In_English": "help",
+    "Other_Forms": "auxilii",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "bellum",
+    "In_English": "war",
+    "Other_Forms": "belli",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "caelum",
+    "In_English": "sky, heaven",
+    "Other_Forms": "caeli",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "captivus",
+    "In_English": "captive, prisoner",
+    "Other_Forms": "captivi",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "caput",
+    "In_English": "head",
+    "Other_Forms": "capitis",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "castra",
+    "In_English": "camp",
+    "Other_Forms": "castrorum",
+    "Gender": "n plural",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "cena",
+    "In_English": "dinner, meal",
+    "Other_Forms": "cenae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "cibus",
+    "In_English": "food",
+    "Other_Forms": "cibi",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "civis",
+    "In_English": "citizen",
+    "Other_Forms": "civis",
+    "Gender": "m and f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "clamor",
+    "In_English": "shout, shouting, noise",
+    "Other_Forms": "clamoris",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "comes",
+    "In_English": "comrade, companion",
+    "Other_Forms": "comitis",
+    "Gender": "m and f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "consilium",
+    "In_English": "plan, idea, advice",
+    "Other_Forms": "consilii",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "consul",
+    "In_English": "consul",
+    "Other_Forms": "consulis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "copiae",
+    "In_English": "forces, troops",
+    "Other_Forms": "copiarum",
+    "Gender": "f plural",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "corpus",
+    "In_English": "body",
+    "Other_Forms": "corporis",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "cura",
+    "In_English": "care, worry",
+    "Other_Forms": "curae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "custos",
+    "In_English": "guard",
+    "Other_Forms": "custodis",
+    "Gender": "m and f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "dea",
+    "In_English": "goddess",
+    "Other_Forms": "deae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "deus",
+    "In_English": "god",
+    "Other_Forms": "dei",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "dies",
+    "In_English": "day",
+    "Other_Forms": "diei",
+    "Gender": "m",
+    "Declension": "5"
+  },
+  {
+    "In_Latin": "domina",
+    "In_English": "mistress",
+    "Other_Forms": "dominae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "dominus",
+    "In_English": "master",
+    "Other_Forms": "domini",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "domus",
+    "In_English": "home",
+    "Other_Forms": "domus (domi = at home)",
+    "Gender": "f",
+    "Declension": "4"
+  },
+  {
+    "In_Latin": "donum",
+    "In_English": "gift, present",
+    "Other_Forms": "doni",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "dux",
+    "In_English": "leader",
+    "Other_Forms": "ducis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "epistula",
+    "In_English": "letter",
+    "Other_Forms": "epistulae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "equuus",
+    "In_English": "horse",
+    "Other_Forms": "equi",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "exercitus",
+    "In_English": "army",
+    "Other_Forms": "exercitus",
+    "Gender": "m",
+    "Declension": "4"
+  },
+  {
+    "In_Latin": "femina",
+    "In_English": "woman",
+    "Other_Forms": "feminae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "filia",
+    "In_English": "daughter",
+    "Other_Forms": "filiae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "filius",
+    "In_English": "son",
+    "Other_Forms": "filii",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "flumen",
+    "In_English": "river",
+    "Other_Forms": "fluminis",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "forum",
+    "In_English": "forum, market-place",
+    "Other_Forms": "fori",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "frater",
+    "In_English": "brother",
+    "Other_Forms": "fratris",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "gaudium",
+    "In_English": "joy, pleasure",
+    "Other_Forms": "gaudii",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "gens",
+    "In_English": "family, tribe, race, people",
+    "Other_Forms": "gentis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "gladius",
+    "In_English": "sword",
+    "Other_Forms": "gladii",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "homo",
+    "In_English": "man, human being",
+    "Other_Forms": "hominis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "hora",
+    "In_English": "hour",
+    "Other_Forms": "horae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "hortus",
+    "In_English": "garden",
+    "Other_Forms": "horti",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "hostis",
+    "In_English": "enemy",
+    "Other_Forms": "hostis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "ianua",
+    "In_English": "door",
+    "Other_Forms": "ianuae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "imperator",
+    "In_English": "emperor, general leader",
+    "Other_Forms": "imperatoris",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "imperium",
+    "In_English": "empire, power, command",
+    "Other_Forms": "imperii",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "inimicus",
+    "In_English": "enemy",
+    "Other_Forms": "inimici",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "insula",
+    "In_English": "island, block of flats",
+    "Other_Forms": "insulae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "ira",
+    "In_English": "anger",
+    "Other_Forms": "irae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "iter",
+    "In_English": "journey",
+    "Other_Forms": "itineris",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "iuvenis",
+    "In_English": "young man",
+    "Other_Forms": "iuvenis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "labor",
+    "In_English": "work, toil",
+    "Other_Forms": "laboris",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "legio",
+    "In_English": "legion",
+    "Other_Forms": "legionis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "liber",
+    "In_English": "book",
+    "Other_Forms": "libri",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "liberi",
+    "In_English": "children",
+    "Other_Forms": "liberorum",
+    "Gender": "m plural",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "libertus",
+    "In_English": "freedman, ex-slave",
+    "Other_Forms": "liberti",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "locus",
+    "In_English": "place",
+    "Other_Forms": "loci",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "lux",
+    "In_English": "light, daylight",
+    "Other_Forms": "lucis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "manus",
+    "In_English": "hand, group of people",
+    "Other_Forms": "manus",
+    "Gender": "f",
+    "Declension": "4"
+  },
+  {
+    "In_Latin": "mare",
+    "In_English": "sea",
+    "Other_Forms": "maris",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "maritus",
+    "In_English": "husband",
+    "Other_Forms": "mariti",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "mater",
+    "In_English": "mother",
+    "Other_Forms": "matris",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "miles",
+    "In_English": "soldier",
+    "Other_Forms": "militis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "modus",
+    "In_English": "manner, way, kind",
+    "Other_Forms": "modi",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "mons",
+    "In_English": "mountain",
+    "Other_Forms": "montis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "mors",
+    "In_English": "death",
+    "Other_Forms": "mortis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "murus",
+    "In_English": "wall",
+    "Other_Forms": "muri",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "nauta",
+    "In_English": "sailor",
+    "Other_Forms": "nautae",
+    "Gender": "m",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "navis",
+    "In_English": "ship",
+    "Other_Forms": "navis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "nemo",
+    "In_English": "no-one, nobody",
+    "Other_Forms": "nullius",
+    "Gender": "n/a",
+    "Declension": "irregular"
+  },
+  {
+    "In_Latin": "nihil",
+    "In_English": "nothing",
+    "Other_Forms": "indeclinable",
+    "Gender": "n/a",
+    "Declension": "irregular"
+  },
+  {
+    "In_Latin": "nomen",
+    "In_English": "name",
+    "Other_Forms": "nominis",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "nox",
+    "In_English": "night",
+    "Other_Forms": "noctis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "nuntius",
+    "In_English": "messenger, message, news",
+    "Other_Forms": "nuntii",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "pars",
+    "In_English": "part",
+    "Other_Forms": "partis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "pater",
+    "In_English": "father",
+    "Other_Forms": "patris",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "patria",
+    "In_English": "country, homeland",
+    "Other_Forms": "patriae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "pax",
+    "In_English": "peace",
+    "Other_Forms": "pacis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "pecunia",
+    "In_English": "money",
+    "Other_Forms": "pecuniae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "periculum",
+    "In_English": "danger",
+    "Other_Forms": "periculi",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "pes",
+    "In_English": "foot",
+    "Other_Forms": "pedis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+	  "In_Latin": "poena",
+	  "In_English": "punishment",
+	  "Other_Forms": "poenae",
+	  "Gender": "f",
+	  "Declension": "1"
+  },
+  {
+    "In_Latin": "porta",
+    "In_English": "gate",
+    "Other_Forms": "portae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "praemium",
+    "In_English": "prize, reward, profit",
+    "Other_Forms": "praemii",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "princeps",
+    "In_English": "chief, emperor",
+    "Other_Forms": "principis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "proelium",
+    "In_English": "battle",
+    "Other_Forms": "proelii",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "puella",
+    "In_English": "girl",
+    "Other_Forms": "puellae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "puer",
+    "In_English": "boy",
+    "Other_Forms": "pueri",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "regina",
+    "In_English": "queen",
+    "Other_Forms": "reginae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "regnum",
+    "In_English": "kingdom",
+    "Other_Forms": "regni",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "res",
+    "In_English": "thing, matter, event",
+    "Other_Forms": "rei",
+    "Gender": "f",
+    "Declension": "5"
+  },
+  {
+    "In_Latin": "rex",
+    "In_English": "king",
+    "Other_Forms": "regis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "Roma",
+    "In_English": "Rome",
+    "Other_Forms": "Romae (= at/in Rome)",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "sanguis",
+    "In_English": "blood",
+    "Other_Forms": "sanguinis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "scelus",
+    "In_English": "crime",
+    "Other_Forms": "sceleris",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "senator",
+    "In_English": "senator",
+    "Other_Forms": "senatoris",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "senex",
+    "In_English": "old man",
+    "Other_Forms": "senis",
+    "Gender": "m",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "servus",
+    "In_English": "slave",
+    "Other_Forms": "servi",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "silva",
+    "In_English": "wood",
+    "Other_Forms": "silvae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "spes",
+    "In_English": "hope",
+    "Other_Forms": "spei",
+    "Gender": "f",
+    "Declension": "5"
+  },
+  {
+    "In_Latin": "taberna",
+    "In_English": "shop, inn",
+    "Other_Forms": "tabernae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "tempestas",
+    "In_English": "storm",
+    "Other_Forms": "tempestatis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "templum",
+    "In_English": "temple",
+    "Other_Forms": "templi",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "tempus",
+    "In_English": "time",
+    "Other_Forms": "temporis",
+    "Gender": "n",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "terra",
+    "In_English": "ground, land, country",
+    "Other_Forms": "terrae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "turba",
+    "In_English": "crowd",
+    "Other_Forms": "turbae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "urbs",
+    "In_English": "city",
+    "Other_Forms": "urbis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "uxor",
+    "In_English": "wife",
+    "Other_Forms": "uxoris",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "verbum",
+    "In_English": "word",
+    "Other_Forms": "verbi",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "via",
+    "In_English": "street, road, way",
+    "Other_Forms": "viae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "victoria",
+    "In_English": "victory",
+    "Other_Forms": "victoriae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "vinum",
+    "In_English": "wine",
+    "Other_Forms": "vini",
+    "Gender": "n",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "vir",
+    "In_English": "man",
+    "Other_Forms": "viri",
+    "Gender": "m",
+    "Declension": "2"
+  },
+  {
+    "In_Latin": "virtus",
+    "In_English": "courage, virtue",
+    "Other_Forms": "virtutis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "vita",
+    "In_English": "life",
+    "Other_Forms": "vitae",
+    "Gender": "f",
+    "Declension": "1"
+  },
+  {
+    "In_Latin": "vox",
+    "In_English": "voice, shout",
+    "Other_Forms": "vocis",
+    "Gender": "f",
+    "Declension": "3"
+  },
+  {
+    "In_Latin": "vulnus",
+    "In_English": "wound",
+    "Other_Forms": "vulneris",
+    "Gender": "n",
+    "Declension": "3"
+  }
+]
