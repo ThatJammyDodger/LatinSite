@@ -618,7 +618,7 @@
     "PP3": "iussi",
     "PP4": "iussus",
     "Conjugation": "2",
-    "Other_Info": "laboro"
+    "Other_Info": ""
   },
   {
     "In_English": "work, toil",
@@ -1023,7 +1023,7 @@
     "PP3": "reddidi",
     "PP4": "redditus",
     "Conjugation": "3",
-    "Other_Info": "redeo"
+    "Other_Info": ""
   },
   {
     "In_English": "go back, come back, return",
@@ -1058,8 +1058,8 @@
     "PP2": "regredi",
     "PP3": "regressus sum",
     "PP4": "",
-    "Conjugation": "deponent",
-    "Other_Info": "relinquo"
+    "Conjugation": "3",
+    "Other_Info": "deponent"
   },
   {
     "In_English": "leave, leave behind",

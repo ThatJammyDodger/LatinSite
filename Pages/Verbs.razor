@@ -1,0 +1,105 @@
+﻿@page "/verb-notes"
+@inject HttpClient Http
+
+<h1>Verbs</h1>
+
+<style>
+    tr { display: block; float: left; }
+    th, td { display: block; }
+</style>
+
+
+@if (endings == null)
+{
+    <h5><em>Loading...</em></h5>
+}
+else
+{
+    <h5>Active Indicative</h5>
+    <h6 style="margin-top: 20px">Present: I carry; I warn; I drag; I hear; I take</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                @foreach(var x in endings[0].pres_endings)
+                {
+                    if (x == "o") { <td>port-@x.ToString()</td> } 
+                    else { <td>porta-@x.ToString()</td> }
+                }
+             </tr>
+             <tr>
+                <th>2</th>
+                @foreach(var x in endings[1].pres_endings)
+                {
+                    if (x == "o") { <td>mon-@x.ToString()</td> } 
+                    else { <td>mone-@x.ToString()</td> }
+                }
+             </tr>
+             <tr>
+                <th>3</th>
+                @foreach(var x in endings[2].pres_endings)
+                {
+                    if (x == "o") { <td>trah-@x.ToString()</td> } 
+                    else { <td>trahi-@x.ToString()</td> }
+                }
+             </tr>
+             <tr>
+                <th>4</th>
+                @foreach(var x in endings[3].pres_endings)
+                {
+                    <td>audi-@x.ToString()</td>
+                }
+             </tr>
+             <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[4].pres_endings)
+                {
+                    <td>capi-@x.ToString()</td>
+                }
+             </tr>
+        </tbody>
+    </table>
+}
+
+
+
+
+@code {
+    private verb_endings[]? endings;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        endings = await Http.GetFromJsonAsync<verb_endings[]>("data/verbs/verb-endings_latin.json");
+    }
+
+
+
+
+
+
+
+
+
+
+
+    public class verb_endings
+    {
+        public string? Conjugation { get; set; }
+        public string? Type { get; set; }
+        public string[]? pres_endings { get; set; }
+        public string[]? fut_endings { get; set; }
+        public string[]? imp_endings { get; set; } = { "bam", "bas", "bat", "bamus", "batis", "bant" };
+        public string[]? perf_endings { get; set; } = { "i", "isti", "it", "imus", "istis", "erunt" };
+        public string[]? plu_endings { get; set; } = { "eram", "eras", "erat", "eramus", "eratis", "erant" };
+    }
+}
