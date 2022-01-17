@@ -1,0 +1,442 @@
+[
+  {
+    "Conjugation": "1",
+    "Type": "Active Indicative",
+    "pres_endings": [
+      "o",
+      "s",
+      "t",
+      "mus",
+      "tis",
+      "nt"
+    ],
+    "fut_endings": [
+      "bo",
+      "bis",
+      "bit",
+      "bimus",
+      "bitis",
+      "bunt"
+    ],
+    "imp_endings": [
+      "bam",
+      "bas",
+      "bat",
+      "bamus",
+      "batis",
+      "bant"
+    ],
+    "perf_endings": [
+      "i",
+      "isti",
+      "it",
+      "imus",
+      "istis",
+      "erunt"
+    ],
+    "plu_endings": [
+      "eram",
+      "eras",
+      "erat",
+      "eramus",
+      "eratis",
+      "erant"
+    ]
+  },
+  {
+    "Conjugation": "2",
+    "Type": "Active Indicative",
+    "pres_endings": [
+      "o",
+      "s",
+      "t",
+      "mus",
+      "tis",
+      "nt"
+    ],
+    "fut_endings": [
+      "bo",
+      "bis",
+      "bit",
+      "bimus",
+      "bitis",
+      "bunt"
+    ],
+    "imp_endings": [
+      "bam",
+      "bas",
+      "bat",
+      "bamus",
+      "batis",
+      "bant"
+    ],
+    "perf_endings": [
+      "i",
+      "isti",
+      "it",
+      "imus",
+      "istis",
+      "erunt"
+    ],
+    "plu_endings": [
+      "eram",
+      "eras",
+      "erat",
+      "eramus",
+      "eratis",
+      "erant"
+    ]
+  },
+  {
+    "Conjugation": "3",
+    "Type": "Active Indicative",
+    "pres_endings": [
+      "o",
+      "s",
+      "t",
+      "mus",
+      "tis",
+      "nt"
+    ],
+    "fut_endings": [
+      "am",
+      "es",
+      "et",
+      "emus",
+      "etis",
+      "ent"
+    ],
+    "imp_endings": [
+      "bam",
+      "bas",
+      "bat",
+      "bamus",
+      "batis",
+      "bant"
+    ],
+    "perf_endings": [
+      "i",
+      "isti",
+      "it",
+      "imus",
+      "istis",
+      "erunt"
+    ],
+    "plu_endings": [
+      "eram",
+      "eras",
+      "erat",
+      "eramus",
+      "eratis",
+      "erant"
+    ]
+  },
+  {
+    "Conjugation": "4",
+    "Type": "Active Indicative",
+    "pres_endings": [
+      "o",
+      "s",
+      "t",
+      "mus",
+      "tis",
+      "nt"
+    ],
+    "fut_endings": [
+      "am",
+      "es",
+      "et",
+      "emus",
+      "etis",
+      "ent"
+    ],
+    "imp_endings": [
+      "bam",
+      "bas",
+      "bat",
+      "bamus",
+      "batis",
+      "bant"
+    ],
+    "perf_endings": [
+      "i",
+      "isti",
+      "it",
+      "imus",
+      "istis",
+      "erunt"
+    ],
+    "plu_endings": [
+      "eram",
+      "eras",
+      "erat",
+      "eramus",
+      "eratis",
+      "erant"
+    ]
+  },
+  {
+    "Conjugation": "3/4",
+    "Type": "Active Indicative",
+    "pres_endings": [
+      "o",
+      "s",
+      "t",
+      "mus",
+      "tis",
+      "nt"
+    ],
+    "fut_endings": [
+      "am",
+      "es",
+      "et",
+      "emus",
+      "etis",
+      "ent"
+    ],
+    "imp_endings": [
+      "bam",
+      "bas",
+      "bat",
+      "bamus",
+      "batis",
+      "bant"
+    ],
+    "perf_endings": [
+      "i",
+      "isti",
+      "it",
+      "imus",
+      "istis",
+      "erunt"
+    ],
+    "plu_endings": [
+      "eram",
+      "eras",
+      "erat",
+      "eramus",
+      "eratis",
+      "erant"
+    ]
+  },
+  {
+    "Conjugation": "1",
+    "Type": "Passive Indicative",
+    "pres_endings": [
+      "or",
+      "aris",
+      "atur",
+      "amur",
+      "amini",
+      "antur"
+    ],
+    "fut_endings": [
+      "bor",
+      "beris",
+      "bitur",
+      "bimur",
+      "bimini",
+      "buntur"
+    ],
+    "imp_endings": [
+      "bar",
+      "baris",
+      "batur",
+      "bamur",
+      "bamini",
+      "bantur"
+    ],
+    "perf_endings": [
+      "tus sum",
+      "tus es",
+      "tus est",
+      "ti sumus",
+      "ti estis",
+      "ti sunt"
+    ],
+    "plu_endings": [
+      "tus eram",
+      "tus eras",
+      "tus erat",
+      "ti eramus",
+      "ti eratis",
+      "ti erant"
+    ]
+  },
+  {
+    "Conjugation": "2",
+    "Type": "Passive Indicative",
+    "pres_endings": [
+      "eor",
+      "eris",
+      "etur",
+      "emur",
+      "emini",
+      "entur"
+    ],
+    "fut_endings": [
+      "bor",
+      "beris",
+      "bitur",
+      "bimur",
+      "bimini",
+      "buntur"
+    ],
+    "imp_endings": [
+      "bar",
+      "baris",
+      "batur",
+      "bamur",
+      "bamini",
+      "bantur"
+    ],
+    "perf_endings": [
+      "tus sum",
+      "tus es",
+      "tus est",
+      "ti sumus",
+      "ti estis",
+      "ti sunt"
+    ],
+    "plu_endings": [
+      "tus eram",
+      "tus eras",
+      "tus erat",
+      "ti eramus",
+      "ti eratis",
+      "ti erant"
+    ]
+  },
+  {
+    "Conjugation": "3",
+    "Type": "Passive Indicative",
+    "pres_endings": [
+      "or",
+      "eris",
+      "itur",
+      "imur",
+      "imini",
+      "untur"
+    ],
+    "fut_endings": [
+      "ar",
+      "eris",
+      "etur",
+      "emur",
+      "emini",
+      "entur"
+    ],
+    "imp_endings": [
+      "bar",
+      "baris",
+      "batur",
+      "bamur",
+      "bamini",
+      "bantur"
+    ],
+    "perf_endings": [
+      "tus sum",
+      "tus es",
+      "tus est",
+      "ti sumus",
+      "ti estis",
+      "ti sunt"
+    ],
+    "plu_endings": [
+      "tus eram",
+      "tus eras",
+      "tus erat",
+      "ti eramus",
+      "ti eratis",
+      "ti erant"
+    ]
+  },
+  {
+    "Conjugation": "4",
+    "Type": "Passive Indicative",
+    "pres_endings": [
+      "or",
+      "ris",
+      "tur",
+      "mur",
+      "mini",
+      "untur"
+    ],
+    "fut_endings": [
+      "ar",
+      "eris",
+      "etur",
+      "emur",
+      "emini",
+      "entur"
+    ],
+    "imp_endings": [
+      "bar",
+      "baris",
+      "batur",
+      "bamur",
+      "bamini",
+      "bantur"
+    ],
+    "perf_endings": [
+      "tus sum",
+      "tus es",
+      "tus est",
+      "ti sumus",
+      "ti estis",
+      "ti sunt"
+    ],
+    "plu_endings": [
+      "tus eram",
+      "tus eras",
+      "tus erat",
+      "ti eramus",
+      "ti eratis",
+      "ti erant"
+    ]
+  },
+  {
+    "Conjugation": "3/4",
+    "Type": "Passive Indicative",
+    "pres_endings": [
+      "ior",
+      "eris",
+      "itur",
+      "imur",
+      "imini",
+      "iuntur"
+    ],
+    "fut_endings": [
+      "ar",
+      "eris",
+      "etur",
+      "emur",
+      "emini",
+      "entur"
+    ],
+    "imp_endings": [
+      "bar",
+      "baris",
+      "batur",
+      "bamur",
+      "bamini",
+      "bantur"
+    ],
+    "perf_endings": [
+      "tus sum",
+      "tus es",
+      "tus est",
+      "ti sumus",
+      "ti estis",
+      "ti sunt"
+    ],
+    "plu_endings": [
+      "tus eram",
+      "tus eras",
+      "tus erat",
+      "ti eramus",
+      "ti eratis",
+      "ti erant"
+    ]
+  }
+]

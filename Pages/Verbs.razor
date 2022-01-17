@@ -1,5 +1,8 @@
 ﻿@page "/verb-notes"
 @inject HttpClient Http
+@using System.Linq
+
+<PageTitle>Verb Notes</PageTitle>
 
 <h1>Verbs</h1>
 
@@ -15,8 +18,10 @@
 }
 else
 {
-    <h5>Active Indicative</h5>
-    <h6 style="margin-top: 20px">Present: I carry; I warn; I drag; I hear; I take</h6>
+    <h3 style="margin-top: 10px"><em>Active Indicative</em></h3>
+
+    <h5 style="margin-top: 20px; font-weight:bold">Present:</h5>
+    <h6>I carry; I warn; I drag; I hear; I take</h6>
     <table class="table">
         <tbody>
             <tr>
@@ -63,11 +68,392 @@ else
                 <th>3/4</th>
                 @foreach(var x in endings[4].pres_endings)
                 {
-                    <td>capi-@x.ToString()</td>
-                }
+                    <td>capi-@x.ToString()</td> }
              </tr>
         </tbody>
     </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Future:</h5>
+    <h6>I shall carry; I shall warn; I shall drag; I shall hear; I shall take</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 0; i <= 3; i++)
+            {
+                <tr>
+                    <th>@(i+1)</th>
+                    @foreach(var x in endings[i].fut_endings)
+                    {
+                        string stem = "";
+                        switch (i+1)
+                        {
+                            case 1: stem = "porta"; break;
+                            case 2: stem = "mone"; break;
+                            case 3: stem = "trah"; break;
+                            case 4: stem = "audi"; break;
+                        }
+                        <td>@stem-@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[4].fut_endings)
+                {
+                    <td>capi-@x.ToString()</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Future:</h5>
+    <h6>I was carrying; I was warning; I was dragging; I was hearing; I was taking</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 0; i <= 3; i++)
+            {
+                <tr>
+                    <th>@(i+1)</th>
+                    @foreach(var x in endings[i].imp_endings)
+                    {
+                        string stem = "";
+                        switch (i+1)
+                        {
+                            case 1: stem = "porta"; break;
+                            case 2: stem = "mone"; break;
+                            case 3: stem = "trahe"; break;
+                            case 4: stem = "audie"; break;
+                        }
+                        <td>@stem-@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[4].imp_endings)
+                {
+                    <td>capie-@x.ToString()</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Perfect:</h5>
+    <h6>I (have) carried; I (have) warned; I (have) dragged; I (have) heard; I took, have taken</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 0; i <= 3; i++)
+            {
+                <tr>
+                    <th>@(i+1)</th>
+                    @foreach(var x in endings[i].perf_endings)
+                    {
+                        string stem = "";
+                        switch (i+1)
+                        {
+                            case 1: stem = "portav"; break;
+                            case 2: stem = "monu"; break;
+                            case 3: stem = "trax"; break;
+                            case 4: stem = "audiv"; break;
+                        }
+                        <td>@stem-@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[4].perf_endings)
+                {
+                    <td>cep-@x.ToString()</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Pluperfect:</h5>
+    <h6>I had carried; I had warned; I had dragged; I had heard; I had taken</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 0; i <= 3; i++)
+            {
+                <tr>
+                    <th>@(i+1)</th>
+                    @foreach(var x in endings[i].plu_endings)
+                    {
+                        string stem = "";
+                        switch (i+1)
+                        {
+                            case 1: stem = "portav"; break;
+                            case 2: stem = "monu"; break;
+                            case 3: stem = "trax"; break;
+                            case 4: stem = "audiv"; break;
+                        }
+                        <td>@stem-@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[4].plu_endings)
+                {
+                    <td>cep-@x.ToString()</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+    <h3 style="margin-top: 35px"><em>Passive Indicative</em></h3>
+    
+    <h5 style="margin-top: 20px; font-weight:bold">Present:</h5>
+    <h6>I am carried; I am warned; I am dragged; I am heard; I am taken</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 5; i <= 8; i++)
+            {
+                <tr>
+                    <th>@(i-4)</th>
+                    @foreach(var x in endings[i].pres_endings)
+                    {
+                        string stem = "";
+                        switch (i-4)
+                        {
+                            case 1: stem = "port"; break;
+                            case 2: stem = "mon"; break;
+                            case 3: stem = "trah"; break;
+                            case 4: stem = "audi"; break;
+                        }
+                        <td>@stem-@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[9].pres_endings)
+                {
+                    <td>cap-@x.ToString()</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Future:</h5>
+    <h6>I shall be carried; I shall be warned; I shall be dragged; I shall be heard; I shall be taken</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 5; i <= 8; i++)
+            {
+                <tr>
+                    <th>@(i-4)</th>
+                    @foreach(var x in endings[i].fut_endings)
+                    {
+                        string stem = "";
+                        switch (i-4)
+                        {
+                            case 1: stem = "porta"; break;
+                            case 2: stem = "mone"; break;
+                            case 3: stem = "trah"; break;
+                            case 4: stem = "audi"; break;
+                        }
+                        <td>@stem-@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[9].fut_endings)
+                {
+                    <td>capi-@x.ToString()</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Imperfect:</h5>
+    <h6>I was being carried; I was being warned; I was being dragged; I was being heard; I was being taken</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 5; i <= 8; i++)
+            {
+                <tr>
+                    <th>@(i-4)</th>
+                    @foreach(var x in endings[i].imp_endings)
+                    {
+                        string stem = "";
+                        switch (i-4)
+                        {
+                            case 1: stem = "porta"; break;
+                            case 2: stem = "mone"; break;
+                            case 3: stem = "trahe"; break;
+                            case 4: stem = "audie"; break;
+                        }
+                        <td>@stem-@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[9].imp_endings)
+                {
+                    <td>capie-@x.ToString()</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Perfect:</h5>
+    <h6>I was being carried; I was warned; I was dragged; I was heard; I was taken</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 5; i <= 8; i++)
+            {
+                <tr>
+                    <th>@(i-4)</th>
+                    @foreach(var x in endings[i].perf_endings)
+                    {
+                        string stem = "";
+                        switch (i-4)
+                        {
+                            case 1: stem = "porta"; break;
+                            case 2: stem = "moni"; break;
+                            case 3: stem = "trac"; break;
+                            case 4: stem = "audi"; break;
+                        }
+                        <td>@stem@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[9].perf_endings)
+                {
+                    <td>@($"cap{x.ToString()}")</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h5 style="margin-top: 50px; font-weight:bold">Pluperfect:</h5>
+    <h6>I had been carried; I had been warned; I had been dragged; I had been heard; I had been taken</h6>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Conjugation: </th>
+                <td>I</td>
+                <td>You (sg.)</td>
+                <td>S/he/it</td>
+                <td>We</td>
+                <td>You (pl.)</td>
+                <td>They</td>
+            </tr>
+            @for(int i = 5; i <= 8; i++)
+            {
+                <tr>
+                    <th>@(i-4)</th>
+                    @foreach(var x in endings[i].plu_endings)
+                    {
+                        string stem = "";
+                        switch (i-4)
+                        {
+                            case 1: stem = "porta"; break;
+                            case 2: stem = "moni"; break;
+                            case 3: stem = "trac"; break;
+                            case 4: stem = "audi"; break;
+                        }
+                        <td>@stem@x.ToString()</td>
+                    }
+                </tr>
+            }
+            <tr>
+                <th>3/4</th>
+                @foreach(var x in endings[9].plu_endings)
+                {
+                    <td>@($"cap{x.ToString()}")</td>
+                }
+            </tr>
+            
+        </tbody>
+    </table>
+
 }
 
 
@@ -79,10 +465,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        endings = await Http.GetFromJsonAsync<verb_endings[]>("data/verbs/verb-endings_latin.json");
+        endings = await Http.GetFromJsonAsync<verb_endings[]>("data/verb/verb-endings_latin.json");
     }
-
-
 
 
 
@@ -98,8 +482,8 @@ else
         public string? Type { get; set; }
         public string[]? pres_endings { get; set; }
         public string[]? fut_endings { get; set; }
-        public string[]? imp_endings { get; set; } = { "bam", "bas", "bat", "bamus", "batis", "bant" };
-        public string[]? perf_endings { get; set; } = { "i", "isti", "it", "imus", "istis", "erunt" };
-        public string[]? plu_endings { get; set; } = { "eram", "eras", "erat", "eramus", "eratis", "erant" };
+        public string[]? imp_endings { get; set; }
+        public string[]? perf_endings { get; set; }
+        public string[]? plu_endings { get; set; }
     }
 }
