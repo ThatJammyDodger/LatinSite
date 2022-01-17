@@ -1,0 +1,267 @@
+[
+  {
+    "In_Latin": "adeo",
+    "In_English": "so much, so greatly, to such an extent",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "antea",
+    "In_English": "before",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "bene",
+    "In_English": "well",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "cras",
+    "In_English": "tomorrow",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "cur?",
+    "In_English": "why?",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "deinde",
+    "In_English": "then",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "diu",
+    "In_English": "for a long time",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "ecce!",
+    "In_English": "look!",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "etiam",
+    "In_English": "also, even",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "forte",
+    "In_English": "by chance",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "frustra",
+    "In_English": "in vain",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "heri",
+    "In_English": "yesterday",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "hodie",
+    "In_English": "today",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "iam",
+    "In_English": "now, already",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "ibi",
+    "In_English": "there",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "igitur",
+    "In_English": "therefore, and so",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "interea",
+    "In_English": "meanwhile",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "ita",
+    "In_English": "in this way, to such an extent, so",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "itaque",
+    "In_English": "and so, therefore",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "iterum",
+    "In_English": "again",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "libenter",
+    "In_English": "willingly, gladly",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "maxime",
+    "In_English": "very greatly",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "minime",
+    "In_English": "very little, least, no",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "mox",
+    "In_English": "soon",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "multo",
+    "In_English": "much",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "non",
+    "In_English": "not",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "nonne...?",
+    "In_English": "surely...?",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "numquam",
+    "In_English": "never",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "nunc",
+    "In_English": "now",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "olim",
+    "In_English": "once, some time ago",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "paene",
+    "In_English": "almost, nearly",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "postea",
+    "In_English": "afterwards",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "postridie",
+    "In_English": "on the next day",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "primo",
+    "In_English": "at first",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quam \u002B superlative adverb",
+    "In_English": "as ... as possible",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quam",
+    "In_English": "than, how...? how...!",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quando?",
+    "In_English": "when?",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quo?",
+    "In_English": "to where?",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quomodo?",
+    "In_English": "how?",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "saepe",
+    "In_English": "often",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "semper",
+    "In_English": "always",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "sic",
+    "In_English": "thus, in this way",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "simul",
+    "In_English": "at the same time",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "statim",
+    "In_English": "at once, immediately",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "subito",
+    "In_English": "suddenly",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "tam",
+    "In_English": "so",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "tamen",
+    "In_English": "however",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "tandem",
+    "In_English": "at last, finally",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "tum",
+    "In_English": "then",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "ubi",
+    "In_English": "where? where, when",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "umquam",
+    "In_English": "ever",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "unde?",
+    "In_English": "from whence?",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "vehementer",
+    "In_English": "violently, loudly",
+    "Other_Forms": "indeclinable"
+  }
+]

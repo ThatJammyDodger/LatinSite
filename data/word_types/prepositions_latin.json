@@ -1,0 +1,110 @@
+[
+  {
+    "In_Latin": "a, ab",
+    "In_English": "from, away from, by",
+    "Usage": "+ ablative",
+    "Other_Notes": "as prefix with verbs = away"
+  },
+  {
+    "In_Latin": "ad",
+    "In_English": "to, towards, at",
+    "Usage": "+ accusative",
+    "Other_Notes": "also used as prefix with verbs"
+  },
+  {
+    "In_Latin": "circum",
+    "In_English": "around",
+    "Usage": "+ accusative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "contra",
+    "In_English": "against",
+    "Usage": "+ accusative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "cum",
+    "In_English": "with",
+    "Usage": "+ ablative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "de",
+    "In_English": "from, down from, about",
+    "Usage": "+ ablative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "e, ex",
+    "In_English": "from, out of, out",
+    "Usage": "+ ablative",
+    "Other_Notes": "also used as prefix with verbs"
+  },
+  {
+    "In_Latin": "in",
+    "In_English": "in, on",
+    "Usage": "+ ablative",
+    "Other_Notes": "also used as prefix with verbs"
+  },
+  {
+    "In_Latin": "in",
+    "In_English": "into, onto",
+    "Usage": "+ accusative",
+    "Other_Notes": "also used as prefix with verbs"
+  },
+  {
+    "In_Latin": "inter",
+    "In_English": "among, between",
+    "Usage": "+ accusative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "per",
+    "In_English": "through, along",
+    "Usage": "+ accusative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "post",
+    "In_English": "after, behind",
+    "Usage": "+ accusative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "pro",
+    "In_English": "in front of, for, in return for",
+    "Usage": "+ ablative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "prope",
+    "In_English": "near",
+    "Usage": "+ accusative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "propter",
+    "In_English": "on account of, because of",
+    "Usage": "+ accusative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "sine",
+    "In_English": "without",
+    "Usage": "+ ablative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "sub",
+    "In_English": "under, beneath",
+    "Usage": "+ accusative / ablative",
+    "Other_Notes": ""
+  },
+  {
+    "In_Latin": "trans",
+    "In_English": "across",
+    "Usage": "+ accusative",
+    "Other_Notes": "also used as prefix with verbs"
+  }
+]

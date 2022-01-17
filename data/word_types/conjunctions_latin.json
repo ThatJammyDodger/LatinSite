@@ -1,0 +1,102 @@
+[
+  {
+    "In_Latin": "ac, atque",
+    "In_English": "and",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "cum",
+    "In_English": "when, since",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "dum",
+    "In_English": "while, until",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "enim",
+    "In_English": "for",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "et",
+    "In_English": "and, even",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "et... et",
+    "In_English": "both... and",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "nam",
+    "In_English": "for",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "ne \u002B subjunctive",
+    "In_English": "that... not, so that... not, that, lest",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "nec, neque",
+    "In_English": "and not, nor, neither",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "nisi",
+    "In_English": "unless, except",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "postquam",
+    "In_English": "after, when",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quamquam",
+    "In_English": "although",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "-que (suffix)",
+    "In_English": "and",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quod",
+    "In_English": "because",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "quoque",
+    "In_English": "also, too",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "sed",
+    "In_English": "but",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "si",
+    "In_English": "if",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "simulac, simulatque",
+    "In_English": "as soon as",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "ut \u002B subjunctive",
+    "In_English": "that, so that, in order that",
+    "Other_Forms": "indeclinable"
+  },
+  {
+    "In_Latin": "ut \u002B indicative",
+    "In_English": "as, when",
+    "Other_Forms": "indeclinable"
+  }
+]

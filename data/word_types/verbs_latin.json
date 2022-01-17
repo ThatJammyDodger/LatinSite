@@ -1,0 +1,1388 @@
+[
+  {
+    "In_English": "be absent, be away, be distant from",
+    "PP1": "absum",
+    "PP2": "abesse",
+    "PP3": "afui",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "happen",
+    "PP1": "accido",
+    "PP2": "accidere",
+    "PP3": "accidi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "accept, take in, receive",
+    "PP1": "accipio",
+    "PP2": "accipere",
+    "PP3": "accepi",
+    "PP4": "acceptus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "be here, be present",
+    "PP1": "adsum",
+    "PP2": "adesse",
+    "PP3": "adfui",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "arrive",
+    "PP1": "advenio",
+    "PP2": "advenire",
+    "PP3": "adveni",
+    "PP4": "",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "build",
+    "PP1": "aedifico",
+    "PP2": "aedificare",
+    "PP3": "aedificavi",
+    "PP4": "aedificatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "do, act, drive",
+    "PP1": "ago",
+    "PP2": "agere",
+    "PP3": "egi",
+    "PP4": "actus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "walk",
+    "PP1": "ambulo",
+    "PP2": "ambulare",
+    "PP3": "ambulavi",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "love, like",
+    "PP1": "amo",
+    "PP2": "amare",
+    "PP3": "amavi",
+    "PP4": "amatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "approach, come near to",
+    "PP1": "appropinquo",
+    "PP2": "appropinquare",
+    "PP3": "appropinquavi",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": "\u002B dative"
+  },
+  {
+    "In_English": "climb",
+    "PP1": "ascendo",
+    "PP2": "ascendere",
+    "PP3": "ascendi",
+    "PP4": "ascensus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "dare",
+    "PP1": "audeo",
+    "PP2": "audere",
+    "PP3": "ausus sum",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": "semi-deponent"
+  },
+  {
+    "In_English": "hear, listen to",
+    "PP1": "audio",
+    "PP2": "audire",
+    "PP3": "audivi",
+    "PP4": "auditus",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "take away, carry off, steal",
+    "PP1": "aufero",
+    "PP2": "auferre",
+    "PP3": "abstuli",
+    "PP4": "ablatus",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "drink",
+    "PP1": "bibo",
+    "PP2": "bibere",
+    "PP3": "bibi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "fall",
+    "PP1": "cado",
+    "PP2": "cadere",
+    "PP3": "cecidi",
+    "PP4": "casus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "take, catch, capture, make (a plan)",
+    "PP1": "capio",
+    "PP2": "capere",
+    "PP3": "cepi",
+    "PP4": "captus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "hide",
+    "PP1": "celo",
+    "PP2": "celare",
+    "PP3": "celavi",
+    "PP4": "celatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "shout",
+    "PP1": "clamo",
+    "PP2": "clamare",
+    "PP3": "clamavi",
+    "PP4": "clamatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "began",
+    "PP1": "coepi",
+    "PP2": "coepisse",
+    "PP3": "",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "think, consider",
+    "PP1": "cogito",
+    "PP2": "cogitare",
+    "PP3": "cogitavi",
+    "PP4": "cogitatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "get to know, find out",
+    "PP1": "cognosco",
+    "PP2": "cognoscere",
+    "PP3": "cognovi",
+    "PP4": "cognitus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "force, compel",
+    "PP1": "cogere",
+    "PP2": "coegi",
+    "PP3": "coactus",
+    "PP4": "cogo",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "finish, wear out",
+    "PP1": "conficio",
+    "PP2": "conficere",
+    "PP3": "confeci",
+    "PP4": "confectus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "try",
+    "PP1": "conor",
+    "PP2": "conari",
+    "PP3": "conatus sum",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "catch sight of, notice",
+    "PP1": "conspicio",
+    "PP2": "conspicere",
+    "PP3": "conspexi",
+    "PP4": "conspectus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "decide",
+    "PP1": "constituo",
+    "PP2": "constituere",
+    "PP3": "constitui",
+    "PP4": "constitutus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "eat",
+    "PP1": "consumo",
+    "PP2": "consumere",
+    "PP3": "consumpsi",
+    "PP4": "consumptus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "come together, gather, meet",
+    "PP1": "convenio",
+    "PP2": "convenire",
+    "PP3": "conveni",
+    "PP4": "",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "believe, trust",
+    "PP1": "credo",
+    "PP2": "credere",
+    "PP3": "credidi",
+    "PP4": "creditus",
+    "Conjugation": "3",
+    "Other_Info": "\u002B dative"
+  },
+  {
+    "In_English": "want, desire",
+    "PP1": "cupio",
+    "PP2": "cupere",
+    "PP3": "cupivi",
+    "PP4": "cupitus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "run",
+    "PP1": "curro",
+    "PP2": "currere",
+    "PP3": "cucurri",
+    "PP4": "cursus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "guard",
+    "PP1": "custodio",
+    "PP2": "custodire",
+    "PP3": "custodivi",
+    "PP4": "custoditus",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "owe, ought, should, must",
+    "PP1": "debeo",
+    "PP2": "debere",
+    "PP3": "debui",
+    "PP4": "debitus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "defend",
+    "PP1": "defendo",
+    "PP2": "defendere",
+    "PP3": "defendi",
+    "PP4": "defensus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "destroy",
+    "PP1": "deleo",
+    "PP2": "delere",
+    "PP3": "delevi",
+    "PP4": "deletus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "go down, come down",
+    "PP1": "descendo",
+    "PP2": "descendere",
+    "PP3": "descendi",
+    "PP4": "descensus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "say, speak, tell",
+    "PP1": "dico",
+    "PP2": "dicere",
+    "PP3": "dixi",
+    "PP4": "dictus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "depart, leave",
+    "PP1": "discedo",
+    "PP2": "discedere",
+    "PP3": "discessi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "give",
+    "PP1": "do",
+    "PP2": "dare",
+    "PP3": "dedi",
+    "PP4": "datus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "teach",
+    "PP1": "doceo",
+    "PP2": "docere",
+    "PP3": "docui",
+    "PP4": "doctus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "sleep",
+    "PP1": "dormio",
+    "PP2": "dormire",
+    "PP3": "dormivi",
+    "PP4": "",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "lead, take",
+    "PP1": "duco",
+    "PP2": "ducere",
+    "PP3": "duxi",
+    "PP4": "ductus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "escape",
+    "PP1": "effugio",
+    "PP2": "effugere",
+    "PP3": "effugi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "go out",
+    "PP1": "egredior",
+    "PP2": "egredi",
+    "PP3": "egressus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "buy",
+    "PP1": "emo",
+    "PP2": "emere",
+    "PP3": "emi",
+    "PP4": "emptus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "go",
+    "PP1": "eo",
+    "PP2": "ire",
+    "PP3": "i(v)i",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "wait for, expect",
+    "PP1": "exspecto",
+    "PP2": "exspectare",
+    "PP3": "exspectavi",
+    "PP4": "exspectatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "make, do",
+    "PP1": "facio",
+    "PP2": "facere",
+    "PP3": "feci",
+    "PP4": "factus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "favour, support",
+    "PP1": "faveo",
+    "PP2": "favere",
+    "PP3": "favi",
+    "PP4": "fautus",
+    "Conjugation": "2",
+    "Other_Info": "\u002B dative"
+  },
+  {
+    "In_English": "bring, carry, bear",
+    "PP1": "fero",
+    "PP2": "ferre",
+    "PP3": "tuli",
+    "PP4": "latus",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "hurry",
+    "PP1": "festino",
+    "PP2": "festinare",
+    "PP3": "festinavi",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "run away, flee",
+    "PP1": "fugio",
+    "PP2": "fugere",
+    "PP3": "fugi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "be pleased, rejoice",
+    "PP1": "gaudeo",
+    "PP2": "gaudere",
+    "PP3": "gavisus sum",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": "semi-deponent"
+  },
+  {
+    "In_English": "wear (clothes), wage (war)",
+    "PP1": "gero",
+    "PP2": "gerere",
+    "PP3": "gessi",
+    "PP4": "gestus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "have, hold",
+    "PP1": "habeo",
+    "PP2": "habere",
+    "PP3": "habui",
+    "PP4": "habitus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "live",
+    "PP1": "habito",
+    "PP2": "habitare",
+    "PP3": "habitavi",
+    "PP4": "habitatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "encourage, urge",
+    "PP1": "hortor",
+    "PP2": "hortari",
+    "PP3": "hortatus sum",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "lie",
+    "PP1": "iaceo",
+    "PP2": "iacere",
+    "PP3": "iacui",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "throw",
+    "PP1": "iacio",
+    "PP2": "iacere",
+    "PP3": "ieci",
+    "PP4": "iactus",
+    "Conjugation": "3",
+    "Other_Info": "-icio when compounded"
+  },
+  {
+    "In_English": "order, command",
+    "PP1": "impero",
+    "PP2": "imperare",
+    "PP3": "imperavi",
+    "PP4": "imperatus",
+    "Conjugation": "1",
+    "Other_Info": "\u002B dative"
+  },
+  {
+    "In_English": "burn, set on fire",
+    "PP1": "incendo",
+    "PP2": "incendere",
+    "PP3": "incendi",
+    "PP4": "incensus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "enter",
+    "PP1": "ingredior",
+    "PP2": "inggredi",
+    "PP3": "ingressus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "s/he says, s/he said",
+    "PP1": "inquit",
+    "PP2": "",
+    "PP3": "",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "kill",
+    "PP1": "interficio",
+    "PP2": "interficere",
+    "PP3": "interfeci",
+    "PP4": "interfectus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "enter",
+    "PP1": "intro",
+    "PP2": "intrare",
+    "PP3": "intravi",
+    "PP4": "intratus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "find",
+    "PP1": "invenio",
+    "PP2": "invenire",
+    "PP3": "inveni",
+    "PP4": "inventus",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "invite",
+    "PP1": "invito",
+    "PP2": "invitare",
+    "PP3": "invitavi",
+    "PP4": "invitatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "order",
+    "PP1": "iubeo",
+    "PP2": "iubere",
+    "PP3": "iussi",
+    "PP4": "iussus",
+    "Conjugation": "2",
+    "Other_Info": "laboro"
+  },
+  {
+    "In_English": "work, toil",
+    "PP1": "laboro",
+    "PP2": "laborare",
+    "PP3": "laboravi",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "weep, cry",
+    "PP1": "lacrimo",
+    "PP2": "lacrimare",
+    "PP3": "lacrimavi",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "praise",
+    "PP1": "laudo",
+    "PP2": "laudare",
+    "PP3": "laudavi",
+    "PP4": "laudatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "read, choose",
+    "PP1": "lego",
+    "PP2": "legere",
+    "PP3": "legi",
+    "PP4": "lectus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "set free",
+    "PP1": "libero",
+    "PP2": "liberare",
+    "PP3": "liberavi",
+    "PP4": "liberatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "speak, talk",
+    "PP1": "loquor",
+    "PP2": "loqui",
+    "PP3": "locutus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "prefer",
+    "PP1": "malo",
+    "PP2": "malle",
+    "PP3": "malui",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "remain, stay",
+    "PP1": "maneo",
+    "PP2": "manere",
+    "PP3": "mansi",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "wonder at, admire",
+    "PP1": "miror",
+    "PP2": "mirari",
+    "PP3": "miratus sum",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "send",
+    "PP1": "mitto",
+    "PP2": "mittere",
+    "PP3": "misi",
+    "PP4": "missus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "warn, advise",
+    "PP1": "moneo",
+    "PP2": "monere",
+    "PP3": "monui",
+    "PP4": "monitus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "die",
+    "PP1": "morior",
+    "PP2": "mori",
+    "PP3": "mortuus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "move",
+    "PP1": "moveo",
+    "PP2": "movere",
+    "PP3": "movi",
+    "PP4": "motus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "tell, relate",
+    "PP1": "narro",
+    "PP2": "narrare",
+    "PP3": "narravi",
+    "PP4": "narratus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "sail",
+    "PP1": "navigo",
+    "PP2": "navigare",
+    "PP3": "navigavi",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "kill",
+    "PP1": "neco",
+    "PP2": "necare",
+    "PP3": "necavi",
+    "PP4": "necatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "not know",
+    "PP1": "nescio",
+    "PP2": "nescire",
+    "PP3": "nescivi",
+    "PP4": "",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "not want, refuse",
+    "PP1": "nolo",
+    "PP2": "nolle",
+    "PP3": "nolui",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "announce, report",
+    "PP1": "nuntio",
+    "PP2": "nuntiare",
+    "PP3": "nuntiavi",
+    "PP4": "nuntiatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "kill",
+    "PP1": "occido",
+    "PP2": "occidere",
+    "PP3": "occidi",
+    "PP4": "occisus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "offer",
+    "PP1": "offero",
+    "PP2": "offerre",
+    "PP3": "obtuli",
+    "PP4": "oblatus",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "crush, overwhelm",
+    "PP1": "opprimo",
+    "PP2": "opprimere",
+    "PP3": "oppresi",
+    "PP4": "oppresus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "attack",
+    "PP1": "oppugno",
+    "PP2": "oppugnare",
+    "PP3": "oppugnavi",
+    "PP4": "oppugnatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "beg",
+    "PP1": "oro",
+    "PP2": "orare",
+    "PP3": "oravi",
+    "PP4": "oratus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "show",
+    "PP1": "ostendo",
+    "PP2": "ostendere",
+    "PP3": "ostendi",
+    "PP4": "ostentus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "prepare, provide",
+    "PP1": "paro",
+    "PP2": "parare",
+    "PP3": "paravi",
+    "PP4": "paratus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "suffer, endure",
+    "PP1": "patior",
+    "PP2": "pati",
+    "PP3": "passus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "drive",
+    "PP1": "pello",
+    "PP2": "pellere",
+    "PP3": "pepuli",
+    "PP4": "pulsus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "die, perish",
+    "PP1": "pereo",
+    "PP2": "perire",
+    "PP3": "perii",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "persuade",
+    "PP1": "persuado",
+    "PP2": "persuadere",
+    "PP3": "persuasi",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": "\u002B dative"
+  },
+  {
+    "In_English": "make for, seek, beg/ask for",
+    "PP1": "peto",
+    "PP2": "petere",
+    "PP3": "petivi",
+    "PP4": "petitus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "pay the penalty, be punished",
+    "PP1": "poenas do",
+    "PP2": "",
+    "PP3": "",
+    "PP4": "",
+    "Conjugation": "n/a",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "put, place, set up",
+    "PP1": "pono",
+    "PP2": "ponere",
+    "PP3": "posui",
+    "PP4": "positus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "carry, bear, take",
+    "PP1": "porto",
+    "PP2": "portare",
+    "PP3": "portavi",
+    "PP4": "portatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "can, be able",
+    "PP1": "possum",
+    "PP2": "posse",
+    "PP3": "potui",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "advance, proceed",
+    "PP1": "procedo",
+    "PP2": "procedere",
+    "PP3": "processi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "set out",
+    "PP1": "profiscior",
+    "PP2": "profisci",
+    "PP3": "profectus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "advance",
+    "PP1": "progredior",
+    "PP2": "progredi",
+    "PP3": "progressus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "promise",
+    "PP1": "promitto",
+    "PP2": "promittere",
+    "PP3": "promisi",
+    "PP4": "promissus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "fight",
+    "PP1": "pugno",
+    "PP2": "pugnare",
+    "PP3": "pugnavi",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "punish",
+    "PP1": "punio",
+    "PP2": "punire",
+    "PP3": "punivi",
+    "PP4": "punitus",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "think",
+    "PP1": "puto",
+    "PP2": "putare",
+    "PP3": "putavi",
+    "PP4": "putatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "search for, look for, ask",
+    "PP1": "quaero",
+    "PP2": "quaerere",
+    "PP3": "quaesivi",
+    "PP4": "quaesitus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "seize, grab",
+    "PP1": "rapio",
+    "PP2": "rapere",
+    "PP3": "rapui",
+    "PP4": "raptus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "give back, restore",
+    "PP1": "reddo",
+    "PP2": "reddere",
+    "PP3": "reddidi",
+    "PP4": "redditus",
+    "Conjugation": "3",
+    "Other_Info": "redeo"
+  },
+  {
+    "In_English": "go back, come back, return",
+    "PP1": "redeo",
+    "PP2": "redire",
+    "PP3": "redii",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "bring/carry back, report, tell",
+    "PP1": "refero",
+    "PP2": "referre",
+    "PP3": "rettuli",
+    "PP4": "relatus",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "rule",
+    "PP1": "rego",
+    "PP2": "regere",
+    "PP3": "rexi",
+    "PP4": "rectus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "go back, return",
+    "PP1": "regredior",
+    "PP2": "regredi",
+    "PP3": "regressus sum",
+    "PP4": "",
+    "Conjugation": "deponent",
+    "Other_Info": "relinquo"
+  },
+  {
+    "In_English": "leave, leave behind",
+    "PP1": "relinquo",
+    "PP2": "relinquere",
+    "PP3": "relinqui",
+    "PP4": "relictus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "resist",
+    "PP1": "resisto",
+    "PP2": "resistere",
+    "PP3": "restiti",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "\u002B dative"
+  },
+  {
+    "In_English": "reply",
+    "PP1": "respondeo",
+    "PP2": "respondere",
+    "PP3": "respondi",
+    "PP4": "responsus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "laugh, smile",
+    "PP1": "rideo",
+    "PP2": "ridere",
+    "PP3": "risi",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "ask, ask for",
+    "PP1": "rogo",
+    "PP2": "rogare",
+    "PP3": "rogavi",
+    "PP4": "rogatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "greet",
+    "PP1": "saluto",
+    "PP2": "salutare",
+    "PP3": "salutavi",
+    "PP4": "salulatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "know",
+    "PP1": "scio",
+    "PP2": "scire",
+    "PP3": "scivi",
+    "PP4": "scitus",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "write",
+    "PP1": "scribo",
+    "PP2": "scribere",
+    "PP3": "scripsi",
+    "PP4": "scriptus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "sit",
+    "PP1": "sedeo",
+    "PP2": "sedere",
+    "PP3": "sedi",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "feel, notice",
+    "PP1": "sentio",
+    "PP2": "sentire",
+    "PP3": "sensi",
+    "PP4": "sensus",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "follow",
+    "PP1": "sequor",
+    "PP2": "sequi",
+    "PP3": "secutus sum",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "save, protect, keep",
+    "PP1": "servo",
+    "PP2": "servare",
+    "PP3": "servavi",
+    "PP4": "servatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "be accustomed",
+    "PP1": "soleo",
+    "PP2": "solere",
+    "PP3": "solitus sum",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": "semi-deponent"
+  },
+  {
+    "In_English": "look at, watch",
+    "PP1": "specto",
+    "PP2": "spectare",
+    "PP3": "spectavi",
+    "PP4": "spectatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "hope, expect",
+    "PP1": "spero",
+    "PP2": "sperare",
+    "PP3": "speravi",
+    "PP4": "speratus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "stand",
+    "PP1": "sto",
+    "PP2": "stare",
+    "PP3": "steti",
+    "PP4": "",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "be",
+    "PP1": "sum",
+    "PP2": "esse",
+    "PP3": "fui",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "overcome, overpower",
+    "PP1": "supero",
+    "PP2": "superare",
+    "PP3": "superavi",
+    "PP4": "superatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "get up, stand up, rise",
+    "PP1": "surgo",
+    "PP2": "surgere",
+    "PP3": "surrexi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "be silent, be quiet",
+    "PP1": "taceo",
+    "PP2": "tacere",
+    "PP3": "tacui",
+    "PP4": "tacitus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "hold",
+    "PP1": "teneo",
+    "PP2": "tenere",
+    "PP3": "tenui",
+    "PP4": "tentus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "frighten",
+    "PP1": "terreo",
+    "PP2": "terrere",
+    "PP3": "terrui",
+    "PP4": "territus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "fear, be afraid",
+    "PP1": "timeo",
+    "PP2": "timere",
+    "PP3": "timui",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "raise, lift up, hold up",
+    "PP1": "tollo",
+    "PP2": "tollere",
+    "PP3": "sustuli",
+    "PP4": "sublatus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "hand over, hand down",
+    "PP1": "trado",
+    "PP2": "tradere",
+    "PP3": "tradidi",
+    "PP4": "traditus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "drag",
+    "PP1": "traho",
+    "PP2": "trahere",
+    "PP3": "traxi",
+    "PP4": "tractus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "sell",
+    "PP1": "vendo",
+    "PP2": "vendere",
+    "PP3": "vendidi",
+    "PP4": "venditus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "come",
+    "PP1": "venio",
+    "PP2": "venire",
+    "PP3": "veni",
+    "PP4": "",
+    "Conjugation": "4",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "turn",
+    "PP1": "verto",
+    "PP2": "vertere",
+    "PP3": "verti",
+    "PP4": "versus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "see",
+    "PP1": "video",
+    "PP2": "videre",
+    "PP3": "vidi",
+    "PP4": "visus",
+    "Conjugation": "2",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "seem, appear",
+    "PP1": "videor",
+    "PP2": "videri",
+    "PP3": "visus sum",
+    "PP4": "",
+    "Conjugation": "2",
+    "Other_Info": "deponent"
+  },
+  {
+    "In_English": "conquer, win, be victorious",
+    "PP1": "vinco",
+    "PP2": "vincere",
+    "PP3": "vici",
+    "PP4": "victus",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "live, be alive",
+    "PP1": "vivo",
+    "PP2": "vivere",
+    "PP3": "vixi",
+    "PP4": "",
+    "Conjugation": "3",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "call",
+    "PP1": "voco",
+    "PP2": "vocare",
+    "PP3": "vocavi",
+    "PP4": "vocatus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "want, wish, be willing",
+    "PP1": "volo",
+    "PP2": "velle",
+    "PP3": "volui",
+    "PP4": "",
+    "Conjugation": "irregular",
+    "Other_Info": ""
+  },
+  {
+    "In_English": "wound, injure",
+    "PP1": "vulnero",
+    "PP2": "vulnerare",
+    "PP3": "vulneravi",
+    "PP4": "vulneratus",
+    "Conjugation": "1",
+    "Other_Info": ""
+  }
+]

@@ -1,0 +1,1786 @@
+[
+  {
+    "In_Latin": "alius, alia, aliud",
+    "In_English": "other, another, else"
+  },
+  {
+    "In_Latin": "alter, altera, alterum",
+    "In_English": "the other, another, one (of two), the second (of two)"
+  },
+  {
+    "In_Latin": "altus, alta, altum",
+    "In_English": "high, deep"
+  },
+  {
+    "In_Latin": "audax, audacis",
+    "In_English": "bold, daring"
+  },
+  {
+    "In_Latin": "bonus, bona, bonum",
+    "In_English": "good"
+  },
+  {
+    "In_Latin": "brevis, breve",
+    "In_English": "short, brief"
+  },
+  {
+    "In_Latin": "celer, celeris, celere",
+    "In_English": "quick, fast"
+  },
+  {
+    "In_Latin": "ceteri, ceterae, cetera",
+    "In_English": "the rest, the others"
+  },
+  {
+    "In_Latin": "clarus, clara, clarum",
+    "In_English": "famous, clear"
+  },
+  {
+    "In_Latin": "crudelis, crudele",
+    "In_English": "cruel"
+  },
+  {
+    "In_Latin": "difficilis, difficile",
+    "In_English": "difficult"
+  },
+  {
+    "In_Latin": "diligens, diligentis",
+    "In_English": "careful"
+  },
+  {
+    "In_Latin": "dirus, dira, dirum",
+    "In_English": "dreadful"
+  },
+  {
+    "In_Latin": "facilis, facile",
+    "In_English": "easy"
+  },
+  {
+    "In_Latin": "felix, felicis",
+    "In_English": "fortunate, happy"
+  },
+  {
+    "In_Latin": "ferox, ferocis",
+    "In_English": "fierce, ferocious"
+  },
+  {
+    "In_Latin": "fidelis, fidele",
+    "In_English": "faithful, loyal"
+  },
+  {
+    "In_Latin": "fortis, forte",
+    "In_English": "brave"
+  },
+  {
+    "In_Latin": "gravis, grave",
+    "In_English": "heavy, serious"
+  },
+  {
+    "In_Latin": "infelix, infelicis",
+    "In_English": "unlucky, unhappy"
+  },
+  {
+    "In_Latin": "ingens, ingentis",
+    "In_English": "huge"
+  },
+  {
+    "In_Latin": "iratus, irata, iratum",
+    "In_English": "angry"
+  },
+  {
+    "In_Latin": "laetus, laeta, laetum",
+    "In_English": "happy"
+  },
+  {
+    "In_Latin": "lentus, lenta, lentum",
+    "In_English": "slow"
+  },
+  {
+    "In_Latin": "longus, longa, longum",
+    "In_English": "long"
+  },
+  {
+    "In_Latin": "magnus, magna, magnum",
+    "In_English": "big, great, large"
+  },
+  {
+    "In_Latin": "malus, mala, malum",
+    "In_English": "evil, bad"
+  },
+  {
+    "In_Latin": "medius, media, medium",
+    "In_English": "middle"
+  },
+  {
+    "In_Latin": "miser, misera, miserum",
+    "In_English": "miserable, wretched, sad"
+  },
+  {
+    "In_Latin": "multus, multa, multum",
+    "In_English": "much, many"
+  },
+  {
+    "In_Latin": "nonnulli, nunnullae, nonnulla",
+    "In_English": "some, several"
+  },
+  {
+    "In_Latin": "novus, nova, novum",
+    "In_English": "new"
+  },
+  {
+    "In_Latin": "nullus, nulla, nullum",
+    "In_English": "not any, no"
+  },
+  {
+    "In_Latin": "omnis, omne",
+    "In_English": "all, every"
+  },
+  {
+    "In_Latin": "parvus, parva, parvum",
+    "In_English": "small"
+  },
+  {
+    "In_Latin": "pauci (adj. plu.), paucae, pauca",
+    "In_English": "few, a few"
+  },
+  {
+    "In_Latin": "perterritus, perterrita, perterritum",
+    "In_English": "terrified"
+  },
+  {
+    "In_Latin": "primus, prima, primum",
+    "In_English": "first"
+  },
+  {
+    "In_Latin": "proximus, proxima, proximum",
+    "In_English": "nearest, next to"
+  },
+  {
+    "In_Latin": "pulcher, pulchra, pulchrum",
+    "In_English": "beautiful, handsome"
+  },
+  {
+    "In_Latin": "qualis?, quale",
+    "In_English": "what sort of?"
+  },
+  {
+    "In_Latin": "quantus?, quanta? quantum?",
+    "In_English": "how big? how much?"
+  },
+  {
+    "In_Latin": "quot?, indeclinable",
+    "In_English": "how many?"
+  },
+  {
+    "In_Latin": "Romanus, Romana, Romanum",
+    "In_English": "Roman"
+  },
+  {
+    "In_Latin": "sacer, sacra, sacrum",
+    "In_English": "sacred"
+  },
+  {
+    "In_Latin": "saevus, saeva, saevum",
+    "In_English": "savage, cruel"
+  },
+  {
+    "In_Latin": "scelestus, scelesta, scelestum",
+    "In_English": "wicked"
+  },
+  {
+    "In_Latin": "solus, sola, solum",
+    "In_English": "alone, lonely, only, on one's own"
+  },
+  {
+    "In_Latin": "stultus, stulta, stultum",
+    "In_English": "stupid, foolish"
+  },
+  {
+    "In_Latin": "summus, summa, summum",
+    "In_English": "highest, greatest, top (of)"
+  },
+  {
+    "In_Latin": "talis, tale",
+    "In_English": "such, of such a kind"
+  },
+  {
+    "In_Latin": "tantus, tanta, tantum",
+    "In_English": "so great, such a great"
+  },
+  {
+    "In_Latin": "tot, indeclinable",
+    "In_English": "so many"
+  },
+  {
+    "In_Latin": "totus, tota, totum",
+    "In_English": "whole"
+  },
+  {
+    "In_Latin": "tristis, triste",
+    "In_English": "sad"
+  },
+  {
+    "In_Latin": "validus, valida, validum",
+    "In_English": "strong"
+  },
+  {
+    "In_Latin": "adeo",
+    "In_English": "so much, so greatly, to such an extent"
+  },
+  {
+    "In_Latin": "antea",
+    "In_English": "before"
+  },
+  {
+    "In_Latin": "bene",
+    "In_English": "well"
+  },
+  {
+    "In_Latin": "cras",
+    "In_English": "tomorrow"
+  },
+  {
+    "In_Latin": "cur?",
+    "In_English": "why?"
+  },
+  {
+    "In_Latin": "deinde",
+    "In_English": "then"
+  },
+  {
+    "In_Latin": "diu",
+    "In_English": "for a long time"
+  },
+  {
+    "In_Latin": "ecce!",
+    "In_English": "look!"
+  },
+  {
+    "In_Latin": "etiam",
+    "In_English": "also, even"
+  },
+  {
+    "In_Latin": "forte",
+    "In_English": "by chance"
+  },
+  {
+    "In_Latin": "frustra",
+    "In_English": "in vain"
+  },
+  {
+    "In_Latin": "heri",
+    "In_English": "yesterday"
+  },
+  {
+    "In_Latin": "hodie",
+    "In_English": "today"
+  },
+  {
+    "In_Latin": "iam",
+    "In_English": "now, already"
+  },
+  {
+    "In_Latin": "ibi",
+    "In_English": "there"
+  },
+  {
+    "In_Latin": "igitur",
+    "In_English": "therefore, and so"
+  },
+  {
+    "In_Latin": "interea",
+    "In_English": "meanwhile"
+  },
+  {
+    "In_Latin": "ita",
+    "In_English": "in this way, to such an extent, so"
+  },
+  {
+    "In_Latin": "itaque",
+    "In_English": "and so, therefore"
+  },
+  {
+    "In_Latin": "iterum",
+    "In_English": "again"
+  },
+  {
+    "In_Latin": "libenter",
+    "In_English": "willingly, gladly"
+  },
+  {
+    "In_Latin": "maxime",
+    "In_English": "very greatly"
+  },
+  {
+    "In_Latin": "minime",
+    "In_English": "very little, least, no"
+  },
+  {
+    "In_Latin": "mox",
+    "In_English": "soon"
+  },
+  {
+    "In_Latin": "multo",
+    "In_English": "much"
+  },
+  {
+    "In_Latin": "non",
+    "In_English": "not"
+  },
+  {
+    "In_Latin": "nonne...?",
+    "In_English": "surely...?"
+  },
+  {
+    "In_Latin": "numquam",
+    "In_English": "never"
+  },
+  {
+    "In_Latin": "nunc",
+    "In_English": "now"
+  },
+  {
+    "In_Latin": "olim",
+    "In_English": "once, some time ago"
+  },
+  {
+    "In_Latin": "paene",
+    "In_English": "almost, nearly"
+  },
+  {
+    "In_Latin": "postea",
+    "In_English": "afterwards"
+  },
+  {
+    "In_Latin": "postridie",
+    "In_English": "on the next day"
+  },
+  {
+    "In_Latin": "primo",
+    "In_English": "at first"
+  },
+  {
+    "In_Latin": "quam + superlative adverb",
+    "In_English": "as ... as possible"
+  },
+  {
+    "In_Latin": "quam",
+    "In_English": "than, how...? how...!"
+  },
+  {
+    "In_Latin": "quando?",
+    "In_English": "when?"
+  },
+  {
+    "In_Latin": "quo?",
+    "In_English": "to where?"
+  },
+  {
+    "In_Latin": "quomodo?",
+    "In_English": "how?"
+  },
+  {
+    "In_Latin": "saepe",
+    "In_English": "often"
+  },
+  {
+    "In_Latin": "semper",
+    "In_English": "always"
+  },
+  {
+    "In_Latin": "sic",
+    "In_English": "thus, in this way"
+  },
+  {
+    "In_Latin": "simul",
+    "In_English": "at the same time"
+  },
+  {
+    "In_Latin": "statim",
+    "In_English": "at once, immediately"
+  },
+  {
+    "In_Latin": "subito",
+    "In_English": "suddenly"
+  },
+  {
+    "In_Latin": "tam",
+    "In_English": "so"
+  },
+  {
+    "In_Latin": "tamen",
+    "In_English": "however"
+  },
+  {
+    "In_Latin": "tandem",
+    "In_English": "at last, finally"
+  },
+  {
+    "In_Latin": "tum",
+    "In_English": "then"
+  },
+  {
+    "In_Latin": "ubi",
+    "In_English": "where? where, when"
+  },
+  {
+    "In_Latin": "umquam",
+    "In_English": "ever"
+  },
+  {
+    "In_Latin": "unde?",
+    "In_English": "from whence?"
+  },
+  {
+    "In_Latin": "vehementer",
+    "In_English": "violently, loudly"
+  },
+  {
+    "In_Latin": "ac, atque",
+    "In_English": "and"
+  },
+  {
+    "In_Latin": "cum",
+    "In_English": "when, since"
+  },
+  {
+    "In_Latin": "dum",
+    "In_English": "while, until"
+  },
+  {
+    "In_Latin": "enim",
+    "In_English": "for"
+  },
+  {
+    "In_Latin": "et",
+    "In_English": "and, even"
+  },
+  {
+    "In_Latin": "et... et",
+    "In_English": "both... and"
+  },
+  {
+    "In_Latin": "nam",
+    "In_English": "for"
+  },
+  {
+    "In_Latin": "ne + subjunctive",
+    "In_English": "that... not, so that... not, that, lest"
+  },
+  {
+    "In_Latin": "nec, neque",
+    "In_English": "and not, nor, neither"
+  },
+  {
+    "In_Latin": "nisi",
+    "In_English": "unless, except"
+  },
+  {
+    "In_Latin": "postquam",
+    "In_English": "after, when"
+  },
+  {
+    "In_Latin": "quamquam",
+    "In_English": "although"
+  },
+  {
+    "In_Latin": "-que (suffix)",
+    "In_English": "and"
+  },
+  {
+    "In_Latin": "quod",
+    "In_English": "because"
+  },
+  {
+    "In_Latin": "quoque",
+    "In_English": "also, too"
+  },
+  {
+    "In_Latin": "sed",
+    "In_English": "but"
+  },
+  {
+    "In_Latin": "si",
+    "In_English": "if"
+  },
+  {
+    "In_Latin": "simulac, simulatque",
+    "In_English": "as soon as"
+  },
+  {
+    "In_Latin": "ut + subjunctive",
+    "In_English": "that, so that, in order that"
+  },
+  {
+    "In_Latin": "ut + indicative",
+    "In_English": "as, when"
+  },
+  {
+    "In_Latin": "ager, agri",
+    "In_English": "field"
+  },
+  {
+    "In_Latin": "amicus, amici",
+    "In_English": "friend"
+  },
+  {
+    "In_Latin": "amor, amoris",
+    "In_English": "love"
+  },
+  {
+    "In_Latin": "ancilla, ancillae",
+    "In_English": "slave-girl, slave-woman"
+  },
+  {
+    "In_Latin": "animus, animi",
+    "In_English": "spirit, soul, mind"
+  },
+  {
+    "In_Latin": "annus, anni",
+    "In_English": "year"
+  },
+  {
+    "In_Latin": "aqua, aquae",
+    "In_English": "water"
+  },
+  {
+    "In_Latin": "arma, armorum",
+    "In_English": "arms, weapons"
+  },
+  {
+    "In_Latin": "ars, artis",
+    "In_English": "art, skill"
+  },
+  {
+    "In_Latin": "auxilium, auxilii",
+    "In_English": "help"
+  },
+  {
+    "In_Latin": "bellum, belli",
+    "In_English": "war"
+  },
+  {
+    "In_Latin": "caelum, caeli",
+    "In_English": "sky, heaven"
+  },
+  {
+    "In_Latin": "captivus, captivi",
+    "In_English": "captive, prisoner"
+  },
+  {
+    "In_Latin": "caput, capitis",
+    "In_English": "head"
+  },
+  {
+    "In_Latin": "castra, castrorum",
+    "In_English": "camp"
+  },
+  {
+    "In_Latin": "cena, cenae",
+    "In_English": "dinner, meal"
+  },
+  {
+    "In_Latin": "cibus, cibi",
+    "In_English": "food"
+  },
+  {
+    "In_Latin": "civis, civis",
+    "In_English": "citizen"
+  },
+  {
+    "In_Latin": "clamor, clamoris",
+    "In_English": "shout, shouting, noise"
+  },
+  {
+    "In_Latin": "comes, comitis",
+    "In_English": "comrade, companion"
+  },
+  {
+    "In_Latin": "consilium, consilii",
+    "In_English": "plan, idea, advice"
+  },
+  {
+    "In_Latin": "consul, consulis",
+    "In_English": "consul"
+  },
+  {
+    "In_Latin": "copiae, copiarum",
+    "In_English": "forces, troops"
+  },
+  {
+    "In_Latin": "corpus, corporis",
+    "In_English": "body"
+  },
+  {
+    "In_Latin": "cura, curae",
+    "In_English": "care, worry"
+  },
+  {
+    "In_Latin": "custos, custodis",
+    "In_English": "guard"
+  },
+  {
+    "In_Latin": "dea, deae",
+    "In_English": "goddess"
+  },
+  {
+    "In_Latin": "deus, dei",
+    "In_English": "god"
+  },
+  {
+    "In_Latin": "dies, diei",
+    "In_English": "day"
+  },
+  {
+    "In_Latin": "domina, dominae",
+    "In_English": "mistress"
+  },
+  {
+    "In_Latin": "dominus, domini",
+    "In_English": "master"
+  },
+  {
+    "In_Latin": "domus, domus (domi = at home)",
+    "In_English": "home"
+  },
+  {
+    "In_Latin": "donum, doni",
+    "In_English": "gift, present"
+  },
+  {
+    "In_Latin": "dux, ducis",
+    "In_English": "leader"
+  },
+  {
+    "In_Latin": "epistula, epistulae",
+    "In_English": "letter"
+  },
+  {
+    "In_Latin": "equuus, equi",
+    "In_English": "horse"
+  },
+  {
+    "In_Latin": "exercitus, exercitus",
+    "In_English": "army"
+  },
+  {
+    "In_Latin": "femina, feminae",
+    "In_English": "woman"
+  },
+  {
+    "In_Latin": "filia, filiae",
+    "In_English": "daughter"
+  },
+  {
+    "In_Latin": "filius, filii",
+    "In_English": "son"
+  },
+  {
+    "In_Latin": "flumen, fluminis",
+    "In_English": "river"
+  },
+  {
+    "In_Latin": "forum, fori",
+    "In_English": "forum, market-place"
+  },
+  {
+    "In_Latin": "frater, fratris",
+    "In_English": "brother"
+  },
+  {
+    "In_Latin": "gaudium, gaudii",
+    "In_English": "joy, pleasure"
+  },
+  {
+    "In_Latin": "gens, gentis",
+    "In_English": "family, tribe, race, people"
+  },
+  {
+    "In_Latin": "gladius, gladii",
+    "In_English": "sword"
+  },
+  {
+    "In_Latin": "homo, hominis",
+    "In_English": "man, human being"
+  },
+  {
+    "In_Latin": "hora, horae",
+    "In_English": "hour"
+  },
+  {
+    "In_Latin": "hortus, horti",
+    "In_English": "garden"
+  },
+  {
+    "In_Latin": "hostis, hostis",
+    "In_English": "enemy"
+  },
+  {
+    "In_Latin": "ianua, ianuae",
+    "In_English": "door"
+  },
+  {
+    "In_Latin": "imperator, imperatoris",
+    "In_English": "emperor, general leader"
+  },
+  {
+    "In_Latin": "imperium, imperii",
+    "In_English": "empire, power, command"
+  },
+  {
+    "In_Latin": "inimicus, inimici",
+    "In_English": "enemy"
+  },
+  {
+    "In_Latin": "insula, insulae",
+    "In_English": "island, block of flats"
+  },
+  {
+    "In_Latin": "ira, irae",
+    "In_English": "anger"
+  },
+  {
+    "In_Latin": "iter, itineris",
+    "In_English": "journey"
+  },
+  {
+    "In_Latin": "iuvenis, iuvenis",
+    "In_English": "young man"
+  },
+  {
+    "In_Latin": "labor, laboris",
+    "In_English": "work, toil"
+  },
+  {
+    "In_Latin": "legio, legionis",
+    "In_English": "legion"
+  },
+  {
+    "In_Latin": "liber, libri",
+    "In_English": "book"
+  },
+  {
+    "In_Latin": "liberi, liberorum",
+    "In_English": "children"
+  },
+  {
+    "In_Latin": "libertus, liberti",
+    "In_English": "freedman, ex-slave"
+  },
+  {
+    "In_Latin": "locus, loci",
+    "In_English": "place"
+  },
+  {
+    "In_Latin": "lux, lucis",
+    "In_English": "light, daylight"
+  },
+  {
+    "In_Latin": "manus, manus",
+    "In_English": "hand, group of people"
+  },
+  {
+    "In_Latin": "mare, maris",
+    "In_English": "sea"
+  },
+  {
+    "In_Latin": "maritus, mariti",
+    "In_English": "husband"
+  },
+  {
+    "In_Latin": "mater, matris",
+    "In_English": "mother"
+  },
+  {
+    "In_Latin": "miles, militis",
+    "In_English": "soldier"
+  },
+  {
+    "In_Latin": "modus, modi",
+    "In_English": "manner, way, kind"
+  },
+  {
+    "In_Latin": "mons, montis",
+    "In_English": "mountain"
+  },
+  {
+    "In_Latin": "mors, mortis",
+    "In_English": "death"
+  },
+  {
+    "In_Latin": "murus, muri",
+    "In_English": "wall"
+  },
+  {
+    "In_Latin": "nauta, nautae",
+    "In_English": "sailor"
+  },
+  {
+    "In_Latin": "navis, navis",
+    "In_English": "ship"
+  },
+  {
+    "In_Latin": "nemo, nullius",
+    "In_English": "no-one, nobody"
+  },
+  {
+    "In_Latin": "nihil, indeclinable",
+    "In_English": "nothing"
+  },
+  {
+    "In_Latin": "nomen, nominis",
+    "In_English": "name"
+  },
+  {
+    "In_Latin": "nox, noctis",
+    "In_English": "night"
+  },
+  {
+    "In_Latin": "nuntius, nuntii",
+    "In_English": "messenger, message, news"
+  },
+  {
+    "In_Latin": "pars, partis",
+    "In_English": "part"
+  },
+  {
+    "In_Latin": "pater, patris",
+    "In_English": "father"
+  },
+  {
+    "In_Latin": "patria, patriae",
+    "In_English": "country, homeland"
+  },
+  {
+    "In_Latin": "pax, pacis",
+    "In_English": "peace"
+  },
+  {
+    "In_Latin": "pecunia, pecuniae",
+    "In_English": "money"
+  },
+  {
+    "In_Latin": "periculum, periculi",
+    "In_English": "danger"
+  },
+  {
+    "In_Latin": "pes, pedis",
+    "In_English": "foot"
+  },
+  {
+    "In_Latin": "poena, poenae",
+    "In_English": "punishment"
+  },
+  {
+    "In_Latin": "porta, portae",
+    "In_English": "gate"
+  },
+  {
+    "In_Latin": "praemium, praemii",
+    "In_English": "prize, reward, profit"
+  },
+  {
+    "In_Latin": "princeps, principis",
+    "In_English": "chief, emperor"
+  },
+  {
+    "In_Latin": "proelium, proelii",
+    "In_English": "battle"
+  },
+  {
+    "In_Latin": "puella, puellae",
+    "In_English": "girl"
+  },
+  {
+    "In_Latin": "puer, pueri",
+    "In_English": "boy"
+  },
+  {
+    "In_Latin": "regina, reginae",
+    "In_English": "queen"
+  },
+  {
+    "In_Latin": "regnum, regni",
+    "In_English": "kingdom"
+  },
+  {
+    "In_Latin": "res, rei",
+    "In_English": "thing, matter, event"
+  },
+  {
+    "In_Latin": "rex, regis",
+    "In_English": "king"
+  },
+  {
+    "In_Latin": "Roma, Romae (= at/in Rome)",
+    "In_English": "Rome"
+  },
+  {
+    "In_Latin": "sanguis, sanguinis",
+    "In_English": "blood"
+  },
+  {
+    "In_Latin": "scelus, sceleris",
+    "In_English": "crime"
+  },
+  {
+    "In_Latin": "senator, senatoris",
+    "In_English": "senator"
+  },
+  {
+    "In_Latin": "senex, senis",
+    "In_English": "old man"
+  },
+  {
+    "In_Latin": "servus, servi",
+    "In_English": "slave"
+  },
+  {
+    "In_Latin": "silva, silvae",
+    "In_English": "wood"
+  },
+  {
+    "In_Latin": "spes, spei",
+    "In_English": "hope"
+  },
+  {
+    "In_Latin": "taberna, tabernae",
+    "In_English": "shop, inn"
+  },
+  {
+    "In_Latin": "tempestas, tempestatis",
+    "In_English": "storm"
+  },
+  {
+    "In_Latin": "templum, templi",
+    "In_English": "temple"
+  },
+  {
+    "In_Latin": "tempus, temporis",
+    "In_English": "time"
+  },
+  {
+    "In_Latin": "terra, terrae",
+    "In_English": "ground, land, country"
+  },
+  {
+    "In_Latin": "turba, turbae",
+    "In_English": "crowd"
+  },
+  {
+    "In_Latin": "urbs, urbis",
+    "In_English": "city"
+  },
+  {
+    "In_Latin": "uxor, uxoris",
+    "In_English": "wife"
+  },
+  {
+    "In_Latin": "verbum, verbi",
+    "In_English": "word"
+  },
+  {
+    "In_Latin": "via, viae",
+    "In_English": "street, road, way"
+  },
+  {
+    "In_Latin": "victoria, victoriae",
+    "In_English": "victory"
+  },
+  {
+    "In_Latin": "vinum, vini",
+    "In_English": "wine"
+  },
+  {
+    "In_Latin": "vir, viri",
+    "In_English": "man"
+  },
+  {
+    "In_Latin": "virtus, virtutis",
+    "In_English": "courage, virtue"
+  },
+  {
+    "In_Latin": "vita, vitae",
+    "In_English": "life"
+  },
+  {
+    "In_Latin": "vox, vocis",
+    "In_English": "voice, shout"
+  },
+  {
+    "In_Latin": "vulnus, vulneris",
+    "In_English": "wound"
+  },
+  {
+    "In_Latin": "-ne (suffix), indeclinable",
+    "In_English": "(introduces a question)"
+  },
+  {
+    "In_Latin": "num, indeclinable",
+    "In_English": "whether"
+  },
+  {
+    "In_Latin": "num...?, indeclinable",
+    "In_English": "surely... not?"
+  },
+  {
+    "In_Latin": "a, ab + ablative",
+    "In_English": "from, away from, by"
+  },
+  {
+    "In_Latin": "ad + accusative",
+    "In_English": "to, towards, at"
+  },
+  {
+    "In_Latin": "circum + accusative",
+    "In_English": "around"
+  },
+  {
+    "In_Latin": "contra + accusative",
+    "In_English": "against"
+  },
+  {
+    "In_Latin": "cum + ablative",
+    "In_English": "with"
+  },
+  {
+    "In_Latin": "de + ablative",
+    "In_English": "from, down from, about"
+  },
+  {
+    "In_Latin": "e, ex + ablative",
+    "In_English": "from, out of, out"
+  },
+  {
+    "In_Latin": "in + ablative",
+    "In_English": "in, on"
+  },
+  {
+    "In_Latin": "in + accusative",
+    "In_English": "into, onto"
+  },
+  {
+    "In_Latin": "inter + accusative",
+    "In_English": "among, between"
+  },
+  {
+    "In_Latin": "per + accusative",
+    "In_English": "through, along"
+  },
+  {
+    "In_Latin": "post + accusative",
+    "In_English": "after, behind"
+  },
+  {
+    "In_Latin": "pro + ablative",
+    "In_English": "in front of, for, in return for"
+  },
+  {
+    "In_Latin": "prope + accusative",
+    "In_English": "near"
+  },
+  {
+    "In_Latin": "propter + accusative",
+    "In_English": "on account of, because of"
+  },
+  {
+    "In_Latin": "sine + ablative",
+    "In_English": "without"
+  },
+  {
+    "In_Latin": "sub + accusative / ablative",
+    "In_English": "under, beneath"
+  },
+  {
+    "In_Latin": "trans + accusative",
+    "In_English": "across"
+  },
+  {
+    "In_Latin": "ego, mei",
+    "In_English": "I, me"
+  },
+  {
+    "In_Latin": "hic, haec, hoc",
+    "In_English": "this, he, she, it"
+  },
+  {
+    "In_Latin": "idem, eadem, idem",
+    "In_English": "the same"
+  },
+  {
+    "In_Latin": "ille, illa, illud",
+    "In_English": "that, he, she, it"
+  },
+  {
+    "In_Latin": "ipse, ipsa, ipsum",
+    "In_English": "himself, herself, itself, themselves"
+  },
+  {
+    "In_Latin": "is, ea, id",
+    "In_English": "this, that, he, she, it, them"
+  },
+  {
+    "In_Latin": "meus, mea, meum",
+    "In_English": "my"
+  },
+  {
+    "In_Latin": "nos, nostrum",
+    "In_English": "we, us"
+  },
+  {
+    "In_Latin": "noster, nostra, nostrum",
+    "In_English": "our"
+  },
+  {
+    "In_Latin": "qui, quae, quod",
+    "In_English": "who, which"
+  },
+  {
+    "In_Latin": "quidam, quaedam, quoddam",
+    "In_English": "one, a certain, some"
+  },
+  {
+    "In_Latin": "quis?, quid?",
+    "In_English": "who? what?"
+  },
+  {
+    "In_Latin": "se, sui",
+    "In_English": "himself, herself, itself, themselves"
+  },
+  {
+    "In_Latin": "suus, sua, suum",
+    "In_English": "his, er, its, their (own)"
+  },
+  {
+    "In_Latin": "tu, tui",
+    "In_English": "you (singular)"
+  },
+  {
+    "In_Latin": "tuus, tua, tuum",
+    "In_English": "your (singular), yours"
+  },
+  {
+    "In_Latin": "vester, vestra, vestrum",
+    "In_English": "your (plural), yours"
+  },
+  {
+    "In_Latin": "vos, vestrum",
+    "In_English": "you (plural)"
+  },
+  {
+    "In_Latin": "absum, abesse, afui",
+    "In_English": "be absent, be away, be distant from"
+  },
+  {
+    "In_Latin": "accido, accidere, accidi",
+    "In_English": "happen"
+  },
+  {
+    "In_Latin": "accipio, accipere, accepi, acceptus",
+    "In_English": "accept, take in, receive"
+  },
+  {
+    "In_Latin": "adsum, adesse, adfui",
+    "In_English": "be here, be present"
+  },
+  {
+    "In_Latin": "advenio, advenire, adveni",
+    "In_English": "arrive"
+  },
+  {
+    "In_Latin": "aedifico, aedificare, aedificavi, aedificatus",
+    "In_English": "build"
+  },
+  {
+    "In_Latin": "ago, agere, egi, actus",
+    "In_English": "do, act, drive"
+  },
+  {
+    "In_Latin": "ambulo, ambulare, ambulavi",
+    "In_English": "walk"
+  },
+  {
+    "In_Latin": "amo, amare, amavi, amatus",
+    "In_English": "love, like"
+  },
+  {
+    "In_Latin": "appropinquo, appropinquare, appropinquavi",
+    "In_English": "approach, come near to"
+  },
+  {
+    "In_Latin": "ascendo, ascendere, ascendi, ascensus",
+    "In_English": "climb"
+  },
+  {
+    "In_Latin": "audeo, audere, ausus sum",
+    "In_English": "dare"
+  },
+  {
+    "In_Latin": "audio, audire, audivi, auditus",
+    "In_English": "hear, listen to"
+  },
+  {
+    "In_Latin": "aufero, auferre, abstuli, ablatus",
+    "In_English": "take away, carry off, steal"
+  },
+  {
+    "In_Latin": "bibo, bibere, bibi",
+    "In_English": "drink"
+  },
+  {
+    "In_Latin": "cado, cadere, cecidi, casus",
+    "In_English": "fall"
+  },
+  {
+    "In_Latin": "capio, capere, cepi, captus",
+    "In_English": "take, catch, capture, make (a plan)"
+  },
+  {
+    "In_Latin": "celo, celare, celavi, celatus",
+    "In_English": "hide"
+  },
+  {
+    "In_Latin": "clamo, clamare, clamavi, clamatus",
+    "In_English": "shout"
+  },
+  {
+    "In_Latin": "coepi, coepisse",
+    "In_English": "began"
+  },
+  {
+    "In_Latin": "cogito, cogitare, cogitavi, cogitatus",
+    "In_English": "think, consider"
+  },
+  {
+    "In_Latin": "cognosco, cognoscere, cognovi, cognitus",
+    "In_English": "get to know, find out"
+  },
+  {
+    "In_Latin": "cogere, coegi, coactus, cogo",
+    "In_English": "force, compel"
+  },
+  {
+    "In_Latin": "conficio, conficere, confeci, confectus",
+    "In_English": "finish, wear out"
+  },
+  {
+    "In_Latin": "conor, conari, conatus sum",
+    "In_English": "try"
+  },
+  {
+    "In_Latin": "conspicio, conspicere, conspexi, conspectus",
+    "In_English": "catch sight of, notice"
+  },
+  {
+    "In_Latin": "constituo, constituere, constitui, constitutus",
+    "In_English": "decide"
+  },
+  {
+    "In_Latin": "consumo, consumere, consumpsi, consumptus",
+    "In_English": "eat"
+  },
+  {
+    "In_Latin": "convenio, convenire, conveni",
+    "In_English": "come together, gather, meet"
+  },
+  {
+    "In_Latin": "credo, credere, credidi, creditus",
+    "In_English": "believe, trust"
+  },
+  {
+    "In_Latin": "cupio, cupere, cupivi, cupitus",
+    "In_English": "want, desire"
+  },
+  {
+    "In_Latin": "curro, currere, cucurri, cursus",
+    "In_English": "run"
+  },
+  {
+    "In_Latin": "custodio, custodire, custodivi, custoditus",
+    "In_English": "guard"
+  },
+  {
+    "In_Latin": "debeo, debere, debui, debitus",
+    "In_English": "owe, ought, should, must"
+  },
+  {
+    "In_Latin": "defendo, defendere, defendi, defensus",
+    "In_English": "defend"
+  },
+  {
+    "In_Latin": "deleo, delere, delevi, deletus",
+    "In_English": "destroy"
+  },
+  {
+    "In_Latin": "descendo, descendere, descendi, descensus",
+    "In_English": "go down, come down"
+  },
+  {
+    "In_Latin": "dico, dicere, dixi, dictus",
+    "In_English": "say, speak, tell"
+  },
+  {
+    "In_Latin": "discedo, discedere, discessi",
+    "In_English": "depart, leave"
+  },
+  {
+    "In_Latin": "do, dare, dedi, datus",
+    "In_English": "give"
+  },
+  {
+    "In_Latin": "doceo, docere, docui, doctus",
+    "In_English": "teach"
+  },
+  {
+    "In_Latin": "dormio, dormire, dormivi",
+    "In_English": "sleep"
+  },
+  {
+    "In_Latin": "duco, ducere, duxi, ductus",
+    "In_English": "lead, take"
+  },
+  {
+    "In_Latin": "effugio, effugere, effugi",
+    "In_English": "escape"
+  },
+  {
+    "In_Latin": "egredior, egredi, egressus sum",
+    "In_English": "go out"
+  },
+  {
+    "In_Latin": "emo, emere, emi, emptus",
+    "In_English": "buy"
+  },
+  {
+    "In_Latin": "eo, ire, i(v)i",
+    "In_English": "go"
+  },
+  {
+    "In_Latin": "exspecto, exspectare, exspectavi, exspectatus",
+    "In_English": "wait for, expect"
+  },
+  {
+    "In_Latin": "facio, facere, feci, factus",
+    "In_English": "make, do"
+  },
+  {
+    "In_Latin": "faveo, favere, favi, fautus",
+    "In_English": "favour, support"
+  },
+  {
+    "In_Latin": "fero, ferre, tuli, latus",
+    "In_English": "bring, carry, bear"
+  },
+  {
+    "In_Latin": "festino, festinare, festinavi",
+    "In_English": "hurry"
+  },
+  {
+    "In_Latin": "fugio, fugere, fugi",
+    "In_English": "run away, flee"
+  },
+  {
+    "In_Latin": "gaudeo, gaudere, gavisus sum",
+    "In_English": "be pleased, rejoice"
+  },
+  {
+    "In_Latin": "gero, gerere, gessi, gestus",
+    "In_English": "wear (clothes), wage (war)"
+  },
+  {
+    "In_Latin": "habeo, habere, habui, habitus",
+    "In_English": "have, hold"
+  },
+  {
+    "In_Latin": "habito, habitare, habitavi, habitatus",
+    "In_English": "live"
+  },
+  {
+    "In_Latin": "hortor, hortari, hortatus sum",
+    "In_English": "encourage, urge"
+  },
+  {
+    "In_Latin": "iaceo, iacere, iacui",
+    "In_English": "lie"
+  },
+  {
+    "In_Latin": "iacio, iacere, ieci, iactus",
+    "In_English": "throw"
+  },
+  {
+    "In_Latin": "impero, imperare, imperavi, imperatus",
+    "In_English": "order, command"
+  },
+  {
+    "In_Latin": "incendo, incendere, incendi, incensus",
+    "In_English": "burn, set on fire"
+  },
+  {
+    "In_Latin": "ingredior, inggredi, ingressus sum",
+    "In_English": "enter"
+  },
+  {
+    "In_Latin": "inquit",
+    "In_English": "s/he says, s/he said"
+  },
+  {
+    "In_Latin": "interficio, interficere, interfeci, interfectus",
+    "In_English": "kill"
+  },
+  {
+    "In_Latin": "intro, intrare, intravi, intratus",
+    "In_English": "enter"
+  },
+  {
+    "In_Latin": "invenio, invenire, inveni, inventus",
+    "In_English": "find"
+  },
+  {
+    "In_Latin": "invito, invitare, invitavi, invitatus",
+    "In_English": "invite"
+  },
+  {
+    "In_Latin": "iubeo, iubere, iussi, iussus",
+    "In_English": "order"
+  },
+  {
+    "In_Latin": "laboro, laborare, laboravi",
+    "In_English": "work, toil"
+  },
+  {
+    "In_Latin": "lacrimo, lacrimare, lacrimavi",
+    "In_English": "weep, cry"
+  },
+  {
+    "In_Latin": "laudo, laudare, laudavi, laudatus",
+    "In_English": "praise"
+  },
+  {
+    "In_Latin": "lego, legere, legi, lectus",
+    "In_English": "read, choose"
+  },
+  {
+    "In_Latin": "libero, liberare, liberavi, liberatus",
+    "In_English": "set free"
+  },
+  {
+    "In_Latin": "loquor, loqui, locutus sum",
+    "In_English": "speak, talk"
+  },
+  {
+    "In_Latin": "malo, malle, malui",
+    "In_English": "prefer"
+  },
+  {
+    "In_Latin": "maneo, manere, mansi",
+    "In_English": "remain, stay"
+  },
+  {
+    "In_Latin": "miror, mirari, miratus sum",
+    "In_English": "wonder at, admire"
+  },
+  {
+    "In_Latin": "mitto, mittere, misi, missus",
+    "In_English": "send"
+  },
+  {
+    "In_Latin": "moneo, monere, monui, monitus",
+    "In_English": "warn, advise"
+  },
+  {
+    "In_Latin": "morior, mori, mortuus sum",
+    "In_English": "die"
+  },
+  {
+    "In_Latin": "moveo, movere, movi, motus",
+    "In_English": "move"
+  },
+  {
+    "In_Latin": "narro, narrare, narravi, narratus",
+    "In_English": "tell, relate"
+  },
+  {
+    "In_Latin": "navigo, navigare, navigavi",
+    "In_English": "sail"
+  },
+  {
+    "In_Latin": "neco, necare, necavi, necatus",
+    "In_English": "kill"
+  },
+  {
+    "In_Latin": "nescio, nescire, nescivi",
+    "In_English": "not know"
+  },
+  {
+    "In_Latin": "nolo, nolle, nolui",
+    "In_English": "not want, refuse"
+  },
+  {
+    "In_Latin": "nuntio, nuntiare, nuntiavi, nuntiatus",
+    "In_English": "announce, report"
+  },
+  {
+    "In_Latin": "occido, occidere, occidi, occisus",
+    "In_English": "kill"
+  },
+  {
+    "In_Latin": "offero, offerre, obtuli, oblatus",
+    "In_English": "offer"
+  },
+  {
+    "In_Latin": "opprimo, opprimere, oppresi, oppresus",
+    "In_English": "crush, overwhelm"
+  },
+  {
+    "In_Latin": "oppugno, oppugnare, oppugnavi, oppugnatus",
+    "In_English": "attack"
+  },
+  {
+    "In_Latin": "oro, orare, oravi, oratus",
+    "In_English": "beg"
+  },
+  {
+    "In_Latin": "ostendo, ostendere, ostendi, ostentus",
+    "In_English": "show"
+  },
+  {
+    "In_Latin": "paro, parare, paravi, paratus",
+    "In_English": "prepare, provide"
+  },
+  {
+    "In_Latin": "patior, pati, passus sum",
+    "In_English": "suffer, endure"
+  },
+  {
+    "In_Latin": "pello, pellere, pepuli, pulsus",
+    "In_English": "drive"
+  },
+  {
+    "In_Latin": "pereo, perire, perii",
+    "In_English": "die, perish"
+  },
+  {
+    "In_Latin": "persuado, persuadere, persuasi",
+    "In_English": "persuade"
+  },
+  {
+    "In_Latin": "peto, petere, petivi, petitus",
+    "In_English": "make for, seek, beg/ask for"
+  },
+  {
+    "In_Latin": "poenas do",
+    "In_English": "pay the penalty, be punished"
+  },
+  {
+    "In_Latin": "pono, ponere, posui, positus",
+    "In_English": "put, place, set up"
+  },
+  {
+    "In_Latin": "porto, portare, portavi, portatus",
+    "In_English": "carry, bear, take"
+  },
+  {
+    "In_Latin": "possum, posse, potui",
+    "In_English": "can, be able"
+  },
+  {
+    "In_Latin": "procedo, procedere, processi",
+    "In_English": "advance, proceed"
+  },
+  {
+    "In_Latin": "profiscior, profisci, profectus sum",
+    "In_English": "set out"
+  },
+  {
+    "In_Latin": "progredior, progredi, progressus sum",
+    "In_English": "advance"
+  },
+  {
+    "In_Latin": "promitto, promittere, promisi, promissus",
+    "In_English": "promise"
+  },
+  {
+    "In_Latin": "pugno, pugnare, pugnavi",
+    "In_English": "fight"
+  },
+  {
+    "In_Latin": "punio, punire, punivi, punitus",
+    "In_English": "punish"
+  },
+  {
+    "In_Latin": "puto, putare, putavi, putatus",
+    "In_English": "think"
+  },
+  {
+    "In_Latin": "quaero, quaerere, quaesivi, quaesitus",
+    "In_English": "search for, look for, ask"
+  },
+  {
+    "In_Latin": "rapio, rapere, rapui, raptus",
+    "In_English": "seize, grab"
+  },
+  {
+    "In_Latin": "reddo, reddere, reddidi, redditus",
+    "In_English": "give back, restore"
+  },
+  {
+    "In_Latin": "redeo, redire, redii",
+    "In_English": "go back, come back, return"
+  },
+  {
+    "In_Latin": "refero, referre, rettuli, relatus",
+    "In_English": "bring/carry back, report, tell"
+  },
+  {
+    "In_Latin": "rego, regere, rexi, rectus",
+    "In_English": "rule"
+  },
+  {
+    "In_Latin": "regredior, regredi, regressus sum",
+    "In_English": "go back, return"
+  },
+  {
+    "In_Latin": "relinquo, relinquere, relinqui, relictus",
+    "In_English": "leave, leave behind"
+  },
+  {
+    "In_Latin": "resisto, resistere, restiti",
+    "In_English": "resist"
+  },
+  {
+    "In_Latin": "respondeo, respondere, respondi, responsus",
+    "In_English": "reply"
+  },
+  {
+    "In_Latin": "rideo, ridere, risi",
+    "In_English": "laugh, smile"
+  },
+  {
+    "In_Latin": "rogo, rogare, rogavi, rogatus",
+    "In_English": "ask, ask for"
+  },
+  {
+    "In_Latin": "saluto, salutare, salutavi, salulatus",
+    "In_English": "greet"
+  },
+  {
+    "In_Latin": "scio, scire, scivi, scitus",
+    "In_English": "know"
+  },
+  {
+    "In_Latin": "scribo, scribere, scripsi, scriptus",
+    "In_English": "write"
+  },
+  {
+    "In_Latin": "sedeo, sedere, sedi",
+    "In_English": "sit"
+  },
+  {
+    "In_Latin": "sentio, sentire, sensi, sensus",
+    "In_English": "feel, notice"
+  },
+  {
+    "In_Latin": "sequor, sequi, secutus sum",
+    "In_English": "follow"
+  },
+  {
+    "In_Latin": "servo, servare, servavi, servatus",
+    "In_English": "save, protect, keep"
+  },
+  {
+    "In_Latin": "soleo, solere, solitus sum",
+    "In_English": "be accustomed"
+  },
+  {
+    "In_Latin": "specto, spectare, spectavi, spectatus",
+    "In_English": "look at, watch"
+  },
+  {
+    "In_Latin": "spero, sperare, speravi, speratus",
+    "In_English": "hope, expect"
+  },
+  {
+    "In_Latin": "sto, stare, steti",
+    "In_English": "stand"
+  },
+  {
+    "In_Latin": "sum, esse, fui",
+    "In_English": "be"
+  },
+  {
+    "In_Latin": "supero, superare, superavi, superatus",
+    "In_English": "overcome, overpower"
+  },
+  {
+    "In_Latin": "surgo, surgere, surrexi",
+    "In_English": "get up, stand up, rise"
+  },
+  {
+    "In_Latin": "taceo, tacere, tacui, tacitus",
+    "In_English": "be silent, be quiet"
+  },
+  {
+    "In_Latin": "teneo, tenere, tenui, tentus",
+    "In_English": "hold"
+  },
+  {
+    "In_Latin": "terreo, terrere, terrui, territus",
+    "In_English": "frighten"
+  },
+  {
+    "In_Latin": "timeo, timere, timui",
+    "In_English": "fear, be afraid"
+  },
+  {
+    "In_Latin": "tollo, tollere, sustuli, sublatus",
+    "In_English": "raise, lift up, hold up"
+  },
+  {
+    "In_Latin": "trado, tradere, tradidi, traditus",
+    "In_English": "hand over, hand down"
+  },
+  {
+    "In_Latin": "traho, trahere, traxi, tractus",
+    "In_English": "drag"
+  },
+  {
+    "In_Latin": "vendo, vendere, vendidi, venditus",
+    "In_English": "sell"
+  },
+  {
+    "In_Latin": "venio, venire, veni",
+    "In_English": "come"
+  },
+  {
+    "In_Latin": "verto, vertere, verti, versus",
+    "In_English": "turn"
+  },
+  {
+    "In_Latin": "video, videre, vidi, visus",
+    "In_English": "see"
+  },
+  {
+    "In_Latin": "videor, videri, visus sum",
+    "In_English": "seem, appear"
+  },
+  {
+    "In_Latin": "vinco, vincere, vici, victus",
+    "In_English": "conquer, win, be victorious"
+  },
+  {
+    "In_Latin": "vivo, vivere, vixi",
+    "In_English": "live, be alive"
+  },
+  {
+    "In_Latin": "voco, vocare, vocavi, vocatus",
+    "In_English": "call"
+  },
+  {
+    "In_Latin": "volo, velle, volui",
+    "In_English": "want, wish, be willing"
+  },
+  {
+    "In_Latin": "vulnero, vulnerare, vulneravi, vulneratus",
+    "In_English": "wound, injure"
+  }
+]
