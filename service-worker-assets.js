@@ -53,8 +53,8 @@
       "url": "data\/anywords_latin.json"
     },
     {
-      "hash": "sha256-cz99lHdOB9VSfM\/rvgihRY+PqFfHUWM7NkGcAfVa1t0=",
-      "url": "data\/verbs\/verb-endings_latin.json"
+      "hash": "sha256-xYwvZRG4MP283MJ76JJ2y1GPB74rZ7xQ39rlG7B2udw=",
+      "url": "data\/verb\/verb-endings_latin.json"
     },
     {
       "hash": "sha256-KhV1zlr3rjBmbaxIqaC49YmIECX8igxYpEOn\/9YJ7HQ=",
@@ -157,7 +157,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-LgbkXcETK3FCpz9iNZDwZnAjkQ\/JanPdolg8B1IY4+8=",
+      "hash": "sha256-h9OpkowGzu6L4Lp5g2bDP0ELXaKiEbf8mv763fCl\/Dc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-BJbG\/zb7M+ZERkjMeXY3NTtusCaAnDahFYsfc6zDXJQ=",
+      "hash": "sha256-wKI0ct+h5S4yOsFq6JP4vhnqNJ3dLIj3XhD+YWl3RZc=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
@@ -385,5 +385,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "KTfaY+XV"
+  "version": "0CG2ftF9"
 };
