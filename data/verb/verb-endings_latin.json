@@ -438,5 +438,375 @@
       "ti eratis",
       "ti erant"
     ]
+  },
+  {
+    "Conjugation": "1",
+    "Type": "Active Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rem",
+      "res",
+      "ret",
+      "remus",
+      "retis",
+      "rent"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "issem",
+      "isses",
+      "isset",
+      "issemus",
+      "issetis",
+      "issent"
+    ]
+  },
+  {
+    "Conjugation": "2",
+    "Type": "Active Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rem",
+      "res",
+      "ret",
+      "remus",
+      "retis",
+      "rent"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "issem",
+      "isses",
+      "isset",
+      "issemus",
+      "issetis",
+      "issent"
+    ]
+  },
+  {
+    "Conjugation": "3",
+    "Type": "Active Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rem",
+      "res",
+      "ret",
+      "remus",
+      "retis",
+      "rent"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "issem",
+      "isses",
+      "isset",
+      "issemus",
+      "issetis",
+      "issent"
+    ]
+  },
+  {
+    "Conjugation": "4",
+    "Type": "Active Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rem",
+      "res",
+      "ret",
+      "remus",
+      "retis",
+      "rent"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "issem",
+      "isses",
+      "isset",
+      "issemus",
+      "issetis",
+      "issent"
+    ]
+  },
+  {
+    "Conjugation": "3/4",
+    "Type": "Active Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rem",
+      "res",
+      "ret",
+      "remus",
+      "retis",
+      "rent"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "issem",
+      "isses",
+      "isset",
+      "issemus",
+      "issetis",
+      "issent"
+    ]
+  },
+  {
+    "Conjugation": "1",
+    "Type": "Passive Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rer",
+      "reris",
+      "retur",
+      "remur",
+      "remini",
+      "rentur"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "tus essem",
+      "tus esses",
+      "tus esset",
+      "ti essemus",
+      "ti essetis",
+      "ti essent"
+    ]
+  },
+  {
+    "Conjugation": "2",
+    "Type": "Passive Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rer",
+      "reris",
+      "retur",
+      "remur",
+      "remini",
+      "rentur"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "tus essem",
+      "tus esses",
+      "tus esset",
+      "ti essemus",
+      "ti essetis",
+      "ti essent"
+    ]
+  },
+  {
+    "Conjugation": "3",
+    "Type": "Passive Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rer",
+      "reris",
+      "retur",
+      "remur",
+      "remini",
+      "rentur"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "tus essem",
+      "tus esses",
+      "tus esset",
+      "ti essemus",
+      "ti essetis",
+      "ti essent"
+    ]
+  },
+  {
+    "Conjugation": "4",
+    "Type": "Passive Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rer",
+      "reris",
+      "retur",
+      "remur",
+      "remini",
+      "rentur"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "tus essem",
+      "tus esses",
+      "tus esset",
+      "ti essemus",
+      "ti essetis",
+      "ti essent"
+    ]
+  },
+  {
+    "Conjugation": "3/4",
+    "Type": "Passive Subjunctive",
+    "pres_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fut_endings": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imp_endings": [
+      "rer",
+      "reris",
+      "retur",
+      "remur",
+      "remini",
+      "rentur"
+    ],
+    "perf_endings": null,
+    "plu_endings": [
+      "tus essem",
+      "tus esses",
+      "tus esset",
+      "ti essemus",
+      "ti essetis",
+      "ti essent"
+    ]
   }
 ]
