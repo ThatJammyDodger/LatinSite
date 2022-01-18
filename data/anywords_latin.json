@@ -168,7 +168,7 @@
     "In_English": "how big? how much?"
   },
   {
-    "In_Latin": "quot?, indeclinable",
+    "In_Latin": "quot?",
     "In_English": "how many?"
   },
   {
@@ -208,7 +208,7 @@
     "In_English": "so great, such a great"
   },
   {
-    "In_Latin": "tot, indeclinable",
+    "In_Latin": "tot",
     "In_English": "so many"
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "In_Latin": "imperator, imperatoris",
-    "In_English": "emperor, general leader"
+    "In_English": "emperor, general, leader"
   },
   {
     "In_Latin": "imperium, imperii",
@@ -824,7 +824,7 @@
     "In_English": "no-one, nobody"
   },
   {
-    "In_Latin": "nihil, indeclinable",
+    "In_Latin": "nihil",
     "In_English": "nothing"
   },
   {
@@ -1012,15 +1012,15 @@
     "In_English": "wound"
   },
   {
-    "In_Latin": "-ne (suffix), indeclinable",
+    "In_Latin": "-ne (suffix)",
     "In_English": "(introduces a question)"
   },
   {
-    "In_Latin": "num, indeclinable",
+    "In_Latin": "num",
     "In_English": "whether"
   },
   {
-    "In_Latin": "num...?, indeclinable",
+    "In_Latin": "num...?",
     "In_English": "surely... not?"
   },
   {

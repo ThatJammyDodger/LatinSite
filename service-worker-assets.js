@@ -1,11 +1,15 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
+      "hash": "sha256-dk6Y7T7BrehNDP9EKyBXzhUYxvcnU+ll4sHD2W7uLpE=",
+      "url": "animation.js"
+    },
+    {
       "hash": "sha256-kfXT+\/7PwnK7UBTMq8\/AX20+soj7u1sV\/U1lCtnmSZI=",
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-nHdHQqsMXW3klCYWOTBu4tNL8TOMYhR9XZLKy+7Hpjs=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -49,7 +53,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-LeajljXqjHNeKfMQX\/UUEgbf8kK9b34j8tODei5nI1w=",
+      "hash": "sha256-6a40+dy6oN8406hYgocDDbXvHKri7znhCRf4J6nvoM4=",
       "url": "data\/anywords_latin.json"
     },
     {
@@ -69,7 +73,7 @@
       "url": "data\/word_types\/conjunctions_latin.json"
     },
     {
-      "hash": "sha256-OLYICl8pdWl+k5IB17lxEfrl00CZzRM16KepYvDnnLs=",
+      "hash": "sha256-iXJmIC9CCFdDVDBG51Wrj5l88SIOxRaUXo54YiCwS5c=",
       "url": "data\/word_types\/nouns_latin.json"
     },
     {
@@ -113,7 +117,7 @@
       "url": "images\/null.png"
     },
     {
-      "hash": "sha256-uV17k2JoXtFUcV6eV8FEgsA7\/a6l6hlfslhWv0egh1Q=",
+      "hash": "sha256-dRAj4azrGhYExdlbpHK3JJv1tzZHgGH2ooOv9FGO3Tk=",
       "url": "index.html"
     },
     {
@@ -153,7 +157,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-Xu8aLYUlQ\/LsUO3XgiseqRoD5FW0I7AVe0biJecv3SU=",
+      "hash": "sha256-FJUtSyPjH9YznoVZ57YGoEQ5mISYQHnTH22dOPmm73U=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -161,7 +165,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-DZ0OSH8umE\/HIzsHP5hyeHGk9VLbOKMwR\/VrF9B4CpE=",
+      "hash": "sha256-df3mYAyl\/OjiiASwcW2A2ApCsPIjxW8UK63\/YqEboLI=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
@@ -269,7 +273,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-q8UX8Y1zJE32UUgw3dZ5QSB2lf5qdk2bcHcg\/bV9pSM=",
+      "hash": "sha256-aD\/eScSJJUzjDwMkQzqChrQB+v5\/g1nL73F\/lqtyAEw=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -293,5 +297,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "7EELgjfV"
+  "version": "7+6i7CMs"
 };
