@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Properties\" />
     <Folder Include="wwwroot\data\word_types\" />
   </ItemGroup>
 
