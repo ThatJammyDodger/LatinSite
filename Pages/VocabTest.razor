@@ -1,7 +1,12 @@
 ﻿@page "/vocab-test"
 @inject HttpClient Http
+@inject IJSRuntime JS
 @using LatinVocabTest.Data
+@using System.Linq
 
+<head>
+     <link href="_content/Syncfusion.Blazor/styles/bootstrap4.css" rel="stylesheet" />
+</head>
 
 
 <PageTitle>Vocab Test</PageTitle>
@@ -15,17 +20,39 @@
 }
 else
 {
-    <button class="btn btn-outline-primary" style="display: @(InPlay ? "none" : "block"); margin-bottom:10px  " @onclick="Start">Start</button>
+    @foreach(any_word x in words)
+    {
+        string[] temp = x.In_Latin.Split(",");
+        foreach(string y in temp)
+        {
+            all_latin_words.Add(y.Trim());
+        }
+    }
+    
+    <div style="display: @(InPlay ? "none" : "block"); margin-bottom:10px">
+        <button class="btn btn-outline-primary"  @onclick="Start">Start</button>
+    </div>
+
+    
+
+
     <div style=' display: @(!InPlay ? "none" : "block");'>
         <h6 style="font-weight: bold">@testWord</h6>
-        <input type="text" @bind="@enteredValue" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter"/>
-        <a style="margin-left: 5px">@correction</a>
-        <Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">
-            <div>
-                <img src="@imgSource" height="35" width="35"/>
+
+        <div style="display: flex;">
+            <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" @bind="@enteredValue" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter"/>
+            
+            <div id="result" style="flex-basis:40%">
+                <Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">
+                    <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
+                    <a style="max-width:100%">@correction</a>
+                </Animate>
             </div>
-        </Animate>
-        <p>@questions_right/@questions_asked</p>
+        </div>
+
+        
+        
+        <h5>Score: @questions_right/@questions_asked</h5>
     </div>
     
 }
@@ -33,6 +60,8 @@ else
 
 
 @code {
+    private string vocab_list = "";
+
     public Random rnd = new Random();
     private string? enteredValue;
     private string? testWord;
@@ -46,8 +75,9 @@ else
     private int questions_asked = 0;
     private int questions_right = 0;
     private string correction = "";
+    private List<string>? all_latin_words = new List<string>();
 
-    private char[] forbidden_chars = { '.',',','/','?',';','#','[',']'};
+    private char[] forbidden_chars = { '.',',','/','?',';','#','!','-'};
 
     private string remove_chars(string x)
     {
@@ -96,7 +126,7 @@ else
         return false;
     }
 
-    public async void Enter(KeyboardEventArgs e)
+    public void Enter(KeyboardEventArgs e)
     {
         if ((e.Code == "Enter" || e.Code == "NumpadEnter")&&(!String.IsNullOrWhiteSpace(enteredValue)))
         {
@@ -128,6 +158,8 @@ else
         imgSource = $@"images/{result}.png";
         imgAnim.Run();
     }
+
+    
 
 
     public class any_word
