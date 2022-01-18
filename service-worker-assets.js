@@ -113,7 +113,7 @@
       "url": "images\/null.png"
     },
     {
-      "hash": "sha256-+nJK9sHAZKQnEEYNYBJOcHgDLyFbZ\/UnHRWLoK5P31g=",
+      "hash": "sha256-uV17k2JoXtFUcV6eV8FEgsA7\/a6l6hlfslhWv0egh1Q=",
       "url": "index.html"
     },
     {
@@ -293,5 +293,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "w3s\/qKu2"
+  "version": "7EELgjfV"
 };
