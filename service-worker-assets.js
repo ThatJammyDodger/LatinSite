@@ -1,11 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-dk6Y7T7BrehNDP9EKyBXzhUYxvcnU+ll4sHD2W7uLpE=",
-      "url": "animation.js"
-    },
-    {
-      "hash": "sha256-kfXT+\/7PwnK7UBTMq8\/AX20+soj7u1sV\/U1lCtnmSZI=",
+      "hash": "sha256-z6gSgjvdGjIPHnsqxlkuBeiTS0\/HT9X20bZLHOzrI8A=",
       "url": "css\/app.css"
     },
     {
@@ -117,8 +113,12 @@
       "url": "images\/null.png"
     },
     {
-      "hash": "sha256-dRAj4azrGhYExdlbpHK3JJv1tzZHgGH2ooOv9FGO3Tk=",
+      "hash": "sha256-ZPScqgr+1QiTX8yrW8Y0PqQlUJDI\/2JDI0fjNzxfAqs=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-ZHB+F\/2Ihk+heCSZ+Yj0jak1RNaeEnkyIwcnsKze58I=",
+      "url": "js\/animation.js"
     },
     {
       "hash": "sha256-MS8HS\/omuHL0\/N99uamunKF4m8nKmr3WYkC5R77+Uu8=",
@@ -157,7 +157,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-FJUtSyPjH9YznoVZ57YGoEQ5mISYQHnTH22dOPmm73U=",
+      "hash": "sha256-C3pTkISoZ+QHRXuH0MsAaknU2xqc0QhnqShscqVATE4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -165,11 +165,11 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-df3mYAyl\/OjiiASwcW2A2ApCsPIjxW8UK63\/YqEboLI=",
+      "hash": "sha256-jYd7deCD8VKxm50+d+6NdrTBBitL3p8ICSYbsBJvYQA=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
-      "hash": "sha256-22Ak6l3K4SOt\/qjjCqVDz3W5TrBFGfQTXB+LMLBemyo=",
+      "hash": "sha256-FKGizmt5InlUWJwMsATdP+FVCxnRxS2yhXR8+CppsaM=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -273,7 +273,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-aD\/eScSJJUzjDwMkQzqChrQB+v5\/g1nL73F\/lqtyAEw=",
+      "hash": "sha256-kzOMq6a\/oi4ZLGkh0cZ95AqMX2jEpi8wF3lukWmw874=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -297,5 +297,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "7+6i7CMs"
+  "version": "h3TuY36T"
 };

@@ -8,8 +8,8 @@
   "resources": {
     "assembly": {
       "BlazorAnimate.dll": "sha256-vGiYBLVyybxLbKCTltgck+lsQRQ3jNQ5QnA+alJq\/7Q=",
-      "LatinVocabTest.dll": "sha256-df3mYAyl\/OjiiASwcW2A2ApCsPIjxW8UK63\/YqEboLI=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-22Ak6l3K4SOt\/qjjCqVDz3W5TrBFGfQTXB+LMLBemyo=",
+      "LatinVocabTest.dll": "sha256-jYd7deCD8VKxm50+d+6NdrTBBitL3p8ICSYbsBJvYQA=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-FKGizmt5InlUWJwMsATdP+FVCxnRxS2yhXR8+CppsaM=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-TinL9ncLtXALy\/mHorNC8Fg1K\/JCFE9zsRbaxR37xAE=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-2fbR6RpUxEMnL89Bp4BedWtQJQRpzWAu87gh1UjPAWk=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-zhFtW4kE16TdrpPne9I1Cu9o0KYzrS50VE9MVSifJg4=",
@@ -35,7 +35,7 @@
       "System.Private.Runtime.InteropServices.JavaScript.dll": "sha256-pGGjiG51Qm\/BwhI3nxtnIkqYgm8aXZp9+jO8CMZuipc=",
       "System.Private.Uri.dll": "sha256-5r0WfGlonucskxAJ+jxj5iXceJpx0x2Lg69ezMaJ6kg=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-NJPcPizDV6A4CjOnszxYro9mJMWaHq2cGM2\/A0bAFNY=",
-      "System.Runtime.dll": "sha256-aD\/eScSJJUzjDwMkQzqChrQB+v5\/g1nL73F\/lqtyAEw=",
+      "System.Runtime.dll": "sha256-kzOMq6a\/oi4ZLGkh0cZ95AqMX2jEpi8wF3lukWmw874=",
       "System.Text.Encodings.Web.dll": "sha256-gUV2fOrOUGrNK6Oj1AxlN44sKTuN4hYA1DxX8xuRU2c=",
       "System.Text.Json.dll": "sha256-wg8WHO9ThupkQUXugIpgZUpU+aMdIZzhEGKK7D9X9\/Y="
     },
