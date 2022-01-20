@@ -5,15 +5,16 @@
 
 <h1>Latin J282</h1>
 
+
+<Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
 <h5>Welcome, use the links below to navigate:</h5>
-
-
 
 <button style="margin-top:5px; margin-bottom:5px" class="btn alert-secondary" @onclick="@(() => NavigateTo("vocab-list"))"> Go to the list </button>
 <br/>
 <button style="margin-top:5px; margin-bottom:5px" class="btn alert-secondary" @onclick="@(() => NavigateTo("vocab-test"))"> Try the test </button>
 <br/>
 <button style="margin-top:5px; margin-bottom:5px" class="btn alert-secondary" @onclick="@(() => NavigateTo("verb-notes"))"> See notes on verbs </button>
+</Animate>
 
 @code 
 { 

@@ -14,10 +14,11 @@
 
 @if (endings == null)
 {
-    <h5><em>Loading...</em></h5>
+    <div class="epicloader"></div>
 }
 else
 {
+    <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
     <nav>
         <p>Quick links: </p>
         @foreach(string x in page_sections)
@@ -806,6 +807,7 @@ else
             
         </tbody>
     </table>
+    </Animate>
 }
 
 

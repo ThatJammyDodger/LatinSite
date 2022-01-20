@@ -1,0 +1,33 @@
+﻿@page "/interop"
+@inject IJSRuntime JsRuntime
+
+<h3>InteropTest</h3>
+
+<button class="btn btn-success" @onclick="ShowAlert">Show alert</button>
+<h3 id="result">abc</h3>
+
+<style>
+    #result {
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+    }
+    #result.fade {
+      opacity:0;
+    }
+</style>
+
+
+@code {
+
+    async Task ShowAlert()
+    {
+        //await JsRuntime.InvokeVoidAsync(identifier: "createAlert");
+        await JsRuntime.InvokeVoidAsync(identifier: "fade","result");
+    }
+
+
+
+}
