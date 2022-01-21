@@ -52,7 +52,7 @@ else
         <h6 style="font-weight: bold">@testWord</h6>
 
         <div style="display: flex;">
-            <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" @bind="@enteredValue" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter"/>
+            <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" @bind="@enteredValue" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter" readonly="@(Q_Answered)"/>
             
             <div id="result" style="flex-basis:40%">
                 <!--<Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">-->

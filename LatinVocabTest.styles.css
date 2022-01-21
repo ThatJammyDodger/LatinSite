@@ -11,6 +11,8 @@ main[b-s9ulwezou5] {
 
 .sidebar[b-s9ulwezou5] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    /*background: rgb(238,238,238);
+    background: linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(100,100,100,1) 100%);*/
 }
 
 .top-row[b-s9ulwezou5] {
@@ -115,7 +117,7 @@ main[b-s9ulwezou5] {
     }
 
     .nav-item[b-ml268bqipt]  a {
-        color: #d7d7d7;
+        color: #373737;
         border-radius: 4px;
         height: 3rem;
         display: flex;
