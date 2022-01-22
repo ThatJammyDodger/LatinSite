@@ -22,7 +22,6 @@
 <PageTitle>Vocab Test</PageTitle>
 
 <h1>Vocab Test</h1>
-<p>Test yourself here</p>
 
 
 @if (words == null)
@@ -32,64 +31,98 @@
 else
 {
     <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
-    @foreach(any_word x in words)
-    {
-        string[] temp = x.In_Latin.Split(",");
-        foreach(string y in temp)
+
+        @foreach(any_word x in words)
         {
-            all_latin_words.Add(y.Trim());
+            string[] temp = x.In_Latin.Split(",");
+            foreach(string y in temp)
+            {
+                all_latin_words.Add(y.Trim());
+            }
         }
-    }
     
-    <div style="display: @(InPlay ? "none" : "block"); margin-bottom:10px">
-        <button class="btn btn-outline-primary"  @onclick="Start">Start</button>
-    </div>
+        <EditForm Model="selectMode" OnValidSubmit="Start">
+            <div style="display: @(InPlay ? "none" : "block"); margin-bottom:10px">
+                <h5>Mode:</h5>
+                <h6 style="color: red; display: @(selectMode.Success||selectMode.Mode!=null ? "none" : "block")">Please select an option</h6> 
 
-    
-
-
-    <div style=' display: @(!InPlay ? "none" : "block");'>
-        <h6 style="font-weight: bold">@testWord</h6>
-
-        <div style="display: flex;">
-            <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
-            
-            <div id="result" style="flex-basis:40%">
-                <!--<Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">-->
-                    <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
-                    <a style="max-width:100%">@correction</a>
-                <!--</Animate>-->
+                <div class="form-check">
+                    <InputRadioGroup @bind-Value="selectMode.Mode">
+                        @foreach(string x in modes)
+                        {
+                            <div style="margin-bottom: 5px">
+                                <InputRadio id="@x" class="form-check-input" Value="@x" />
+                                <label class="form-check-label" for="@x">@x</label>
+                                <br/>
+                            </div>
+                        }
+                    </InputRadioGroup>
+                </div>
+                <button style="margin-top: 10px" class="btn btn-primary" type="submit">Start</button>
             </div>
-        </div>
+        </EditForm>
+
+
+
+        <div style=' display: @(!InPlay ? "none" : "block");'>
+            <h6 style="font-weight: bold">@testWord</h6>
+
+            <div style="display: flex;">
+                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
+            
+                <div id="result" style="flex-basis:40%">
+                    <!--<Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">-->
+                        <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
+                        <a style="max-width:100%">@correction</a>
+                    <!--</Animate>-->
+                </div>
+            </div>
 
         
         
-        <h5>Score: @questions_right/@questions_asked</h5>
-    </div>
-</Animate>
+            <h5>Score: @questions_right/@questions_asked</h5>
+
+            <br />
+
+            @if(selectMode.Mode=="English to Latin")
+            {
+                <p>Note: enter the first principle part for verbs and the nom. sing. for most nouns.</p>
+            }
+            else
+            {
+                <p>Note: enter the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
+            }
+        </div>
+    </Animate>
+
 }
 
 
 
 @code {
-    private string vocab_list = "";
-
     public Random rnd = new Random();
+    private int randNum = 0;
+
     private string? enteredValue;
     private string? testWord;
     private List<string> testWordAnswer = new List<string>();
-    private int randNum = 0;
+
     private bool InPlay = false;
+    mode selectMode = new mode();
+    private string[] modes = { "Latin to English", "English to Latin" };
+
     private bool Q_Asked = false;
     private bool Q_Answered = false;
-    private any_word[]? words;
     private string? imgSource = @"images/null.png";
+    private string correction = "";
+
     private int questions_asked = 0;
     private int questions_right = 0;
-    private string correction = "";
-    private List<string>? all_latin_words = new List<string>();
 
-    private char[] forbidden_chars = { '.',',','/','?',';','#','!','-'};
+    private List<string>? all_latin_words = new List<string>();
+    private any_word[]? words;
+    private any_word[]? RVL;
+    private char[] forbidden_chars = { '.',',','/','?',';','#','!','-','[',']','\''};
 
     private string remove_chars(string x)
     {
@@ -101,15 +134,25 @@ else
     protected override async Task OnInitializedAsync()
     {
         words = await Http.GetFromJsonAsync<any_word[]>("data/anywords_latin.json");
+        RVL = await Http.GetFromJsonAsync<any_word[]>("data/RVL_latin.json");
     }
 
     private void Start()
     {
-        if (!InPlay)
+        if (selectMode.Mode != null)
         {
-            NextWord();
-            InPlay = true;
+            selectMode.Success = true;
+            if (!InPlay)
+            {
+                NextWord();
+                InPlay = true;
+            }
         }
+        else
+        {
+            selectMode.Success = false;
+        }
+
     }
 
     private void NextWord()
@@ -117,9 +160,20 @@ else
         questions_asked++;
         Q_Answered = false;
         resultAnim("0");
-        randNum = rnd.Next(0, words.Length);
-        testWord = words[randNum].In_Latin;
-        testWordAnswer = new List<string>(words[randNum].In_English.Split(','));
+
+        if (selectMode.Mode=="English to Latin")
+        {
+            randNum = rnd.Next(0, RVL.Length);
+            testWord = RVL[randNum].In_English;
+            testWordAnswer = new List<string>(RVL[randNum].In_Latin.Split(','));
+        }
+        else if (selectMode.Mode=="Latin to English")
+        {
+            randNum = rnd.Next(0, words.Length);
+            testWord = words[randNum].In_Latin;
+            testWordAnswer = new List<string>(words[randNum].In_English.Split(','));
+        }
+        
         //correction = String.Empty;
     }
 
@@ -154,7 +208,15 @@ else
                 else
                 {
                     resultAnim("incorrect");
-                    correction = $"Correct: {words[randNum].In_English}";
+                    if (selectMode.Mode=="English to Latin")
+                    {
+                        correction = $"Correct: {RVL[randNum].In_Latin}";
+                    }
+                    else if (selectMode.Mode=="Latin to English")
+                    {
+                        correction = $"Correct: {words[randNum].In_English}";
+                    }
+                    
 
                 }
             }
@@ -169,13 +231,17 @@ else
     private async Task resultAnim(string result)
     {
         imgSource = (result != "0") ? $@"images/{result}.png" : imgSource;
-        
+
         //imgAnim.Run();
         await JsRuntime.InvokeVoidAsync(identifier: "fade","result");
     }
 
-    
 
+    public class mode
+    {
+        public string? Mode { get; set; }
+        public bool Success { get; set; } = true;
+    }
 
     public class any_word
     {
