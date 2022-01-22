@@ -164,8 +164,8 @@
     "In_English": "what sort of?"
   },
   {
-    "In_Latin": "quantus?, quanta? quantum?",
-    "In_English": "how big? how much?"
+    "In_Latin": "quantus?, quanta?, quantum?",
+    "In_English": "how big?, how much?"
   },
   {
     "In_Latin": "quot?",
@@ -365,7 +365,7 @@
   },
   {
     "In_Latin": "quam",
-    "In_English": "than, how...? how...!"
+    "In_English": "than, how...?, how...!"
   },
   {
     "In_Latin": "quando?",
@@ -421,7 +421,7 @@
   },
   {
     "In_Latin": "ubi",
-    "In_English": "where? where, when"
+    "In_English": "where?, where, when"
   },
   {
     "In_Latin": "umquam",
@@ -656,7 +656,7 @@
     "In_English": "letter"
   },
   {
-    "In_Latin": "equuus, equi",
+    "In_Latin": "equus, equi",
     "In_English": "horse"
   },
   {
@@ -1141,7 +1141,7 @@
   },
   {
     "In_Latin": "quis?, quid?",
-    "In_English": "who? what?"
+    "In_English": "who?, what?"
   },
   {
     "In_Latin": "se, sui",

@@ -1,0 +1,502 @@
+[
+  {
+    "In_Latin": "a, ab",
+    "In_English": "from, away from, by"
+  },
+  {
+    "In_Latin": "ad",
+    "In_English": "to, towards, at"
+  },
+  {
+    "In_Latin": "advenio",
+    "In_English": "arrive"
+  },
+  {
+    "In_Latin": "aedifico",
+    "In_English": "build"
+  },
+  {
+    "In_Latin": "ager",
+    "In_English": "field"
+  },
+  {
+    "In_Latin": "ambulo",
+    "In_English": "walk"
+  },
+  {
+    "In_Latin": "amicus",
+    "In_English": "friend"
+  },
+  {
+    "In_Latin": "ancilla",
+    "In_English": "slave-girl, slave-woman"
+  },
+  {
+    "In_Latin": "annus",
+    "In_English": "year"
+  },
+  {
+    "In_Latin": "aqua",
+    "In_English": "water"
+  },
+  {
+    "In_Latin": "arma",
+    "In_English": "arms, weapons"
+  },
+  {
+    "In_Latin": "audio",
+    "In_English": "hear, listen to"
+  },
+  {
+    "In_Latin": "auxilium",
+    "In_English": "help"
+  },
+  {
+    "In_Latin": "bene",
+    "In_English": "well"
+  },
+  {
+    "In_Latin": "bibo",
+    "In_English": "drink"
+  },
+  {
+    "In_Latin": "bonus",
+    "In_English": "good"
+  },
+  {
+    "In_Latin": "cado",
+    "In_English": "fall"
+  },
+  {
+    "In_Latin": "capio",
+    "In_English": "take, catch, capture, make (a plan)"
+  },
+  {
+    "In_Latin": "cena",
+    "In_English": "dinner, meal"
+  },
+  {
+    "In_Latin": "cibus",
+    "In_English": "food"
+  },
+  {
+    "In_Latin": "clamo",
+    "In_English": "shout"
+  },
+  {
+    "In_Latin": "consilium",
+    "In_English": "plan, idea, advice"
+  },
+  {
+    "In_Latin": "conspicio",
+    "In_English": "catch sight of, notice"
+  },
+  {
+    "In_Latin": "constituo",
+    "In_English": "decide"
+  },
+  {
+    "In_Latin": "contra",
+    "In_English": "against"
+  },
+  {
+    "In_Latin": "cum",
+    "In_English": "with"
+  },
+  {
+    "In_Latin": "cur?",
+    "In_English": "why?"
+  },
+  {
+    "In_Latin": "curro",
+    "In_English": "run"
+  },
+  {
+    "In_Latin": "custodio",
+    "In_English": "guard"
+  },
+  {
+    "In_Latin": "dea",
+    "In_English": "goddess"
+  },
+  {
+    "In_Latin": "defendo",
+    "In_English": "defend"
+  },
+  {
+    "In_Latin": "deus",
+    "In_English": "god"
+  },
+  {
+    "In_Latin": "dico",
+    "In_English": "say, speak, tell"
+  },
+  {
+    "In_Latin": "diu",
+    "In_English": "for a long time"
+  },
+  {
+    "In_Latin": "domina",
+    "In_English": "mistress"
+  },
+  {
+    "In_Latin": "dominus",
+    "In_English": "master"
+  },
+  {
+    "In_Latin": "donum",
+    "In_English": "gift, present"
+  },
+  {
+    "In_Latin": "dormio",
+    "In_English": "sleep"
+  },
+  {
+    "In_Latin": "duco",
+    "In_English": "lead, take"
+  },
+  {
+    "In_Latin": "e, ex",
+    "In_English": "from, out of, out"
+  },
+  {
+    "In_Latin": "epistula",
+    "In_English": "letter"
+  },
+  {
+    "In_Latin": "et",
+    "In_English": "and, even"
+  },
+  {
+    "In_Latin": "facio",
+    "In_English": "make, do"
+  },
+  {
+    "In_Latin": "femina",
+    "In_English": "woman"
+  },
+  {
+    "In_Latin": "festino",
+    "In_English": "hurry"
+  },
+  {
+    "In_Latin": "filia",
+    "In_English": "daughter"
+  },
+  {
+    "In_Latin": "filius",
+    "In_English": "son"
+  },
+  {
+    "In_Latin": "forum",
+    "In_English": "forum, marketplace"
+  },
+  {
+    "In_Latin": "fugio",
+    "In_English": "run away, flee"
+  },
+  {
+    "In_Latin": "gladius",
+    "In_English": "sword"
+  },
+  {
+    "In_Latin": "habeo",
+    "In_English": "have, hold"
+  },
+  {
+    "In_Latin": "habito",
+    "In_English": "live"
+  },
+  {
+    "In_Latin": "hora",
+    "In_English": "hour"
+  },
+  {
+    "In_Latin": "hortus",
+    "In_English": "garden"
+  },
+  {
+    "In_Latin": "in",
+    "In_English": "in, on"
+  },
+  {
+    "In_Latin": "in",
+    "In_English": "into, onto"
+  },
+  {
+    "In_Latin": "intro",
+    "In_English": "enter"
+  },
+  {
+    "In_Latin": "invenio",
+    "In_English": "find"
+  },
+  {
+    "In_Latin": "invito",
+    "In_English": "invite"
+  },
+  {
+    "In_Latin": "ira",
+    "In_English": "anger"
+  },
+  {
+    "In_Latin": "iratus",
+    "In_English": "angry"
+  },
+  {
+    "In_Latin": "laboro",
+    "In_English": "work, toil"
+  },
+  {
+    "In_Latin": "laetus",
+    "In_English": "happy"
+  },
+  {
+    "In_Latin": "libertus",
+    "In_English": "freedman, ex-slave"
+  },
+  {
+    "In_Latin": "longus",
+    "In_English": "long"
+  },
+  {
+    "In_Latin": "magnus",
+    "In_English": "big, large, great"
+  },
+  {
+    "In_Latin": "malus",
+    "In_English": "evil, bad"
+  },
+  {
+    "In_Latin": "maritus",
+    "In_English": "husband"
+  },
+  {
+    "In_Latin": "mitto",
+    "In_English": "send"
+  },
+  {
+    "In_Latin": "multus",
+    "In_English": "much, many"
+  },
+  {
+    "In_Latin": "murus",
+    "In_English": "wall"
+  },
+  {
+    "In_Latin": "nauta",
+    "In_English": "sailor"
+  },
+  {
+    "In_Latin": "navigo",
+    "In_English": "sail"
+  },
+  {
+    "In_Latin": "neco",
+    "In_English": "kill"
+  },
+  {
+    "In_Latin": "non",
+    "In_English": "not"
+  },
+  {
+    "In_Latin": "novus",
+    "In_English": "new"
+  },
+  {
+    "In_Latin": "nuntio",
+    "In_English": "announce, report"
+  },
+  {
+    "In_Latin": "nuntius",
+    "In_English": "messenger, message, news"
+  },
+  {
+    "In_Latin": "paro",
+    "In_English": "prepare, provide"
+  },
+  {
+    "In_Latin": "parvus",
+    "In_English": "small"
+  },
+  {
+    "In_Latin": "patria",
+    "In_English": "country, homeland"
+  },
+  {
+    "In_Latin": "pecunia",
+    "In_English": "money"
+  },
+  {
+    "In_Latin": "periculum",
+    "In_English": "danger"
+  },
+  {
+    "In_Latin": "peto",
+    "In_English": "make for, seek, beg for, ask for"
+  },
+  {
+    "In_Latin": "pono",
+    "In_English": "put, place, set up"
+  },
+  {
+    "In_Latin": "porta",
+    "In_English": "gate"
+  },
+  {
+    "In_Latin": "porto",
+    "In_English": "carry, bear, take"
+  },
+  {
+    "In_Latin": "possum",
+    "In_English": "can, be able"
+  },
+  {
+    "In_Latin": "puella",
+    "In_English": "girl"
+  },
+  {
+    "In_Latin": "puer",
+    "In_English": "boy"
+  },
+  {
+    "In_Latin": "quando?",
+    "In_English": "when?"
+  },
+  {
+    "In_Latin": "-que",
+    "In_English": "and (as suffix)"
+  },
+  {
+    "In_Latin": "regina",
+    "In_English": "queen"
+  },
+  {
+    "In_Latin": "regnum",
+    "In_English": "kingdom"
+  },
+  {
+    "In_Latin": "rego",
+    "In_English": "rule"
+  },
+  {
+    "In_Latin": "relinquo",
+    "In_English": "leave, leave behind"
+  },
+  {
+    "In_Latin": "rogo",
+    "In_English": "ask, ask for"
+  },
+  {
+    "In_Latin": "saepe",
+    "In_English": "often"
+  },
+  {
+    "In_Latin": "saevus",
+    "In_English": "savage, cruel"
+  },
+  {
+    "In_Latin": "saluto",
+    "In_English": "greet"
+  },
+  {
+    "In_Latin": "scribo",
+    "In_English": "write"
+  },
+  {
+    "In_Latin": "semper",
+    "In_English": "always"
+  },
+  {
+    "In_Latin": "servo",
+    "In_English": "save, protect, keep"
+  },
+  {
+    "In_Latin": "servus",
+    "In_English": "slave"
+  },
+  {
+    "In_Latin": "silva",
+    "In_English": "wood"
+  },
+  {
+    "In_Latin": "statim",
+    "In_English": "at once, immediately"
+  },
+  {
+    "In_Latin": "subito",
+    "In_English": "suddenly"
+  },
+  {
+    "In_Latin": "sum",
+    "In_English": "be"
+  },
+  {
+    "In_Latin": "supero",
+    "In_English": "overcome, overpower"
+  },
+  {
+    "In_Latin": "taberna",
+    "In_English": "shop, inn"
+  },
+  {
+    "In_Latin": "taceo",
+    "In_English": "be silent, be quiet"
+  },
+  {
+    "In_Latin": "tandem",
+    "In_English": "at last, finally"
+  },
+  {
+    "In_Latin": "templum",
+    "In_English": "temple"
+  },
+  {
+    "In_Latin": "teneo",
+    "In_English": "hold"
+  },
+  {
+    "In_Latin": "terreo",
+    "In_English": "frighten"
+  },
+  {
+    "In_Latin": "timeo",
+    "In_English": "fear, be afraid"
+  },
+  {
+    "In_Latin": "trado",
+    "In_English": "hand over, hand down"
+  },
+  {
+    "In_Latin": "traho",
+    "In_English": "drag"
+  },
+  {
+    "In_Latin": "venio",
+    "In_English": "come"
+  },
+  {
+    "In_Latin": "via",
+    "In_English": "street, road, way"
+  },
+  {
+    "In_Latin": "villa",
+    "In_English": "house, country villa"
+  },
+  {
+    "In_Latin": "vinco",
+    "In_English": "conquer, win, be victorious"
+  },
+  {
+    "In_Latin": "vinum",
+    "In_English": "wine"
+  },
+  {
+    "In_Latin": "vir",
+    "In_English": "man"
+  },
+  {
+    "In_Latin": "voco",
+    "In_English": "call"
+  }
+]
