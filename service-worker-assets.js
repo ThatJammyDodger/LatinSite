@@ -49,7 +49,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-rQYsyL6AMZ7L9JKdlBn5+qTFhBvtrQuBSpzBxO3fpcI=",
+      "hash": "sha256-osOqQ2QzLA1s9EujGIo++cWKsD+F9WzH7sommgGREGg=",
       "url": "data\/anywords_latin.json"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-uFGNS912+8j6OGWh++VHz2H3HBzgFV\/BpDPN1klX7cs=",
+      "hash": "sha256-MTE2sOelX+xetdk43idB6mGCAhg4+pvwMseRYVNI2g0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -169,7 +169,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-PE6hMZstDRvn2rbiljGcTo1nSJyWyOEUqsWsnFy3izk=",
+      "hash": "sha256-40UBLVY5e\/yQiiE9jjqQbN6k9f8NGzlhgMlBBC4prfM=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
@@ -337,5 +337,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "uS\/aH0Pz"
+  "version": "CYA7tCup"
 };
