@@ -44,7 +44,7 @@ else
             </tr>
             <tr>
                 <th>1</th>
-                @foreach(var x in endings[0].pres_endings)
+                @foreach(var x in endings[0].pres_endings!)
                 {
                     if (x == "o") { <td>port-@x.ToString()</td> } 
                     else { <td>porta-@x.ToString()</td> }
@@ -52,14 +52,14 @@ else
              </tr>
              <tr>
                 <th>2</th>
-                @foreach(var x in endings[1].pres_endings)
+                @foreach(var x in endings[1].pres_endings!)
                 {
                     <td>mone-@x.ToString()</td>
                 }
              </tr>
              <tr>
                 <th>3</th>
-                @foreach(var x in endings[2].pres_endings)
+                @foreach(var x in endings[2].pres_endings!)
                 {
                     if (x == "o") { <td>trah-@x.ToString()</td> } 
                     else { <td>trahi-@x.ToString()</td> }
@@ -67,14 +67,14 @@ else
              </tr>
              <tr>
                 <th>4</th>
-                @foreach(var x in endings[3].pres_endings)
+                @foreach(var x in endings[3].pres_endings!)
                 {
                     <td>audi-@x.ToString()</td>
                 }
              </tr>
              <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[4].pres_endings)
+                @foreach(var x in endings[4].pres_endings!)
                 {
                     <td>capi-@x.ToString()</td> }
              </tr>
@@ -98,7 +98,7 @@ else
             {
                 <tr>
                     <th>@(i+1)</th>
-                    @foreach(var x in endings[i].fut_endings)
+                    @foreach(var x in endings[i].fut_endings!)
                     {
                         string stem = "";
                         switch (i+1)
@@ -114,7 +114,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[4].fut_endings)
+                @foreach(var x in endings[4].fut_endings!)
                 {
                     <td>capi-@x.ToString()</td>
                 }
@@ -123,7 +123,7 @@ else
         </tbody>
     </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Future:</h5>
+    <h5 style="margin-top: 50px; font-weight:bold">Imperfect:</h5>
     <h6>I was carrying; I was warning; I was dragging; I was hearing; I was taking</h6>
     <table class="table">
         <tbody>
@@ -140,7 +140,7 @@ else
             {
                 <tr>
                     <th>@(i+1)</th>
-                    @foreach(var x in endings[i].imp_endings)
+                    @foreach(var x in endings[i].imp_endings!)
                     {
                         string stem = "";
                         switch (i+1)
@@ -156,7 +156,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[4].imp_endings)
+                @foreach(var x in endings[4].imp_endings!)
                 {
                     <td>capie-@x.ToString()</td>
                 }
@@ -182,7 +182,7 @@ else
             {
                 <tr>
                     <th>@(i+1)</th>
-                    @foreach(var x in endings[i].perf_endings)
+                    @foreach(var x in endings[i].perf_endings!)
                     {
                         string stem = "";
                         switch (i+1)
@@ -198,7 +198,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[4].perf_endings)
+                @foreach(var x in endings[4].perf_endings!)
                 {
                     <td>cep-@x.ToString()</td>
                 }
@@ -224,7 +224,7 @@ else
             {
                 <tr>
                     <th>@(i+1)</th>
-                    @foreach(var x in endings[i].plu_endings)
+                    @foreach(var x in endings[i].plu_endings!)
                     {
                         string stem = "";
                         switch (i+1)
@@ -240,7 +240,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[4].plu_endings)
+                @foreach(var x in endings[4].plu_endings!)
                 {
                     <td>cep-@x.ToString()</td>
                 }
@@ -269,7 +269,7 @@ else
             {
                 <tr>
                     <th>@(i-4)</th>
-                    @foreach(var x in endings[i].pres_endings)
+                    @foreach(var x in endings[i].pres_endings!)
                     {
                         string stem = "";
                         switch (i-4)
@@ -285,7 +285,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[9].pres_endings)
+                @foreach(var x in endings[9].pres_endings!)
                 {
                     <td>cap-@x.ToString()</td>
                 }
@@ -311,7 +311,7 @@ else
             {
                 <tr>
                     <th>@(i-4)</th>
-                    @foreach(var x in endings[i].fut_endings)
+                    @foreach(var x in endings[i].fut_endings!)
                     {
                         string stem = "";
                         switch (i-4)
@@ -327,7 +327,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[9].fut_endings)
+                @foreach(var x in endings[9].fut_endings!)
                 {
                     <td>capi-@x.ToString()</td>
                 }
@@ -353,7 +353,7 @@ else
             {
                 <tr>
                     <th>@(i-4)</th>
-                    @foreach(var x in endings[i].imp_endings)
+                    @foreach(var x in endings[i].imp_endings!)
                     {
                         string stem = "";
                         switch (i-4)
@@ -369,7 +369,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[9].imp_endings)
+                @foreach(var x in endings[9].imp_endings!)
                 {
                     <td>capie-@x.ToString()</td>
                 }
@@ -395,7 +395,7 @@ else
             {
                 <tr>
                     <th>@(i-4)</th>
-                    @foreach(var x in endings[i].perf_endings)
+                    @foreach(var x in endings[i].perf_endings!)
                     {
                         string stem = "";
                         switch (i-4)
@@ -411,7 +411,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[9].perf_endings)
+                @foreach(var x in endings[9].perf_endings!)
                 {
                     <td>@($"cap{x.ToString()}")</td>
                 }
@@ -437,7 +437,7 @@ else
             {
                 <tr>
                     <th>@(i-4)</th>
-                    @foreach(var x in endings[i].plu_endings)
+                    @foreach(var x in endings[i].plu_endings!)
                     {
                         string stem = "";
                         switch (i-4)
@@ -453,7 +453,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[9].plu_endings)
+                @foreach(var x in endings[9].plu_endings!)
                 {
                     <td>@($"cap{x.ToString()}")</td>
                 }
@@ -481,7 +481,7 @@ else
             {
                 <tr>
                     <th>@(i-9)</th>
-                    @foreach(var x in endings[i].imp_endings)
+                    @foreach(var x in endings[i].imp_endings!)
                     {
                         string stem = "";
                         switch (i-9)
@@ -497,7 +497,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[14].imp_endings)
+                @foreach(var x in endings[14].imp_endings!)
                 {
                     <td>@($"capere{x.Substring(2).ToString()}")</td>
                 }
@@ -522,7 +522,7 @@ else
             {
                 <tr>
                     <th>@(i-9)</th>
-                    @foreach(var x in endings[i].plu_endings)
+                    @foreach(var x in endings[i].plu_endings!)
                     {
                         string stem = "";
                         switch (i-9)
@@ -538,7 +538,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[14].plu_endings)
+                @foreach(var x in endings[14].plu_endings!)
                 {
                     <td>@($"cep{x.ToString()}")</td>
                 }
@@ -566,7 +566,7 @@ else
             {
                 <tr>
                     <th>@(i-14)</th>
-                    @foreach(var x in endings[i].imp_endings)
+                    @foreach(var x in endings[i].imp_endings!)
                     {
                         string stem = "";
                         switch (i-14)
@@ -582,7 +582,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[19].imp_endings)
+                @foreach(var x in endings[19].imp_endings!)
                 {
                     <td>@($"cape{x.ToString()}")</td>
                 }
@@ -607,7 +607,7 @@ else
             {
                 <tr>
                     <th>@(i-14)</th>
-                    @foreach(var x in endings[i].plu_endings)
+                    @foreach(var x in endings[i].plu_endings!)
                     {
                         string stem = "";
                         switch (i-14)
@@ -623,7 +623,7 @@ else
             }
             <tr>
                 <th>3/4</th>
-                @foreach(var x in endings[19].plu_endings)
+                @foreach(var x in endings[19].plu_endings!)
                 {
                     <td>@($"cap{x.ToString()}")</td>
                 }

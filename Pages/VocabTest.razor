@@ -34,10 +34,13 @@ else
 
         @foreach(any_word x in words)
         {
-            string[] temp = x.In_Latin.Split(",");
-            foreach(string y in temp)
+            if (x.In_Latin is not null && all_latin_words is not null)
             {
-                all_latin_words.Add(y.Trim());
+                string[] temp = x.In_Latin.Split(",");
+                foreach(string y in temp)
+                {
+                    all_latin_words.Add(y.Trim());
+                }
             }
         }
     
@@ -66,7 +69,7 @@ else
             <h6 style="font-weight: bold">@testWord</h6>
 
             <div style="display: flex;">
-                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value;})" @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
+                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value!;})" @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
             
                 <div id="result" style="flex-basis:40%">
                     <!--<Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">-->
@@ -82,11 +85,11 @@ else
 
             @if(selectMode.Mode=="English to Latin")
             {
-                <p>Note: enter the first principle part for verbs and the nom. sing. for most nouns.</p>
+                <p>Note: give the first principle part for verbs and the nominative singular form for most nouns and adjectives.</p>
             }
             else
             {
-                <p>Note: enter the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
+                <p>Note: give the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
             }
         </div>
 
@@ -148,24 +151,24 @@ else
         }
     }
 
-    private void NextWord()
+    private async void NextWord()
     {
         questions_asked++;
         Q_Answered = false;
-        resultAnim("0");
 
-        if (selectMode.Mode=="English to Latin")
+        if (selectMode.Mode=="English to Latin" && RVL is not null)
         {
             randNum = rnd.Next(0, RVL.Length);
             testWord = RVL[randNum].In_English;
-            testWordAnswer = new List<string>(RVL[randNum].In_Latin.Split(','));
+            testWordAnswer = new List<string>(RVL[randNum].In_Latin!.Split(','));
         }
-        else if (selectMode.Mode=="Latin to English")
+        else if (selectMode.Mode=="Latin to English" && words is not null)
         {
             randNum = rnd.Next(0, words.Length);
             testWord = words[randNum].In_Latin;
-            testWordAnswer = new List<string>(words[randNum].In_English.Split(','));
+            testWordAnswer = new List<string>(words[randNum].In_English!.Split(','));
         }
+        await resultAnim("0");
     }
 
 
@@ -174,7 +177,7 @@ else
     {
         foreach(string x in testWordAnswer)
         {
-            if (remove_chars(x.Trim()).ToUpper() == remove_chars(enteredValue.Trim()).ToUpper())
+            if (remove_chars(x.Trim()).ToUpper() == remove_chars(enteredValue!.Trim()).ToUpper())
             {
                 questions_right++;
                 return true;
@@ -183,7 +186,7 @@ else
         return false;
     }
 
-    public void Enter(KeyboardEventArgs e)
+    public async void Enter(KeyboardEventArgs e)
     {
         if ((e.Code == "Enter" || e.Code == "NumpadEnter")&&(!String.IsNullOrWhiteSpace(enteredValue)))
         {
@@ -193,22 +196,20 @@ else
                 Q_Answered = true;
                 if (right)
                 {
-                    resultAnim("correct");
                     correction = String.Empty;
+                    await resultAnim("correct");
                 }
                 else
                 {
-                    resultAnim("incorrect");
-                    if (selectMode.Mode=="English to Latin")
+                    if (selectMode.Mode=="English to Latin" && RVL is not null)
                     {
                         correction = $"Correct: {RVL[randNum].In_Latin}";
                     }
-                    else if (selectMode.Mode=="Latin to English")
+                    else if (selectMode.Mode=="Latin to English" && words is not null)
                     {
                         correction = $"Correct: {words[randNum].In_English}";
                     }
-                    
-
+                    await resultAnim("incorrect");
                 }
             }
             else

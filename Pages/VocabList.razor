@@ -37,7 +37,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var word in adjectives)
+            @foreach (var word in adjectives!)
             {
                 <tr>
                     <td>@word.In_Latin</td>
@@ -57,7 +57,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var word in adverbs)
+            @foreach (var word in adverbs!)
             {
                 <tr>
                     <td>@word.In_Latin</td>
@@ -77,7 +77,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var word in conjunctions)
+            @foreach (var word in conjunctions!)
             {
                 <tr>
                     <td>@word.In_Latin</td>
@@ -98,7 +98,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var word in nouns)
+            @foreach (var word in nouns!)
             {
                 <tr>
                     <td>@word.In_Latin, @word.Other_Forms</td>
@@ -133,7 +133,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var word in particles)
+            @foreach (var word in particles!)
             {
                 <tr>
                     <td>@word.In_Latin</td>
@@ -153,7 +153,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var word in prepositions)
+            @foreach (var word in prepositions!)
             {
                 <tr>
                     <td>@word.In_Latin @word.Usage</td>
@@ -173,7 +173,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var word in pronouns)
+            @foreach (var word in pronouns!)
             {
                 <tr>
                     <td>@word.In_Latin, @word.Other_Forms</td>
