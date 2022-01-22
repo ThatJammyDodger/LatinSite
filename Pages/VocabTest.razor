@@ -61,11 +61,11 @@ else
                         }
                     </InputRadioGroup>
                 </div>
-                <button style="margin-top: 10px" class="btn btn-primary" type="submit">Start</button>
+                <button style="margin-top: 10px" class="btn btn-outline-primary" type="submit">Start</button>
             </div>
         </EditForm>
 
-        <div style=' display: @(!InPlay ? "none" : "block");'>
+        <div style=' display: @(!InPlay ? "none" : "block"); margin-left: 5px'>
             <h6 style="font-weight: bold">@testWord</h6>
 
             <div style="display: flex;">
@@ -79,6 +79,7 @@ else
                 </div>
             </div>
 
+            <button style="margin-bottom:10px" class="btn btn-outline-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
 
             <h5>Score: @questions_right/@questions_asked</h5> <p></p>
 
@@ -91,6 +92,7 @@ else
             {
                 <p>Note: give the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
             }
+            <p>Either hit the enter/return key or click the button to move onto the next question.</p>
         </div>
 
     </Animate>
@@ -110,6 +112,7 @@ else
     private bool InPlay = false;
     mode selectMode = new mode();
     private string[] modes = { "Latin to English", "English to Latin" };
+    private string buttonContent = "";
 
     private bool Q_Answered = false;
     private string? imgSource = @"images/null.png";
@@ -143,6 +146,7 @@ else
             {
                 NextWord();
                 InPlay = true;
+                buttonContent = "Submit";
             }
         }
         else
@@ -186,14 +190,23 @@ else
         return false;
     }
 
-    public async void Enter(KeyboardEventArgs e)
+    public void Enter(KeyboardEventArgs e)
     {
-        if ((e.Code == "Enter" || e.Code == "NumpadEnter")&&(!String.IsNullOrWhiteSpace(enteredValue)))
+        if ((e.Code == "Enter" || e.Code == "NumpadEnter"))
+        {
+            QuestionButtonPressed();
+        }
+    }
+
+    public async void QuestionButtonPressed()
+    {
+        if (!String.IsNullOrWhiteSpace(enteredValue))
         {
             if (!Q_Answered)
             {
                 bool right = check();
                 Q_Answered = true;
+                buttonContent = "Next";
                 if (right)
                 {
                     correction = String.Empty;
@@ -216,6 +229,7 @@ else
             {
                 enteredValue = String.Empty;
                 NextWord();
+                buttonContent = "Submit";
             }
         }
     }
