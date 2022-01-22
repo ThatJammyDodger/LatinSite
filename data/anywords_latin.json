@@ -1421,7 +1421,7 @@
   },
   {
     "In_Latin": "inquit",
-    "In_English": "s/he says, s/he said"
+    "In_English": "she says, he says, she said, he said"
   },
   {
     "In_Latin": "interficio, interficere, interfeci, interfectus",
@@ -1565,7 +1565,7 @@
   },
   {
     "In_Latin": "peto, petere, petivi, petitus",
-    "In_English": "make for, seek, beg/ask for"
+    "In_English": "make for, seek, beg for, ask for"
   },
   {
     "In_Latin": "poenas do",
@@ -1629,7 +1629,7 @@
   },
   {
     "In_Latin": "refero, referre, rettuli, relatus",
-    "In_English": "bring/carry back, report, tell"
+    "In_English": "bring back, carry back, report, tell"
   },
   {
     "In_Latin": "rego, regere, rexi, rectus",
