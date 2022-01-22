@@ -62,8 +62,6 @@ else
             </div>
         </EditForm>
 
-
-
         <div style=' display: @(!InPlay ? "none" : "block");'>
             <h6 style="font-weight: bold">@testWord</h6>
 
@@ -78,11 +76,9 @@ else
                 </div>
             </div>
 
-        
-        
-            <h5>Score: @questions_right/@questions_asked</h5>
 
-            <br />
+            <h5>Score: @questions_right/@questions_asked</h5> <p></p>
+
 
             @if(selectMode.Mode=="English to Latin")
             {
@@ -93,6 +89,7 @@ else
                 <p>Note: enter the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
             }
         </div>
+
     </Animate>
 
 }
@@ -111,7 +108,6 @@ else
     mode selectMode = new mode();
     private string[] modes = { "Latin to English", "English to Latin" };
 
-    private bool Q_Asked = false;
     private bool Q_Answered = false;
     private string? imgSource = @"images/null.png";
     private string correction = "";
@@ -128,8 +124,6 @@ else
     {
         return String.Join("", x.Split(forbidden_chars));
     }
-
-    //private Animate imgAnim;
 
     protected override async Task OnInitializedAsync()
     {
@@ -152,7 +146,6 @@ else
         {
             selectMode.Success = false;
         }
-
     }
 
     private void NextWord()
@@ -173,8 +166,6 @@ else
             testWord = words[randNum].In_Latin;
             testWordAnswer = new List<string>(words[randNum].In_English.Split(','));
         }
-        
-        //correction = String.Empty;
     }
 
 
@@ -231,8 +222,6 @@ else
     private async Task resultAnim(string result)
     {
         imgSource = (result != "0") ? $@"images/{result}.png" : imgSource;
-
-        //imgAnim.Run();
         await JsRuntime.InvokeVoidAsync(identifier: "fade","result");
     }
 
