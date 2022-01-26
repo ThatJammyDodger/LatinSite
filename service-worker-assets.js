@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-z6gSgjvdGjIPHnsqxlkuBeiTS0\/HT9X20bZLHOzrI8A=",
+      "hash": "sha256-ShdmXAoFUjUuRuh1Q9r5hNgQBZc5PIg8FT\/t2MIi2Zo=",
       "url": "css\/app.css"
     },
     {
@@ -49,7 +49,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-yCnndvUJfm0catUmeatjYcHlocd9WFiKjsmSK6xHfAQ=",
+      "hash": "sha256-TNayxFWZqDWK\/d3AJnZ6pYQOp3OdDKfJrqlJ4prhoEI=",
       "url": "data\/anywords_latin.json"
     },
     {
@@ -65,7 +65,7 @@
       "url": "data\/word_types\/adjectives_latin.json"
     },
     {
-      "hash": "sha256-PCXCdwz7rePTCKG93L4sBuEaZqOlcAmQdFuOpyz3nB8=",
+      "hash": "sha256-umC9l\/hwW\/DufcsDLJObxtdnUpSp21W8w99G6p6mdT8=",
       "url": "data\/word_types\/adverbs_latin.json"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-33SFIamAy0xQbTqf85GcSVcpXtmU4Gb2v2ijr+3KE0Q=",
+      "hash": "sha256-LgNmFc8\/Y6Zi4BG1HAz\/odb7c0QmNNuBk\/7n50f\/jsE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -169,7 +169,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-IwYQ2ZJPNRt2opj2+7rr4JXnw1JkA809hin2o85y1YM=",
+      "hash": "sha256-+BRrY17fKDJI1pjCA\/LYJtS5QXieWjgseYi5gGWyMrU=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
@@ -325,7 +325,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-SCsINMDqYvicZhhJdYKqFRLrf0E0mosQVUZpOxy7nII=",
+      "hash": "sha256-zkddXCfV5pX\/y4sdQ5NYKM+rVhu4AJqaq8iLEvRNO2M=",
       "url": "LatinVocabTest.styles.css"
     },
     {
@@ -337,5 +337,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "3cW3ys4E"
+  "version": "rTcfmAZD"
 };
