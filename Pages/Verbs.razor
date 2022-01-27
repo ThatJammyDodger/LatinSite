@@ -4,14 +4,15 @@
 
 <PageTitle>Verb Notes</PageTitle>
 
-<h1>Verbs</h1>
+<h3>Verbs</h3>
 
 <style>
+    * { font-synthesis-weight:auto; }
     tr { display: block; float: left; }
     th, td { display: block; }
-    h3 { font-weight:900; }
+    h4 { font-weight: 600; }
+    h5 { font-weight: 500; }
 </style>
-
 
 @if (endings == null)
 {
@@ -21,239 +22,239 @@ else
 {
     <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
     <nav>
-        <p>Quick links: </p>
+        <h5 style="margin-bottom: 10px;">Quick links: </h5>
         @foreach(string x in page_sections)
         {
             <button style="margin: 0px 10px 20px 10px" class="btn btn-secondary" type="button" onclick="document.getElementById('@x').scrollIntoView({behavior:'smooth'})">@x</button>
         }
     </nav>
 
-    <h3 id="Active Indicative" style="margin-top: 10px">Active Indicative</h3>
-
-    <h5 style="margin-top: 20px; font-weight:bold">Present:</h5>
-    <h6>I carry; I warn; I drag; I hear; I take</h6>
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Conjugation: </th>
-                <td>I</td>
-                <td>You (sg.)</td>
-                <td>S/he/it</td>
-                <td>We</td>
-                <td>You (pl.)</td>
-                <td>They</td>
-            </tr>
-            <tr>
-                <th>1</th>
-                @foreach(var x in endings[0].pres_endings!)
-                {
-                    if (x == "o") { <td>port-@x.ToString()</td> } 
-                    else { <td>porta-@x.ToString()</td> }
-                }
-             </tr>
-             <tr>
-                <th>2</th>
-                @foreach(var x in endings[1].pres_endings!)
-                {
-                    <td>mone-@x.ToString()</td>
-                }
-             </tr>
-             <tr>
-                <th>3</th>
-                @foreach(var x in endings[2].pres_endings!)
-                {
-                    if (x == "o") { <td>trah-@x.ToString()</td> } 
-                    else { <td>trahi-@x.ToString()</td> }
-                }
-             </tr>
-             <tr>
-                <th>4</th>
-                @foreach(var x in endings[3].pres_endings!)
-                {
-                    <td>audi-@x.ToString()</td>
-                }
-             </tr>
-             <tr>
-                <th>3/4</th>
-                @foreach(var x in endings[4].pres_endings!)
-                {
-                    <td>capi-@x.ToString()</td> }
-             </tr>
-        </tbody>
-    </table>
-
-    <h5 style="margin-top: 50px; font-weight:bold">Future:</h5>
-    <h6>I shall carry; I shall warn; I shall drag; I shall hear; I shall take</h6>
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Conjugation: </th>
-                <td>I</td>
-                <td>You (sg.)</td>
-                <td>S/he/it</td>
-                <td>We</td>
-                <td>You (pl.)</td>
-                <td>They</td>
-            </tr>
-            @for(int i = 0; i <= 3; i++)
-            {
+    <h4 id="Active Indicative" style="margin-top: 10px">Active Indicative</h4>
+    <div>
+        <h5 style="margin-top: 20px;">Present:</h5>
+        <h6>I carry; I warn; I drag; I hear; I take</h6>
+        <table class="table">
+            <tbody>
                 <tr>
-                    <th>@(i+1)</th>
-                    @foreach(var x in endings[i].fut_endings!)
+                    <th>Conjugation: </th>
+                    <td>I</td>
+                    <td>You (sg.)</td>
+                    <td>S/he/it</td>
+                    <td>We</td>
+                    <td>You (pl.)</td>
+                    <td>They</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    @foreach(var x in endings[0].pres_endings!)
                     {
-                        string stem = "";
-                        switch (i+1)
+                        if (x == "o") { <td>port-@x.ToString()</td> } 
+                        else { <td>porta-@x.ToString()</td> }
+                    }
+                 </tr>
+                 <tr>
+                    <th>2</th>
+                    @foreach(var x in endings[1].pres_endings!)
+                    {
+                        <td>mone-@x.ToString()</td>
+                    }
+                 </tr>
+                 <tr>
+                    <th>3</th>
+                    @foreach(var x in endings[2].pres_endings!)
+                    {
+                        if (x == "o") { <td>trah-@x.ToString()</td> } 
+                        else { <td>trahi-@x.ToString()</td> }
+                    }
+                 </tr>
+                 <tr>
+                    <th>4</th>
+                    @foreach(var x in endings[3].pres_endings!)
+                    {
+                        <td>audi-@x.ToString()</td>
+                    }
+                 </tr>
+                 <tr>
+                    <th>3/4</th>
+                    @foreach(var x in endings[4].pres_endings!)
+                    {
+                        <td>capi-@x.ToString()</td> }
+                 </tr>
+            </tbody>
+        </table>
+
+        <h5 style="margin-top: 50px;">Future:</h5>
+        <h6>I shall carry; I shall warn; I shall drag; I shall hear; I shall take</h6>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>Conjugation: </th>
+                    <td>I</td>
+                    <td>You (sg.)</td>
+                    <td>S/he/it</td>
+                    <td>We</td>
+                    <td>You (pl.)</td>
+                    <td>They</td>
+                </tr>
+                @for(int i = 0; i <= 3; i++)
+                {
+                    <tr>
+                        <th>@(i+1)</th>
+                        @foreach(var x in endings[i].fut_endings!)
                         {
-                            case 1: stem = "porta"; break;
-                            case 2: stem = "mone"; break;
-                            case 3: stem = "trah"; break;
-                            case 4: stem = "audi"; break;
+                            string stem = "";
+                            switch (i+1)
+                            {
+                                case 1: stem = "porta"; break;
+                                case 2: stem = "mone"; break;
+                                case 3: stem = "trah"; break;
+                                case 4: stem = "audi"; break;
+                            }
+                            <td>@stem-@x.ToString()</td>
                         }
-                        <td>@stem-@x.ToString()</td>
+                    </tr>
+                }
+                <tr>
+                    <th>3/4</th>
+                    @foreach(var x in endings[4].fut_endings!)
+                    {
+                        <td>capi-@x.ToString()</td>
                     }
                 </tr>
-            }
-            <tr>
-                <th>3/4</th>
-                @foreach(var x in endings[4].fut_endings!)
-                {
-                    <td>capi-@x.ToString()</td>
-                }
-            </tr>
             
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Imperfect:</h5>
-    <h6>I was carrying; I was warning; I was dragging; I was hearing; I was taking</h6>
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Conjugation: </th>
-                <td>I</td>
-                <td>You (sg.)</td>
-                <td>S/he/it</td>
-                <td>We</td>
-                <td>You (pl.)</td>
-                <td>They</td>
-            </tr>
-            @for(int i = 0; i <= 3; i++)
-            {
+        <h5 style="margin-top: 50px;">Imperfect:</h5>
+        <h6>I was carrying; I was warning; I was dragging; I was hearing; I was taking</h6>
+        <table class="table">
+            <tbody>
                 <tr>
-                    <th>@(i+1)</th>
-                    @foreach(var x in endings[i].imp_endings!)
-                    {
-                        string stem = "";
-                        switch (i+1)
+                    <th>Conjugation: </th>
+                    <td>I</td>
+                    <td>You (sg.)</td>
+                    <td>S/he/it</td>
+                    <td>We</td>
+                    <td>You (pl.)</td>
+                    <td>They</td>
+                </tr>
+                @for(int i = 0; i <= 3; i++)
+                {
+                    <tr>
+                        <th>@(i+1)</th>
+                        @foreach(var x in endings[i].imp_endings!)
                         {
-                            case 1: stem = "porta"; break;
-                            case 2: stem = "mone"; break;
-                            case 3: stem = "trahe"; break;
-                            case 4: stem = "audie"; break;
+                            string stem = "";
+                            switch (i+1)
+                            {
+                                case 1: stem = "porta"; break;
+                                case 2: stem = "mone"; break;
+                                case 3: stem = "trahe"; break;
+                                case 4: stem = "audie"; break;
+                            }
+                            <td>@stem-@x.ToString()</td>
                         }
-                        <td>@stem-@x.ToString()</td>
+                    </tr>
+                }
+                <tr>
+                    <th>3/4</th>
+                    @foreach(var x in endings[4].imp_endings!)
+                    {
+                        <td>capie-@x.ToString()</td>
                     }
                 </tr>
-            }
-            <tr>
-                <th>3/4</th>
-                @foreach(var x in endings[4].imp_endings!)
-                {
-                    <td>capie-@x.ToString()</td>
-                }
-            </tr>
             
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Perfect:</h5>
-    <h6>I (have) carried; I (have) warned; I (have) dragged; I (have) heard; I took, have taken</h6>
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Conjugation: </th>
-                <td>I</td>
-                <td>You (sg.)</td>
-                <td>S/he/it</td>
-                <td>We</td>
-                <td>You (pl.)</td>
-                <td>They</td>
-            </tr>
-            @for(int i = 0; i <= 3; i++)
-            {
+        <h5 style="margin-top: 50px;">Perfect:</h5>
+        <h6>I (have) carried; I (have) warned; I (have) dragged; I (have) heard; I took, have taken</h6>
+        <table class="table">
+            <tbody>
                 <tr>
-                    <th>@(i+1)</th>
-                    @foreach(var x in endings[i].perf_endings!)
-                    {
-                        string stem = "";
-                        switch (i+1)
+                    <th>Conjugation: </th>
+                    <td>I</td>
+                    <td>You (sg.)</td>
+                    <td>S/he/it</td>
+                    <td>We</td>
+                    <td>You (pl.)</td>
+                    <td>They</td>
+                </tr>
+                @for(int i = 0; i <= 3; i++)
+                {
+                    <tr>
+                        <th>@(i+1)</th>
+                        @foreach(var x in endings[i].perf_endings!)
                         {
-                            case 1: stem = "portav"; break;
-                            case 2: stem = "monu"; break;
-                            case 3: stem = "trax"; break;
-                            case 4: stem = "audiv"; break;
+                            string stem = "";
+                            switch (i+1)
+                            {
+                                case 1: stem = "portav"; break;
+                                case 2: stem = "monu"; break;
+                                case 3: stem = "trax"; break;
+                                case 4: stem = "audiv"; break;
+                            }
+                            <td>@stem-@x.ToString()</td>
                         }
-                        <td>@stem-@x.ToString()</td>
+                    </tr>
+                }
+                <tr>
+                    <th>3/4</th>
+                    @foreach(var x in endings[4].perf_endings!)
+                    {
+                        <td>cep-@x.ToString()</td>
                     }
                 </tr>
-            }
-            <tr>
-                <th>3/4</th>
-                @foreach(var x in endings[4].perf_endings!)
-                {
-                    <td>cep-@x.ToString()</td>
-                }
-            </tr>
             
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Pluperfect:</h5>
-    <h6>I had carried; I had warned; I had dragged; I had heard; I had taken</h6>
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Conjugation: </th>
-                <td>I</td>
-                <td>You (sg.)</td>
-                <td>S/he/it</td>
-                <td>We</td>
-                <td>You (pl.)</td>
-                <td>They</td>
-            </tr>
-            @for(int i = 0; i <= 3; i++)
-            {
+        <h5 style="margin-top: 50px;">Pluperfect:</h5>
+        <h6>I had carried; I had warned; I had dragged; I had heard; I had taken</h6>
+        <table class="table">
+            <tbody>
                 <tr>
-                    <th>@(i+1)</th>
-                    @foreach(var x in endings[i].plu_endings!)
-                    {
-                        string stem = "";
-                        switch (i+1)
+                    <th>Conjugation: </th>
+                    <td>I</td>
+                    <td>You (sg.)</td>
+                    <td>S/he/it</td>
+                    <td>We</td>
+                    <td>You (pl.)</td>
+                    <td>They</td>
+                </tr>
+                @for(int i = 0; i <= 3; i++)
+                {
+                    <tr>
+                        <th>@(i+1)</th>
+                        @foreach(var x in endings[i].plu_endings!)
                         {
-                            case 1: stem = "portav"; break;
-                            case 2: stem = "monu"; break;
-                            case 3: stem = "trax"; break;
-                            case 4: stem = "audiv"; break;
+                            string stem = "";
+                            switch (i+1)
+                            {
+                                case 1: stem = "portav"; break;
+                                case 2: stem = "monu"; break;
+                                case 3: stem = "trax"; break;
+                                case 4: stem = "audiv"; break;
+                            }
+                            <td>@stem-@x.ToString()</td>
                         }
-                        <td>@stem-@x.ToString()</td>
+                    </tr>
+                }
+                <tr>
+                    <th>3/4</th>
+                    @foreach(var x in endings[4].plu_endings!)
+                    {
+                        <td>cep-@x.ToString()</td>
                     }
                 </tr>
-            }
-            <tr>
-                <th>3/4</th>
-                @foreach(var x in endings[4].plu_endings!)
-                {
-                    <td>cep-@x.ToString()</td>
-                }
-            </tr>
             
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 
-
-    <h3 id="Passive Indicative" style="margin-top: 35px">Passive Indicative</h3>
+    <h4 id="Passive Indicative" style="margin-top: 35px">Passive Indicative</h4>
     
-    <h5 style="margin-top: 20px; font-weight:bold">Present:</h5>
+    <h5 style="margin-top: 20px;">Present:</h5>
     <h6>I am carried; I am warned; I am dragged; I am heard; I am taken</h6>
     <table class="table">
         <tbody>
@@ -295,7 +296,7 @@ else
         </tbody>
     </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Future:</h5>
+    <h5 style="margin-top: 50px;">Future:</h5>
     <h6>I shall be carried; I shall be warned; I shall be dragged; I shall be heard; I shall be taken</h6>
     <table class="table">
         <tbody>
@@ -337,7 +338,7 @@ else
         </tbody>
     </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Imperfect:</h5>
+    <h5 style="margin-top: 50px; ">Imperfect:</h5>
     <h6>I was being carried; I was being warned; I was being dragged; I was being heard; I was being taken</h6>
     <table class="table">
         <tbody>
@@ -379,7 +380,7 @@ else
         </tbody>
     </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Perfect:</h5>
+    <h5 style="margin-top: 50px; ">Perfect:</h5>
     <h6>I was being carried; I was warned; I was dragged; I was heard; I was taken</h6>
     <table class="table">
         <tbody>
@@ -421,7 +422,7 @@ else
         </tbody>
     </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Pluperfect:</h5>
+    <h5 style="margin-top: 50px; ">Pluperfect:</h5>
     <h6>I had been carried; I had been warned; I had been dragged; I had been heard; I had been taken</h6>
     <table class="table">
         <tbody>
@@ -464,9 +465,9 @@ else
     </table>
 
 
-    <h3 id="Active Subjunctive" style="margin-top: 35px">Active Subjunctive</h3>
+    <h4 id="Active Subjunctive" style="margin-top: 35px">Active Subjunctive</h4>
     
-    <h5 style="margin-top: 20px; font-weight:bold">Imperfect:</h5>
+    <h5 style="margin-top: 20px; ">Imperfect:</h5>
     <table class="table">
         <tbody>
             <tr>
@@ -507,7 +508,7 @@ else
         </tbody>
     </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Pluperfect:</h5>
+    <h5 style="margin-top: 50px; ">Pluperfect:</h5>
     <table class="table">
         <tbody>
             <tr>
@@ -549,9 +550,9 @@ else
     </table>
 
 
-    <h3 id="Passive Subjunctive" style="margin-top: 35px">Passive Subjunctive</h3>
+    <h4 id="Passive Subjunctive" style="margin-top: 35px">Passive Subjunctive</h4>
     
-    <h5 style="margin-top: 20px; font-weight:bold">Imperfect:</h5>
+    <h5 style="margin-top: 20px; ">Imperfect:</h5>
     <table class="table">
         <tbody>
             <tr>
@@ -592,7 +593,7 @@ else
         </tbody>
     </table>
 
-    <h5 style="margin-top: 50px; font-weight:bold">Pluperfect:</h5>
+    <h5 style="margin-top: 50px; ">Pluperfect:</h5>
     <table class="table">
         <tbody>
             <tr>
@@ -634,7 +635,7 @@ else
     </table>
 
 
-    <h3 id="Imperatives" style="margin-top: 35px">Imperatives</h3>
+    <h4 id="Imperatives" style="margin-top: 35px">Imperatives</h4>
     <table class="table">
         <tbody>
             <tr>
@@ -677,7 +678,7 @@ else
     </table>
 
 
-    <h3 id="Infinitives" style="margin-top: 35px">Infinitives</h3>
+    <h4 id="Infinitives" style="margin-top: 35px">Infinitives</h4>
     <table class="table">
         <tbody>
             <tr style="font-weight:bold">
@@ -782,7 +783,7 @@ else
     </table>
 
 
-    <h3 id="Participles" style="margin-top: 35px">Participles</h3>
+    <h4 id="Participles" style="margin-top: 35px">Participles</h4>
     <table class="table">
         <tbody>
             <tr style="font-weight:bold">

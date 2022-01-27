@@ -1,5 +1,10 @@
 ﻿namespace LatinVocabTest
 {
+    public class any_word
+    {
+        public string? In_Latin { get; set; }
+        public string? In_English { get; set; }
+    }
     public class adjective
     {
         public string? In_Latin { get; set; }

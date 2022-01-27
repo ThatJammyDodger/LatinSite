@@ -1,10 +1,42 @@
 ﻿@page "/interop"
 @inject IJSRuntime JsRuntime
+@inject HttpClient Http
+@using LatinVocabTest.Data
 
 <h3>InteropTest</h3>
 
 <button class="btn btn-success" @onclick="ShowAlert">Show alert</button>
+
+<br/>
+
 <h3 id="result">abc</h3>
+
+@if (words == null)
+{
+    <p>Loading</p>
+}
+else 
+{
+    @foreach(any_word x in words!)
+    {
+        string[] temp = x.In_English!.Split(",");
+        foreach(string y in temp)
+        {
+            all_latin_words.Add(y.Trim());
+        }
+    }
+
+    <input class="form-control" type="text" @oninput="@((e) => { queryString=(string)e.Value!; UpdateStuff();})" placeholder="enter here"/>
+    @if (querySuggestions.Count >= 3)
+    {
+        <ul>
+            <li>@querySuggestions[0]</li>
+            <li>@querySuggestions[1]</li>
+            <li>@querySuggestions[2]</li>
+        </ul>
+    }
+}
+
 
 <style>
     #result {
@@ -21,13 +53,38 @@
 
 
 @code {
-
-    async Task ShowAlert()
+    private List<string> all_latin_words = new List<string>();
+    private any_word[]? words;    
+    protected override async Task OnInitializedAsync()
     {
-        //await JsRuntime.InvokeVoidAsync(identifier: "createAlert");
-        await JsRuntime.InvokeVoidAsync(identifier: "fade","result");
+        words = await Http.GetFromJsonAsync<any_word[]>("data/anywords_latin.json");
+    }
+
+    // WORKING BIT
+
+    private string queryString = "";
+    private List<string> querySuggestions = new List<string>();
+
+    async void UpdateStuff()
+    {
+        querySuggestions.Clear();
+        querySuggestions = await PossibleResults(queryString);
+    }
+
+    private async Task<List<string>> PossibleResults(string searchText)
+    {
+        if (String.IsNullOrWhiteSpace(searchText))
+        {
+            return new List<string>();
+        }
+        return await Task.FromResult(all_latin_words.Where(x => x.ToLower().Contains(searchText.ToLower())).ToList());
     }
 
 
 
+    async Task ShowAlert()
+    {
+        await JsRuntime.InvokeVoidAsync(identifier: "makeAlert","Stay Alert! Control The Virus! Protect The NHS!");
+        await JsRuntime.InvokeVoidAsync(identifier: "fade","result");
+    }
 }
