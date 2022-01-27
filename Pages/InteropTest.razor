@@ -30,9 +30,13 @@ else
     @if (querySuggestions.Count >= 3)
     {
         <ul>
-            <li>@querySuggestions[0]</li>
+            @foreach(var x in querySuggestionsNoDupes)
+            {
+                <li>@x</li>
+            }
+            @*<li>@querySuggestions[0]</li>
             <li>@querySuggestions[1]</li>
-            <li>@querySuggestions[2]</li>
+            <li>@querySuggestions[2]</li>*@
         </ul>
     }
 }
@@ -64,11 +68,13 @@ else
 
     private string queryString = "";
     private List<string> querySuggestions = new List<string>();
+    private List<string> querySuggestionsNoDupes = new List<string>();
 
     async void UpdateStuff()
     {
         querySuggestions.Clear();
         querySuggestions = await PossibleResults(queryString);
+        querySuggestionsNoDupes = querySuggestions.Distinct().ToList();
     }
 
     private async Task<List<string>> PossibleResults(string searchText)
