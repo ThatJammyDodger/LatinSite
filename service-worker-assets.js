@@ -93,8 +93,8 @@
       "url": "data\/word_types\/verbs_latin.json"
     },
     {
-      "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
-      "url": "favicon.ico"
+      "hash": "sha256-4v1o\/xM+HZokKBA5zSLJ4Tj3M30U5rXMQyTE0mKyJjU=",
+      "url": "favicon.png"
     },
     {
       "hash": "sha256-ggAlgA\/weoWGiO+HmobZ7xLxZW2HBaAwHWIfkV3PSsU=",
@@ -117,11 +117,11 @@
       "url": "images\/null.png"
     },
     {
-      "hash": "sha256-FtoJIC2Nw4e0MZ599yZKrIwQsM22bz6HGzkNxnbQSYE=",
+      "hash": "sha256-mpBm8QENZqIk5hj3\/EJxlIWm3\/vPKls6QlE4qxPiklg=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-ZHB+F\/2Ihk+heCSZ+Yj0jak1RNaeEnkyIwcnsKze58I=",
+      "hash": "sha256-eyppB8p0pXsvmZl9MaaP25hkzuURLJuHFVwoGhCIsnc=",
       "url": "js\/animation.js"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-ETI5poG4\/CqXbTjOzMZRkZd7dSM\/APjMvdLgxzBeeMk=",
+      "hash": "sha256-7c1FFtf7nL8kWIKGT\/IEYREx\/etbO2f3lyhlmhxFUhA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -169,7 +169,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-WPIpRgupun07mHKmtIYNcLewfPaLaBaPM2MUJKjEDk8=",
+      "hash": "sha256-sivijODoTlkhX85toAmLGkcPNfckLbURSF\/+HBUyOQw=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
@@ -269,7 +269,7 @@
       "url": "_framework\/System.dll"
     },
     {
-      "hash": "sha256-uqoLuawiRQZXI7BpsTycNLbcu1SACtPCfz\/dgs8f9R0=",
+      "hash": "sha256-83A8W3zfhCwmZawR\/1ubEmS+V2lmtQ\/OTkEVtVy+CGo=",
       "url": "_framework\/System.Linq.dll"
     },
     {
@@ -313,7 +313,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-+dokuJTHu\/sR1+whh\/3ZHgbFZjGxQtDOyaEaGHAH3Wg=",
+      "hash": "sha256-kIBYFQfBwQoktP7pk1btcNfXQJjG2x+k3iGf0LCipyc=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -325,7 +325,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-wbSKqk3sHaoCxkkzrpLpH66HVSo4uNXBn0ylkpsUXo0=",
+      "hash": "sha256-9XCnpXiMuX9C6sIk\/Ue\/Akc\/++AbRQw16VKgPi\/eveU=",
       "url": "LatinVocabTest.styles.css"
     },
     {
@@ -337,5 +337,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "qbpN478\/"
+  "version": "Au4pxkqL"
 };
