@@ -3,18 +3,36 @@
 
 <PageTitle>Homepage</PageTitle>
 
-<h3>Latin J282</h3>
+<h3>Latin J282 Revision Help</h3>
 
 
 <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
     <h6>Welcome, use the links below to navigate:</h6>
 
-    <button style="margin-top:5px; margin-bottom:5px" class="btn alert-secondary" @onclick="@(() => NavigateTo("vocab-list"))"> Go to the list </button>
+    <button style="margin-top:5px; margin-bottom:5px" class="btn btn-sm btn-secondary" @onclick="@(() => NavigateTo("vocab-list"))"> Go to the list </button>
     <br/>
-    <button style="margin-top:5px; margin-bottom:5px" class="btn alert-secondary" @onclick="@(() => NavigateTo("vocab-test"))"> Try the test </button>
+    <button style="margin-top:5px; margin-bottom:5px" class="btn btn-sm btn-secondary" @onclick="@(() => NavigateTo("vocab-test"))"> Try the test </button>
     <br/>
-    <button style="margin-top:5px; margin-bottom:5px" class="btn alert-secondary" @onclick="@(() => NavigateTo("verb-notes"))"> See notes on verbs </button>
+    <button style="margin-top:5px; margin-bottom:5px" class="btn btn-sm btn-secondary" @onclick="@(() => NavigateTo("verb-notes"))"> See notes on verbs </button>
 </Animate>
+
+<div style="margin-top:20px;">
+    <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)" Delay="TimeSpan.FromSeconds(0.5)">
+        <h4>What is Latin?</h4>
+        <div style="margin-left: 20px; margin-top: 15px; text-indent: 2rem;">
+            <em>
+                <p>Latin (latīnum, [laˈt̪iːnʊ̃] or lingua latīna, [ˈlɪŋɡʷa laˈt̪iːna]) is a classical language belonging to the Italic branch of the Indo-European languages. Latin was originally a dialect spoken in the lower Tiber area around present-day Rome (then known as Latium), and through the power of the Roman Republic, became the dominant language in Italia and subsequently throughout the realms of Roman Empire. Even after the fall of Western Rome, Latin was the common language of international communication, science, scholarship and academia in Europe until well into the 18th century, when other regional vernaculars (including its own descendants, the Romance languages) supplanted it in common academic and political usage, and it eventually became a dead language in the modern linguistic definition.</p>
+                <p>Latin is a highly inflected language, with three distinct genders, six or seven noun cases, five declensions, four verb conjugations, six tenses, three persons, three moods, two voices, two or three aspects, and two numbers. The Latin alphabet is derived from the Etruscan and Greek alphabets and ultimately from the Phoenician alphabet.</p>
+                <p>By the late Roman Republic (75 BC), Old Latin had been standardised into Classical Latin used by educated elites. Vulgar Latin was the colloquial form spoken at that time among lower-class commoners and attested in inscriptions and the works of comic playwrights like Plautus and Terence and author Petronius. Late Latin is the written language from the 3rd century; its various Vulgar Latin dialects developed in the 6th to 9th centuries into the modern Romance languages, such as Italian, Sardinian, Venetian, Neapolitan, Sicilian, Piedmontese, Lombard, French, Franco-Provençal, Occitan, Corsican, Ladin, Friulan, Romansh, Catalan/Valencian, Aragonese, Spanish, Asturian, Galician, Portuguese and Romanian. Medieval Latin was used during the Middle Ages as a literary language from the 9th century to the Renaissance, which then used Renaissance Latin. Later, New Latin evolved during the early modern era to eventually become the rarely spoken Contemporary Latin, one of which, the Ecclesiastical Latin, remains the official language of the Holy See and the Roman Rite of the Catholic Church at Vatican City.</p>
+                <p>Latin has also greatly influenced the English language and historically contributed many words to the English lexicon via the Christianization of Anglo-Saxons and the Norman conquest. In particular, Latin (and Ancient Greek) roots are still used in English descriptions of theology, science disciplines (especially anatomy and taxonomy), medicine, and law.</p>
+            </em>
+            <h6 style="margin-left: 25px; margin-bottom:25px;">- Excerpt from <a href="https://en.wikipedia.org/wiki/Latin" target="_blank">Wikipedia</a></h6>
+        </div>
+        
+    </Animate>
+</div>
+    
+
 
 @code 
 { 

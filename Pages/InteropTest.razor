@@ -26,18 +26,17 @@ else
         }
     }
 
-    <input class="form-control" type="text" @oninput="@((e) => { queryString=(string)e.Value!; UpdateStuff();})" placeholder="enter here"/>
+    <input class="form-control" type="text" @oninput="@((e) => { queryString=(string)e.Value!; UpdateStuff();})" @bind="queryString" placeholder="enter here"/>
+
     @if (querySuggestions.Count >= 3)
     {
-        <ul>
-            @foreach(var x in querySuggestionsNoDupes)
-            {
-                <li>@x</li>
-            }
-            @*<li>@querySuggestions[0]</li>
-            <li>@querySuggestions[1]</li>
-            <li>@querySuggestions[2]</li>*@
-        </ul>
+        @foreach(var x in querySuggestionsNoDupes)
+        {
+            <button class="btn alert-secondary" style="margin: 10px 10px 5px 5px;" @onclick="@(() => { queryString=x.ToString(); UpdateStuff(); })">@x</button>
+        }
+        @*<li>@querySuggestions[0]</li>
+        <li>@querySuggestions[1]</li>
+        <li>@querySuggestions[2]</li>*@
     }
 }
 
