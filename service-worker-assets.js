@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-ShdmXAoFUjUuRuh1Q9r5hNgQBZc5PIg8FT\/t2MIi2Zo=",
+      "hash": "sha256-8\/N4EZUBgmy4Hexv0mFP8SjsTQfA0AhUMkkYV7oQ3vQ=",
       "url": "css\/app.css"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-7c1FFtf7nL8kWIKGT\/IEYREx\/etbO2f3lyhlmhxFUhA=",
+      "hash": "sha256-t3IWTybDtyHtu+085gfNan\/UiIT8NOa6XmFy3qglnhE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -169,11 +169,11 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-sivijODoTlkhX85toAmLGkcPNfckLbURSF\/+HBUyOQw=",
+      "hash": "sha256-6dIoeK0DyUbmeKPGCdVsas14tHqLRaoCUfSVAb8g1uM=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
-      "hash": "sha256-EwpYANFigVo5ZNTAQnI0M+EtfiB2c9btoUP2uEgfe6M=",
+      "hash": "sha256-f\/mwfGpKhMndD9WFDUCnzGcaE7u3BpX2oZpZx0AG\/Xo=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -337,5 +337,5 @@
       "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
     }
   ],
-  "version": "Au4pxkqL"
+  "version": "BDxyyZYj"
 };
