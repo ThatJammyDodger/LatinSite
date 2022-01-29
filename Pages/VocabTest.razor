@@ -32,17 +32,16 @@ else
 {
     <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
 
-        @foreach(any_word x in words)
+        @foreach(any_word x in words!)
         {
-            if (x.In_Latin is not null && all_latin_words is not null)
+            string[] temp = x.In_English!.Split(",");
+            foreach(string y in temp)
             {
-                string[] temp = x.In_Latin.Split(",");
-                foreach(string y in temp)
-                {
-                    all_latin_words.Add(y.Trim());
-                }
+                all_latin_words.Add(y.Trim());
             }
         }
+
+        <!-- PRE-PLAY -->
     
         <EditForm Model="selectMode" OnValidSubmit="Start">
             <div style="display: @(InPlay ? "none" : "block"); margin-bottom:10px">
@@ -65,21 +64,37 @@ else
             </div>
         </EditForm>
 
+        <!-- DURING PLAY -->
+
         <div style=' display: @(!InPlay ? "none" : "block"); margin-left: 5px'>
             <h6 style="font-weight: bold">@testWord</h6>
 
             <div style="display: flex;">
-                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value!;})" @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
+                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value!; UpdateStuff(); })" @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
             
                 <div id="result" style="flex-basis:40%">
-                    <!--<Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.5)" @ref="imgAnim" IsManual="true" Once="false">-->
-                        <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
-                        <a style="max-width:100%">@correction</a>
-                    <!--</Animate>-->
+                    <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
+                    <a style="max-width:100%">@correction</a>
                 </div>
             </div>
 
-            <button style="margin-bottom:10px" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
+            <!-- SUGGESTIONS -->
+            @if(selectMode.Mode=="Latin to English")
+            {
+                @for (int i = 0; i<querySuggestions.Count; i++)
+                {
+                    if (i >= 3)
+                    {
+                        break;
+                    }
+                    <button style="margin-right:10px;" class="btn btn-sm alert-secondary" @onclick="@(() => { enteredValue=@querySuggestions[i]; UpdateStuff(); })">@querySuggestions[i]</button>
+                }
+            }
+            
+
+            <br/>
+
+            <button style="margin-bottom:10px; margin-top:10px;" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
 
             <h5>Score: @questions_right/@questions_asked</h5> <p></p>
 
@@ -105,7 +120,7 @@ else
     public Random rnd = new Random();
     private int randNum = 0;
 
-    private string? enteredValue;
+    private string enteredValue = "";
     private string? testWord;
     private List<string> testWordAnswer = new List<string>();
 
@@ -121,10 +136,12 @@ else
     private int questions_asked = 0;
     private int questions_right = 0;
 
-    private List<string>? all_latin_words = new List<string>();
+    private List<string> all_latin_words = new List<string>();
     private any_word[]? words;
     private any_word[]? RVL;
     private char[] forbidden_chars = { '.',',','/','?',';','#','!','-','[',']','\''};
+
+    private List<string> querySuggestions = new List<string>();
 
     private string remove_chars(string x)
     {
@@ -135,6 +152,22 @@ else
     {
         words = await Http.GetFromJsonAsync<any_word[]>("data/anywords_latin.json");
         RVL = await Http.GetFromJsonAsync<any_word[]>("data/RVL_latin.json");
+    }
+
+    async void UpdateStuff()
+    {
+        querySuggestions.Clear();
+        List<string> temp = await PossibleResults(enteredValue);
+        querySuggestions = temp.Distinct().ToList();
+    }
+
+    private async Task<List<string>> PossibleResults(string searchText)
+    {
+        if (String.IsNullOrWhiteSpace(searchText))
+        {
+            return new List<string>();
+        }
+        return await Task.FromResult(all_latin_words.Where(x => x.ToLower().Contains(searchText.ToLower())).ToList());
     }
 
     private void Start()
@@ -157,6 +190,7 @@ else
 
     private async void NextWord()
     {
+        UpdateStuff();
         questions_asked++;
         Q_Answered = false;
 
