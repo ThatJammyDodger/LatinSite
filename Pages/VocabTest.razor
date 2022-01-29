@@ -49,7 +49,7 @@ else
                 <h6 style="color: red; display: @(selectMode.Success||selectMode.Mode!=null ? "none" : "block")">Please select an option</h6> 
 
                 <div class="form-check">
-                    <InputRadioGroup @bind-Value="selectMode.Mode">
+                    <InputRadioGroup @bind-Value="selectMode.Mode" >
                         @foreach(string x in modes)
                         {
                             <div style="margin-bottom: 5px">
@@ -59,6 +59,25 @@ else
                             </div>
                         }
                     </InputRadioGroup>
+
+                    <hr style="margin-left: 0; width:25%;">
+
+                    <div>
+                        <input id="check" class="form-check-input" type="checkbox" @bind="@showSuggestions" disabled="@(selectMode.Mode!="Latin to English")"  />
+                        <label class="form-check-label" for="check">Show hints (Latin to English only)</label>
+                    </div>
+                                        
+                    <div class="input-group" style="width: 300px; margin-top:10px; margin-bottom:10px; opacity: @(showSuggestions? "1" : "0.5")">
+                        <div class="input-group-prepend input-group-sm">
+                            <span class="input-group-text" id="inputGroupPrepend3">Show hints after</span>
+                        </div>
+                        <select class="form-control form-control-sm" @bind="showSuggestionsAfter" aria-describedby="inputGroupPrepend3" disabled="@(!showSuggestions || selectMode.Mode!="Latin to English")" >
+                          <option value="3">3 characters</option>
+                          <option value="4">4 characters</option>
+                          <option value="5">5 characters</option>
+                          <option value="6">6 characters</option>
+                        </select>
+                    </div>                    
                 </div>
                 <button style="margin-top: 10px" class="btn btn-primary" type="submit">Start</button>
             </div>
@@ -70,7 +89,10 @@ else
             <h6 style="font-weight: bold">@testWord</h6>
 
             <div style="display: flex;">
-                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => { enteredValue=(string)e.Value!; UpdateStuff(); })" @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
+                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => 
+                    { 
+                    enteredValue=(string)e.Value!; if(showSuggestions && selectMode.Mode == "Latin to English") { UpdateStuff(); } })" 
+                @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
             
                 <div id="result" style="flex-basis:40%">
                     <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
@@ -79,20 +101,22 @@ else
             </div>
 
             <!-- SUGGESTIONS -->
-            @if(selectMode.Mode=="Latin to English")
+            @if(selectMode.Mode=="Latin to English" && showSuggestions)
             {
-                @for (int i = 0; i<querySuggestions.Count; i++)
+                string[] suggests = new string[3];
+                int i = 0;
+                @foreach (var x in querySuggestions)
                 {
                     if (i >= 3)
                     {
                         break;
                     }
-                    <button style="margin-right:10px;" class="btn btn-sm alert-secondary" @onclick="@(() => { enteredValue=@querySuggestions[i]; UpdateStuff(); })">@querySuggestions[i]</button>
+                    <button style="margin-right:10px;" class="btn btn-sm alert-secondary" @onclick="@(() => { enteredValue=x; UpdateStuff(); QuestionButtonPressed(); })">@x</button>
+                    i++;
                 }
             }
             
-
-            <br/>
+            <br>
 
             <button style="margin-bottom:10px; margin-top:10px;" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
 
@@ -142,6 +166,8 @@ else
     private char[] forbidden_chars = { '.',',','/','?',';','#','!','-','[',']','\''};
 
     private List<string> querySuggestions = new List<string>();
+    private bool showSuggestions = false;
+    private int showSuggestionsAfter = 3;
 
     private string remove_chars(string x)
     {
@@ -166,8 +192,12 @@ else
         if (String.IsNullOrWhiteSpace(searchText))
         {
             return new List<string>();
+        } else if (enteredValue.Length >= showSuggestionsAfter)
+        {
+            return await Task.FromResult(all_latin_words.Where(x => x.ToLower().Contains(searchText.ToLower())).ToList());
         }
-        return await Task.FromResult(all_latin_words.Where(x => x.ToLower().Contains(searchText.ToLower())).ToList());
+        return new List<string>();
+        
     }
 
     private void Start()
