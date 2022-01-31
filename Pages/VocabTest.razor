@@ -29,23 +29,6 @@ else
 {
     <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
 
-        @foreach(any_word x in words!)
-        {
-            string[] temp = x.In_English!.Split(",");
-            foreach(string y in temp)
-            {
-                all_latin_words.Add(y.Trim());
-            }
-        }
-        @foreach(any_word x in RVL!)
-        {
-            string[] temp = x.In_Latin!.Split(",");
-            foreach(string y in temp)
-            {
-                all_english_words.Add(y.Trim());
-            }
-        }
-
         <!-- PRE-PLAY -->
     
         <EditForm Model="selectMode" OnValidSubmit="Start">
@@ -167,7 +150,6 @@ else
 
     private int questions_asked = 0;
     private int questions_right = 0;
-    private int i = 0;
 
     private List<string> all_latin_words = new List<string>();
     private List<string> all_english_words = new List<string>();
@@ -189,6 +171,22 @@ else
     {
         words = await Http.GetFromJsonAsync<any_word[]>("data/anywords_latin.json");
         RVL = await Http.GetFromJsonAsync<any_word[]>("data/RVL_latin.json");
+        foreach(any_word x in words!)
+        {
+            string[] temp = x.In_English!.Split(",");
+            foreach(string y in temp)
+            {
+                all_latin_words.Add(y.Trim());
+            } 
+        }
+        foreach(any_word x in RVL!)
+        {
+            string[] temp = x.In_Latin!.Split(",");
+            foreach(string y in temp)
+            {
+                all_english_words.Add(y.Trim());
+            }
+        }
     }
 //querySuggestions = await Task.FromResult(all_latin_words.Where(x => x.ToLower().StartsWith(enteredValue.ToLower())).Distinct().ToArray()); // could also use .Contains
     void UpdateStuff()
@@ -199,8 +197,6 @@ else
         {
             if (selectMode.Mode=="Latin to English")
             {
-                
-
                 querySuggestions = ((
                     from x in all_latin_words
                     where x.Contains(enteredValue.ToLower())
