@@ -52,7 +52,7 @@ else
 
                     <div>
                         <input id="check" class="form-check-input" type="checkbox" @bind="@showSuggestions" />
-                        <label class="form-check-label" for="check">Show hints?  &nbsp;  <em>(feature may currently be a bit buggy)</em></label>
+                        <label class="form-check-label" for="check">Show hints?</label>
                     </div>
                                         
                     <div class="input-group" style="width: 300px; margin-top:10px; margin-bottom:10px; opacity: @(showSuggestions? "1" : "0.5")">
@@ -60,10 +60,11 @@ else
                             <span class="input-group-text" id="inputGroupPrepend3">Show hints after</span>
                         </div>
                         <select class="form-control form-control-sm" @bind="showSuggestionsAfter" aria-describedby="inputGroupPrepend3" disabled="@(!showSuggestions)" >
-                          <option value="3">3 characters</option>
-                          <option value="4">4 characters</option>
-                          <option value="5">5 characters</option>
-                          <option value="6">6 characters</option>
+                            <option value="1">1 character</option>
+                            <option value="2">2 characters</option>
+                            <option value="3">3 characters</option>
+                            <option value="4">4 characters</option>
+                            <option value="5">5 characters</option>
                         </select>
                     </div>                    
                 </div>
@@ -157,8 +158,7 @@ else
     private any_word[]? RVL;
     private char[] forbidden_chars = { '.',',','/','?',';','#','!','-','[',']','\''};
 
-    //private List<string> querySuggestions = new List<string>();
-    private string[] querySuggestions = new string[100];
+    private List<string> querySuggestions = new List<string>();
     private bool showSuggestions = false;
     private int showSuggestionsAfter = 3;
 
@@ -188,10 +188,10 @@ else
             }
         }
     }
-//querySuggestions = await Task.FromResult(all_latin_words.Where(x => x.ToLower().StartsWith(enteredValue.ToLower())).Distinct().ToArray()); // could also use .Contains
+    //querySuggestions = await Task.FromResult(all_latin_words.Where(x => x.ToLower().StartsWith(enteredValue.ToLower())).Distinct().ToArray()); // could also use .Contains
     void UpdateStuff()
     {
-        querySuggestions = Array.Empty<string>();
+        querySuggestions.Clear();
 
         if (enteredValue.Length >= showSuggestionsAfter && showSuggestions)
         {
@@ -201,17 +201,19 @@ else
                     from x in all_latin_words
                     where x.Contains(enteredValue.ToLower())
                     select x)
-                    .Distinct().ToArray()
+                    .Distinct().ToList()
                 );
 
                 //querySuggestions = await Task.FromResult(Get());
             }
             else if (selectMode.Mode=="English to Latin")
             {
-                querySuggestions = (all_english_words
-                    .Where(x => x
-                    .Contains(enteredValue.ToLower()))
-                    .Distinct().ToArray());
+                querySuggestions = ((
+                    from x in all_english_words
+                    where x.Contains(enteredValue.ToLower())
+                    select x)
+                    .Distinct().ToList()
+                );
             }
         }
     }

@@ -17,14 +17,7 @@
 }
 else 
 {
-    @foreach(any_word x in words!)
-    {
-        string[] temp = x.In_English!.Split(",");
-        foreach(string y in temp)
-        {
-            all_latin_words.Add(y.Trim());
-        }
-    }
+    
 
     <input class="form-control" type="text" @oninput="@((e) => { queryString=(string)e.Value!; UpdateStuff();})" @bind="queryString" placeholder="enter here"/>
     
@@ -55,6 +48,14 @@ else
     protected override async Task OnInitializedAsync()
     {
         words = await Http.GetFromJsonAsync<any_word[]>("data/anywords_latin.json");
+        foreach(any_word x in words!)
+        {
+            string[] temp = x.In_English!.Split(",");
+            foreach(string y in temp)
+            {
+                all_latin_words.Add(y.Trim());
+            }
+        }   
     }
 
     // WORKING BIT
