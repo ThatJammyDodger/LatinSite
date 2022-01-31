@@ -2,8 +2,6 @@
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
 @using LatinVocabTest.Data
-@using System.Linq
-
 
 <style>
     #result {
@@ -23,7 +21,6 @@
 
 <h3>Vocab Test</h3>
 
-
 @if (words == null)
 {
     <div class="epicloader"></div>
@@ -38,6 +35,14 @@ else
             foreach(string y in temp)
             {
                 all_latin_words.Add(y.Trim());
+            }
+        }
+        @foreach(any_word x in RVL!)
+        {
+            string[] temp = x.In_Latin!.Split(",");
+            foreach(string y in temp)
+            {
+                all_english_words.Add(y.Trim());
             }
         }
 
@@ -63,15 +68,15 @@ else
                     <hr style="margin-left: 0; width:25%;">
 
                     <div>
-                        <input id="check" class="form-check-input" type="checkbox" @bind="@showSuggestions" disabled="@(selectMode.Mode!="Latin to English")"  />
-                        <label class="form-check-label" for="check">Show hints (Latin to English only)</label>
+                        <input id="check" class="form-check-input" type="checkbox" @bind="@showSuggestions" />
+                        <label class="form-check-label" for="check">Show hints?  &nbsp;  <em>(feature may currently be a bit buggy)</em></label>
                     </div>
                                         
                     <div class="input-group" style="width: 300px; margin-top:10px; margin-bottom:10px; opacity: @(showSuggestions? "1" : "0.5")">
                         <div class="input-group-prepend input-group-sm">
                             <span class="input-group-text" id="inputGroupPrepend3">Show hints after</span>
                         </div>
-                        <select class="form-control form-control-sm" @bind="showSuggestionsAfter" aria-describedby="inputGroupPrepend3" disabled="@(!showSuggestions || selectMode.Mode!="Latin to English")" >
+                        <select class="form-control form-control-sm" @bind="showSuggestionsAfter" aria-describedby="inputGroupPrepend3" disabled="@(!showSuggestions)" >
                           <option value="3">3 characters</option>
                           <option value="4">4 characters</option>
                           <option value="5">5 characters</option>
@@ -91,8 +96,10 @@ else
             <div style="display: flex;">
                 <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => 
                     { 
-                    enteredValue=(string)e.Value!; if(showSuggestions && selectMode.Mode == "Latin to English") { UpdateStuff(); } })" 
-                @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue"/>
+                        enteredValue=(string)e.Value!; 
+                        UpdateStuff();
+                    })" 
+                @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue" autofocus />
             
                 <div id="result" style="flex-basis:40%">
                     <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
@@ -101,22 +108,23 @@ else
             </div>
 
             <!-- SUGGESTIONS -->
-            @if(selectMode.Mode=="Latin to English" && showSuggestions)
-            {
-                string[] suggests = new string[3];
-                int i = 0;
-                @foreach (var x in querySuggestions)
+            <div style=' display: @(showSuggestions ? "block" : "none");'>
+                @if (showSuggestions)
                 {
-                    if (i >= 3)
+                    int i = 0;
+                    @foreach (var x in querySuggestions)
                     {
-                        break;
+                        if (i >= 3)
+                        {
+                            break;
+                        }
+                        <button style="margin-right:10px;" class="btn btn-sm alert-secondary" @onclick="@(() => { enteredValue=x; QuestionButtonPressed(); })">@x</button>
+                        i++;
                     }
-                    <button style="margin-right:10px;" class="btn btn-sm alert-secondary" @onclick="@(() => { enteredValue=x; UpdateStuff(); QuestionButtonPressed(); })">@x</button>
-                    i++;
                 }
-            }
+                
+            </div>
             
-            <br>
 
             <button style="margin-bottom:10px; margin-top:10px;" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
 
@@ -159,13 +167,16 @@ else
 
     private int questions_asked = 0;
     private int questions_right = 0;
+    private int i = 0;
 
     private List<string> all_latin_words = new List<string>();
+    private List<string> all_english_words = new List<string>();
     private any_word[]? words;
     private any_word[]? RVL;
     private char[] forbidden_chars = { '.',',','/','?',';','#','!','-','[',']','\''};
 
-    private List<string> querySuggestions = new List<string>();
+    //private List<string> querySuggestions = new List<string>();
+    private string[] querySuggestions = new string[100];
     private bool showSuggestions = false;
     private int showSuggestionsAfter = 3;
 
@@ -182,22 +193,41 @@ else
 
     async void UpdateStuff()
     {
-        querySuggestions.Clear();
-        List<string> temp = await PossibleResults(enteredValue);
-        querySuggestions = temp.Distinct().ToList();
+        querySuggestions = Array.Empty<string>();
+
+        if (enteredValue.Length >= showSuggestionsAfter && showSuggestions)
+        {
+            if (selectMode.Mode=="Latin to English")
+            {
+                //querySuggestions = await Task.FromResult(all_latin_words.Where(x => x.ToLower().StartsWith(enteredValue.ToLower())).Distinct().ToArray()); // could also use .Contains
+
+                querySuggestions = await Task.FromResult((
+                    from x in all_latin_words
+                    where x.ToLower().Contains(enteredValue)
+                    select x)
+                    .Distinct().ToArray()
+                );
+
+                //querySuggestions = await Task.FromResult(Get());
+            }
+            else if (selectMode.Mode=="English to Latin")
+            {
+                querySuggestions = await Task.FromResult(all_english_words.Where(x => x.ToLower().Contains(enteredValue.ToLower())).Distinct().ToArray());
+            }
+        }
     }
 
-    private async Task<List<string>> PossibleResults(string searchText)
+    string[] Get()
     {
-        if (String.IsNullOrWhiteSpace(searchText))
+        string[] temp = new string[100];
+        foreach(var x in all_latin_words)
         {
-            return new List<string>();
-        } else if (enteredValue.Length >= showSuggestionsAfter)
-        {
-            return await Task.FromResult(all_latin_words.Where(x => x.ToLower().Contains(searchText.ToLower())).ToList());
+            if (x.Contains(enteredValue))
+            {
+                temp.Append(x);
+            }
         }
-        return new List<string>();
-        
+        return temp.Distinct().ToArray() ;
     }
 
     private void Start()
