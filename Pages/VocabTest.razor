@@ -190,8 +190,8 @@ else
         words = await Http.GetFromJsonAsync<any_word[]>("data/anywords_latin.json");
         RVL = await Http.GetFromJsonAsync<any_word[]>("data/RVL_latin.json");
     }
-
-    async void UpdateStuff()
+//querySuggestions = await Task.FromResult(all_latin_words.Where(x => x.ToLower().StartsWith(enteredValue.ToLower())).Distinct().ToArray()); // could also use .Contains
+    void UpdateStuff()
     {
         querySuggestions = Array.Empty<string>();
 
@@ -199,11 +199,11 @@ else
         {
             if (selectMode.Mode=="Latin to English")
             {
-                //querySuggestions = await Task.FromResult(all_latin_words.Where(x => x.ToLower().StartsWith(enteredValue.ToLower())).Distinct().ToArray()); // could also use .Contains
+                
 
-                querySuggestions = await Task.FromResult((
+                querySuggestions = ((
                     from x in all_latin_words
-                    where x.ToLower().Contains(enteredValue)
+                    where x.Contains(enteredValue.ToLower())
                     select x)
                     .Distinct().ToArray()
                 );
@@ -212,7 +212,10 @@ else
             }
             else if (selectMode.Mode=="English to Latin")
             {
-                querySuggestions = await Task.FromResult(all_english_words.Where(x => x.ToLower().Contains(enteredValue.ToLower())).Distinct().ToArray());
+                querySuggestions = (all_english_words
+                    .Where(x => x
+                    .Contains(enteredValue.ToLower()))
+                    .Distinct().ToArray());
             }
         }
     }
