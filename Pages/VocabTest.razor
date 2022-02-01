@@ -78,7 +78,7 @@ else
             <h6 style="font-weight: bold">@testWord</h6>
 
             <div style="display: flex;">
-                <input class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => 
+                <input @ref="entryBox" class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => 
                     { 
                         enteredValue=(string)e.Value!; 
                         UpdateStuff();
@@ -123,7 +123,7 @@ else
             {
                 <p>Note: give the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
             }
-            <p>Either hit the enter/return key or click the button to move onto the next question.</p>
+            <p>Either hit the enter/return key or click any button (including the hint buttons) to move onto the next question.</p>
         </div>
 
     </Animate>
@@ -139,6 +139,7 @@ else
     private string enteredValue = "";
     private string? testWord;
     private List<string> testWordAnswer = new List<string>();
+    private ElementReference entryBox;
 
     private bool InPlay = false;
     mode selectMode = new mode();
@@ -188,7 +189,7 @@ else
             }
         }
     }
-    //querySuggestions = await Task.FromResult(all_latin_words.Where(x => x.ToLower().StartsWith(enteredValue.ToLower())).Distinct().ToArray()); // could also use .Contains
+    
     void UpdateStuff()
     {
         querySuggestions.Clear();
@@ -203,8 +204,6 @@ else
                     select x)
                     .Distinct().ToList()
                 );
-
-                //querySuggestions = await Task.FromResult(Get());
             }
             else if (selectMode.Mode=="English to Latin")
             {
@@ -325,6 +324,7 @@ else
                 enteredValue = String.Empty;
                 NextWord();
                 buttonContent = "Submit";
+                await entryBox.FocusAsync();
             }
         }
     }
@@ -332,7 +332,7 @@ else
     private async Task resultAnim(string result)
     {
         imgSource = (result != "0") ? $@"images/{result}.png" : imgSource;
-        await JsRuntime.InvokeVoidAsync(identifier: "fade","result");
+        await JsRuntime.InvokeVoidAsync("fade","result");
     }
 
 
