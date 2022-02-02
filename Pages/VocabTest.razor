@@ -2,22 +2,24 @@
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
 @inject Blazored.LocalStorage.ILocalStorageService localStore
-@inject Blazored.LocalStorage.ISyncLocalStorageService syncLocalStore
 @inject IModalService modal
 @using LatinVocabTest.Data
 @using Newtonsoft.Json
 
 <PageTitle>Vocab Test</PageTitle>
 
+
 <h3>Vocab Test</h3>
 
-@if (words == null)
+@if (words is null)
 {
     <div class="epicloader"></div>
 }
 else
 {
     <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
+
+        <button style="float: right; margin-right:5%" class="btn btn-success btn-sm" @onclick="ShowModal">Show Results</button> 
 
         <!-- PRE-PLAY -->
     
@@ -127,8 +129,6 @@ else
             <br />
         }*@
     </Animate>
-    <button class="btn btn-outline-success" @onclick="ShowModal">Show Results</button> 
-
 }
 
 
@@ -196,7 +196,7 @@ else
                 all_english_words.Add(y.Trim());
             }
         }
-        if (syncLocalStore.ContainKey(noteKey))
+        if (await localStore.ContainKeyAsync(noteKey))
         {
             ReadLocalStorage();
         } else 
@@ -424,7 +424,7 @@ else
             ContentScrollable = true            
         };
 
-        var formModal = modal.Show<ResultsShowComponent>("Results", options);
+        var formModal = modal.Show<ResultsShow>("Results", options);
 
         var result = await formModal.Result;
 

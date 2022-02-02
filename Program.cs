@@ -1,6 +1,7 @@
 using LatinVocabTest;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+
 using Blazored.LocalStorage;
 using Blazored.Modal;
 
