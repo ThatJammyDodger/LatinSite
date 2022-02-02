@@ -195,7 +195,7 @@ else
                 all_english_words.Add(y.Trim());
             }
         }
-        if (localStore.ContainKey(noteKey))
+        if (localStore.ContainKeyAsync(noteKey))
         {
             ReadLocalStorage();
         } else 
