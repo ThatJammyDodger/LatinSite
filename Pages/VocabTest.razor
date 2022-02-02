@@ -195,7 +195,14 @@ else
                 all_english_words.Add(y.Trim());
             }
         }
-        ReadLocalStorage();
+        if (LocalStorage.ContainKey(noteKey))
+        {
+            ReadLocalStorage();
+        } else 
+        {
+            UpdateLocalStorage();
+        }
+        
     }
 
 
