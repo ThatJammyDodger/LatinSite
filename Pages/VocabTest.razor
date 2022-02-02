@@ -1,21 +1,10 @@
 ﻿@page "/vocab-test"
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
+@inject Blazored.LocalStorage.ILocalStorageService localStore
+@inject IModalService modal
 @using LatinVocabTest.Data
-
-<style>
-    #result {
-      opacity: 1;
-      -webkit-transition: opacity 0.3s ease-in-out;
-      -moz-transition: opacity 0.3s ease-in-out;
-      -o-transition: opacity 0.3s ease-in-out;
-      transition: opacity 0.3s ease-in-out;
-    }
-    #result.fade {
-      opacity:0;
-    }
-</style>
-
+@using Newtonsoft.Json
 
 <PageTitle>Vocab Test</PageTitle>
 
@@ -69,6 +58,8 @@ else
                     </div>                    
                 </div>
                 <button style="margin-top: 10px" class="btn btn-primary" type="submit">Start</button>
+                <hr>
+                <p>Please note: the score for both modes is shared because all current play data is stored to your browser's local storage session. If you want to clear this, open the Results popup and click 'Clear all'</p>
             </div>
         </EditForm>
 
@@ -112,8 +103,10 @@ else
 
             <button style="margin-bottom:10px; margin-top:10px;" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
 
-            <h5>Score: @questions_right/@questions_asked</h5> <p></p>
+            <!--<h5>Score: @questions_right/@questions_asked</h5> <p></p>-->
+            <h5>Score: @big_list.totalCorrect/@big_list.totalAsked</h5> <p></p>
 
+            <hr>
 
             @if(selectMode.Mode=="English to Latin")
             {
@@ -126,7 +119,14 @@ else
             <p>Either hit the enter/return key or click any button (including the hint buttons) to move onto the next question.</p>
         </div>
 
+        <br />
+        @*@foreach(var x in big_list.all_results)
+        {
+            <span style="white-space: pre-line">@x.ToString()</span>
+            <br />
+        }*@
     </Animate>
+    <button class="btn btn-outline-success" @onclick="ShowModal">Show Results</button> 
 
 }
 
@@ -163,10 +163,17 @@ else
     private bool showSuggestions = false;
     private int showSuggestionsAfter = 3;
 
+    private AllResults big_list = new AllResults();
+    private const string noteKey = "quiz_results";
+
     private string remove_chars(string x)
     {
         return String.Join("", x.Split(forbidden_chars));
     }
+
+
+
+    // STARTUP CODE
 
     protected override async Task OnInitializedAsync()
     {
@@ -188,8 +195,13 @@ else
                 all_english_words.Add(y.Trim());
             }
         }
+        ReadLocalStorage();
     }
-    
+
+
+
+    // UPDATES AUTO-SUGGESTIONS
+
     void UpdateStuff()
     {
         querySuggestions.Clear();
@@ -217,18 +229,9 @@ else
         }
     }
 
-    string[] Get()
-    {
-        string[] temp = new string[100];
-        foreach(var x in all_latin_words)
-        {
-            if (x.Contains(enteredValue))
-            {
-                temp.Append(x);
-            }
-        }
-        return temp.Distinct().ToArray() ;
-    }
+
+
+    // CODE RUN WHEN START BUTTON PRESSED
 
     private void Start()
     {
@@ -240,6 +243,7 @@ else
                 NextWord();
                 InPlay = true;
                 buttonContent = "Submit";
+                ReadLocalStorage();
             }
         }
         else
@@ -247,6 +251,10 @@ else
             selectMode.Success = false;
         }
     }
+
+
+
+    // CODE RUN TO PROGRESS TO NEXT WORD OF QUIZ
 
     private async void NextWord()
     {
@@ -271,18 +279,40 @@ else
 
 
 
+    // CODE RUN TO CHECK USER'S ANSWER AND RETURN A VALUE
+
     private bool check()
     {
+        bool result = false;
         foreach(string x in testWordAnswer)
         {
             if (remove_chars(x.Trim()).ToUpper() == remove_chars(enteredValue!.Trim()).ToUpper())
             {
                 questions_right++;
-                return true;
+                result = true;
             }
         }
-        return false;
+
+        if (selectMode.Mode is "Latin to English")
+        {
+            var x = words![randNum];
+            new results(x.In_English!,x.In_Latin!,"Latin to English",showSuggestions,result);
+        } 
+        else if (selectMode.Mode is "English to Latin")
+        {
+            var x = RVL![randNum];
+            new results(x.In_English!,x.In_Latin!,"English to Latin",showSuggestions,result);
+        }
+
+        big_list.Update();
+        UpdateLocalStorage();
+
+        return result;
     }
+
+
+
+    // CODE RUN WHEN ENTER PRESSED INSIDE TEXTBOX OF FORM
 
     public void Enter(KeyboardEventArgs e)
     {
@@ -292,8 +322,13 @@ else
         }
     }
 
+
+
+    // NEXT BUTTON PRESSED
+
     public async void QuestionButtonPressed()
     {
+        ReadLocalStorage();
         if (!String.IsNullOrWhiteSpace(enteredValue))
         {
             if (!Q_Answered)
@@ -318,6 +353,7 @@ else
                     }
                     await resultAnim("incorrect");
                 }
+                ReadLocalStorage();
             }
             else
             {
@@ -329,10 +365,65 @@ else
         }
     }
 
+
+
+    // ANIMATION FOR TICK OR CROSS
+
     private async Task resultAnim(string result)
     {
         imgSource = (result != "0") ? $@"images/{result}.png" : imgSource;
         await JsRuntime.InvokeVoidAsync("fade","result");
+    }
+
+
+
+    // CODE TO USE LOCAL STORAGE
+
+    public async void UpdateLocalStorage()
+    {
+        await localStore.SetItemAsync(noteKey, big_list.JSONstring());
+    }
+    public void ClearLocalStorage()
+    {
+        big_list = new AllResults();
+        ClearSimpleResults();
+        UpdateLocalStorage();
+    }
+    public async void ReadLocalStorage()
+    {
+        UpdateSimpleResults();
+        big_list = JsonConvert.DeserializeObject<AllResults>(await localStore.GetItemAsync<string>(noteKey))!;
+        StateHasChanged();
+    }
+    void UpdateSimpleResults()
+    {
+        results.all_results = new List<results>(big_list.all_results);
+        results.totalAsked = big_list.totalAsked;
+        results.totalCorrect = big_list.totalCorrect;
+    }
+    void ClearSimpleResults()
+    {
+        results.all_results.Clear();
+        results.totalAsked = 0;
+        results.totalCorrect = 0;
+    }
+
+    async Task ShowModal()
+    {
+        var options = new ModalOptions()
+        {
+            Animation = ModalAnimation.FadeInOut(0.25),
+            ContentScrollable = true            
+        };
+
+        var formModal = modal.Show<ResultsShowComponent>("Results", options);
+
+        var result = await formModal.Result;
+
+        if (!result.Cancelled)
+        {
+            ClearLocalStorage();
+        }
     }
 
 

@@ -8,7 +8,7 @@
 
 <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
     <h6>Welcome, use the links below to navigate:</h6>
-
+        
     <button style="margin-top:5px; margin-bottom:5px" class="btn btn-sm btn-secondary" @onclick="@(() => NavigateTo("vocab-list"))"> Go to the list </button>
     <br/>
     <button style="margin-top:5px; margin-bottom:5px" class="btn btn-sm btn-secondary" @onclick="@(() => NavigateTo("vocab-test"))"> Try the test </button>
@@ -58,6 +58,6 @@
 { 
     private void NavigateTo(string destination) 
     { 
-        NavigationManager.NavigateTo(destination); 
+        NavigationManager.NavigateTo(destination);
     }
 }
