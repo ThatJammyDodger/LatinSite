@@ -18,116 +18,116 @@
 else
 {
     <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">
+        <div class="wrapper">
+            
+            <div>
+                <button style="float: right; margin-right:5%" class="btn btn-success btn-sm" @onclick="ShowModal">Show Results</button> 
+                <br />
+            </div>
 
-        <button style="float: right; margin-right:5%" class="btn btn-success btn-sm" @onclick="ShowModal">Show Results</button> 
+            <!-- PRE-PLAY -->
+   
+            <div>
+                <EditForm Model="selectMode" OnValidSubmit="Start">
+                    <div style="display: @(InPlay ? "none" : "block"); margin-bottom:10px">
+                        <h5>Mode:</h5>
+                        <h6 style="color: red; display: @(selectMode.Success||selectMode.Mode!=null ? "none" : "block")">Please select an option</h6> 
 
-        <!-- PRE-PLAY -->
-    
-        <EditForm Model="selectMode" OnValidSubmit="Start">
-            <div style="display: @(InPlay ? "none" : "block"); margin-bottom:10px">
-                <h5>Mode:</h5>
-                <h6 style="color: red; display: @(selectMode.Success||selectMode.Mode!=null ? "none" : "block")">Please select an option</h6> 
+                        <div class="form-check">
+                            <InputRadioGroup @bind-Value="selectMode.Mode" >
+                                @foreach(string x in modes)
+                                {
+                                    <div style="margin-bottom: 5px">
+                                        <InputRadio id="@x" class="form-check-input" Value="@x" />
+                                        <label class="form-check-label" for="@x">@x</label>
+                                        <br/>
+                                    </div>
+                                }
+                            </InputRadioGroup>
 
-                <div class="form-check">
-                    <InputRadioGroup @bind-Value="selectMode.Mode" >
-                        @foreach(string x in modes)
-                        {
-                            <div style="margin-bottom: 5px">
-                                <InputRadio id="@x" class="form-check-input" Value="@x" />
-                                <label class="form-check-label" for="@x">@x</label>
-                                <br/>
+                            <hr style="margin-left: 0; width:25%;">
+
+                            <div>
+                                <input id="check" class="form-check-input" type="checkbox" @bind="@showSuggestions" />
+                                <label class="form-check-label" for="check">Show hints?</label>
                             </div>
-                        }
-                    </InputRadioGroup>
-
-                    <hr style="margin-left: 0; width:25%;">
-
-                    <div>
-                        <input id="check" class="form-check-input" type="checkbox" @bind="@showSuggestions" />
-                        <label class="form-check-label" for="check">Show hints?</label>
-                    </div>
                                         
-                    <div class="input-group" style="width: 300px; margin-top:10px; margin-bottom:10px; opacity: @(showSuggestions? "1" : "0.5")">
-                        <div class="input-group-prepend input-group-sm">
-                            <span class="input-group-text" id="inputGroupPrepend3">Show hints after</span>
+                            <div class="input-group" style="width: 300px; margin-top:10px; margin-bottom:10px; opacity: @(showSuggestions? "1" : "0.5")">
+                                <div class="input-group-prepend input-group-sm">
+                                    <span class="input-group-text" id="inputGroupPrepend3">Show hints after</span>
+                                </div>
+                                <select class="form-control form-control-sm" @bind="showSuggestionsAfter" aria-describedby="inputGroupPrepend3" disabled="@(!showSuggestions)" >
+                                    <option value="1">1 character</option>
+                                    <option value="2">2 characters</option>
+                                    <option value="3">3 characters</option>
+                                    <option value="4">4 characters</option>
+                                    <option value="5">5 characters</option>
+                                </select>
+                            </div>                    
                         </div>
-                        <select class="form-control form-control-sm" @bind="showSuggestionsAfter" aria-describedby="inputGroupPrepend3" disabled="@(!showSuggestions)" >
-                            <option value="1">1 character</option>
-                            <option value="2">2 characters</option>
-                            <option value="3">3 characters</option>
-                            <option value="4">4 characters</option>
-                            <option value="5">5 characters</option>
-                        </select>
-                    </div>                    
-                </div>
-                <button style="margin-top: 10px" class="btn btn-primary" type="submit">Start</button>
-                <hr>
-                <p>Please note: the score for both modes is shared because all current play data is stored to your browser's local storage session. If you want to clear this, open the Results popup and click 'Clear all'</p>
-            </div>
-        </EditForm>
+                        <button style="margin-top: 10px" class="btn btn-primary" type="submit">Start</button>
+                        <hr>
+                        <p>Please note: the score for both modes is shared because all current play data is stored to your browser's local storage session. If you want to clear this, open the Results popup and click 'Clear all'</p>
+                    </div>
+                </EditForm>
 
-        <!-- DURING PLAY -->
+                <!-- DURING PLAY -->
 
-        <div style=' display: @(!InPlay ? "none" : "block"); margin-left: 5px'>
-            <h6 style="font-weight: bold">@testWord</h6>
+                <div style=' display: @(!InPlay ? "none" : "block"); margin-left: 5px'>
+                    <h6 style="font-weight: bold">@testWord</h6>
 
-            <div style="display: flex;">
-                <input @ref="entryBox" class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => 
-                    { 
-                        enteredValue=(string)e.Value!; 
-                        UpdateStuff();
-                    })" 
-                @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue" autofocus />
+                    <div style="display: flex;">
+                        <input @ref="entryBox" class="form-control" size="25" style="padding-right:20px; margin:5px 10px 10px 0px" type="text" placeholder="Enter answer here" @oninput="@((e) => 
+                            { 
+                                enteredValue=(string)e.Value!; 
+                                UpdateStuff();
+                            })" 
+                        @onkeydown="@Enter" readonly="@(Q_Answered)"  @bind="@enteredValue" autofocus />
             
-                <div id="result" style="flex-basis:40%">
-                    <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
-                    <a style="max-width:100%">@correction</a>
-                </div>
-            </div>
+                        <div id="result" style="flex-basis:40%">
+                            <img style="max-width: 100%" src="@imgSource" height="35" width="35"/>
+                            <a style="max-width:100%">@correction</a>
+                        </div>
+                    </div>
 
-            <!-- SUGGESTIONS -->
-            <div style=' display: @(showSuggestions ? "block" : "none");'>
-                @if (showSuggestions)
-                {
-                    int i = 0;
-                    @foreach (var x in querySuggestions)
-                    {
-                        if (i >= 3)
+                    <!-- SUGGESTIONS -->
+                    <div style=' display: @(showSuggestions ? "block" : "none");'>
+                        @if (showSuggestions)
                         {
-                            break;
+                            int i = 0;
+                            @foreach (var x in querySuggestions)
+                            {
+                                if (i >= 3)
+                                {
+                                    break;
+                                }
+                                <button style="margin-right:10px;" class="btn btn-sm alert-secondary" @onclick="@(() => { enteredValue=x; QuestionButtonPressed(); })">@x</button>
+                                i++;
+                            }
                         }
-                        <button style="margin-right:10px;" class="btn btn-sm alert-secondary" @onclick="@(() => { enteredValue=x; QuestionButtonPressed(); })">@x</button>
-                        i++;
-                    }
-                }
                 
-            </div>
+                    </div>
             
 
-            <button style="margin-bottom:10px; margin-top:10px;" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
+                    <button style="margin-bottom:10px; margin-top:10px;" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
 
-            <!--<h5>Score: @questions_right/@questions_asked</h5> <p></p>-->
-            <h5>Score: @big_list.totalCorrect/@big_list.totalAsked</h5> <p></p>
+                    <!--<h5>Score: @questions_right/@questions_asked</h5> <p></p>-->
+                    <h5>Score: @big_list.totalCorrect/@big_list.totalAsked</h5> <p></p>
 
-            <hr>
+                    <hr>
 
-            @if(selectMode.Mode=="English to Latin")
-            {
-                <p>Note: give the first principle part for verbs and the nominative singular form for most nouns and adjectives.</p>
-            }
-            else
-            {
-                <p>Note: give the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
-            }
-            <p>Either hit the enter/return key or click any button (including the hint buttons) to move onto the next question.</p>
+                    @if(selectMode.Mode=="English to Latin")
+                    {
+                        <p>Note: give the first principle part for verbs and the nominative singular form for most nouns and adjectives.</p>
+                    }
+                    else
+                    {
+                        <p>Note: give the meaning of the verbs on their own. E.g. for 'moveo', write 'move', not 'to move'.</p>
+                    }
+                    <p>Either hit the enter/return key or click any button (including the hint buttons) to move onto the next question.</p>
+                </div>
+            </div>
         </div>
-
-        <br />
-        @*@foreach(var x in big_list.all_results)
-        {
-            <span style="white-space: pre-line">@x.ToString()</span>
-            <br />
-        }*@
     </Animate>
 }
 
