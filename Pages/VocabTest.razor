@@ -2,6 +2,7 @@
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
 @inject Blazored.LocalStorage.ILocalStorageService localStore
+@inject Blazored.LocalStorage.ISyncLocalStorageService syncLocalStore
 @inject IModalService modal
 @using LatinVocabTest.Data
 @using Newtonsoft.Json
@@ -195,7 +196,7 @@ else
                 all_english_words.Add(y.Trim());
             }
         }
-        if (localStore.ContainKeyAsync(noteKey))
+        if (syncLocalStore.ContainKey(noteKey))
         {
             ReadLocalStorage();
         } else 
