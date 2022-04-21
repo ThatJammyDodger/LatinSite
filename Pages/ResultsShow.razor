@@ -3,6 +3,8 @@
 @using LatinVocabTest.Data
 @using Newtonsoft.Json
 
+@page "/results"
+
 <style>
     .clicky{
     margin: -20px -50px;
@@ -20,46 +22,48 @@
     <div class="epicloader"></div>
 } else
 {
-    <body>
-        <div style="margin: 10px;">
-            <div style="margin-top:5px; margin-bottom:20px">
-                <button class="btn btn-danger btn-sm" @onclick="@ClearStuff">Clear all</button>
-                <button class="btn btn-success btn-sm" @onclick="@Cancel">Close</button>
-                <button class="btn btn-primary btn-sm" onclick="window.print();" >Print</button>
-            </div>
-            <h5>Total score: @bigger_list.totalCorrect/@bigger_list.totalAsked @( 
-                (bigger_list.totalAsked!=0) ? $"- {Math.Round((double)bigger_list.totalCorrect*100/bigger_list.totalAsked,0)}%" : "" 
-            )</h5>
-            <hr>
-            <h5>Full Breakdown:</h5>
-            <div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Mode</th>
-                            <th>Correct</th>
-                            <th>Latin</th>
-                            <th>English</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach(var x in bigger_list.all_results)
-                        {
-                            string mode = (x.Mode == "Latin to English") ? "L to E" : "E to L";
-                            mode += (x.HintsUsed) ? " with hints" : "";
-                            string imgSrc = (x.Correct) ? @"images/correct.png" : @"images/incorrect.png";
+    //<Animate Animation="Animations.FadeLeft" Easing="Easings.EaseOutQuad" Duration="TimeSpan.FromSeconds(1)">       looked bad may re-add in future
+        <body>
+            <div style="margin: 10px;">
+                <div style="margin-top:5px; margin-bottom:20px">
+                    <button class="btn btn-danger btn-sm" @onclick="@ClearStuff">Clear all</button>
+                    <button class="btn btn-success btn-sm" @onclick="@Cancel">Close</button>
+                    <button class="btn btn-primary btn-sm" onclick="window.print();" >Print</button>
+                </div>
+                <h5>Total score: @bigger_list.totalCorrect/@bigger_list.totalAsked @( 
+                    (bigger_list.totalAsked!=0) ? $"- {Math.Round((double)bigger_list.totalCorrect*100/bigger_list.totalAsked,0)}%" : "" 
+                )</h5>
+                <hr>
+                <h5>Full Breakdown:</h5>
+                <div>
+                    <table class="table">
+                        <thead>
                             <tr>
-                                <td>@mode</td>
-                                <td> <img src="@imgSrc" style="width: 1.5rem;" /> </td>
-                                <td>@x.In_Latin.Split(',')[0]</td>
-                                <td>@x.In_English</td>
+                                <th>Mode</th>
+                                <th>Correct</th>
+                                <th>Latin</th>
+                                <th>English</th>
                             </tr>
-                        }
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            @foreach(var x in bigger_list.all_results)
+                            {
+                                string mode = (x.Mode == "Latin to English") ? "L to E" : "E to L";
+                                mode += (x.HintsUsed) ? " with hints" : "";
+                                string imgSrc = (x.Correct) ? @"images/correct.png" : @"images/incorrect.png";
+                                <tr>
+                                    <td>@mode</td>
+                                    <td> <img src="@imgSrc" style="width: 1.5rem;" /> </td>
+                                    <td>@x.In_Latin.Split(',')[0]</td>
+                                    <td>@x.In_English</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </body>
+        </body>
+    //</Animate>
 }
 
 
