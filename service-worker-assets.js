@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-qFpG\/bdKb9fuM1ywlSD6LQCXU6UkpOaM3Fl33mUrbtQ=",
+      "hash": "sha256-fbZvZfBHaSFsa34vCYbePfoDcYo+ItIGIfef79wX8FA=",
       "url": "css\/app.css"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-hm0+VUlPT5q8nh8NNRwmFr3fTexgACQZASjgDsD8pT4=",
+      "hash": "sha256-ipR47PQRGavSBeX5023o3e8g5GmgIbCsmFAIvZuTNtg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -181,7 +181,7 @@
       "url": "_framework\/Blazored.Modal.dll"
     },
     {
-      "hash": "sha256-sjzlxSG2AVRlI6dSWryT83K4DPR+2zhBigNn10m\/j94=",
+      "hash": "sha256-BFUJH1cCYqM7WYN4rgzPvVoevY0jn1ErI7jegLQtArA=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
@@ -421,5 +421,5 @@
       "url": "_content\/Blazored.Modal\/blazored.modal.js"
     }
   ],
-  "version": "\/5GQGtSg"
+  "version": "nCGhQxye"
 };
