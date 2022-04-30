@@ -161,7 +161,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-ipR47PQRGavSBeX5023o3e8g5GmgIbCsmFAIvZuTNtg=",
+      "hash": "sha256-fxZy+J+pdMkuuPVHf+snEIO1Dsq+KeDHSR\/r8hPjBfw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -181,7 +181,7 @@
       "url": "_framework\/Blazored.Modal.dll"
     },
     {
-      "hash": "sha256-BFUJH1cCYqM7WYN4rgzPvVoevY0jn1ErI7jegLQtArA=",
+      "hash": "sha256-o7wXeI2ImJLqD2ImXla5BjdjmINXn6UTSxNFv1dZAAY=",
       "url": "_framework\/LatinVocabTest.dll"
     },
     {
@@ -421,5 +421,5 @@
       "url": "_content\/Blazored.Modal\/blazored.modal.js"
     }
   ],
-  "version": "nCGhQxye"
+  "version": "BCSIu7Le"
 };
