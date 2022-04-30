@@ -90,7 +90,9 @@ else
                         </div>
                     </div>
 
+
                     <!-- SUGGESTIONS -->
+
                     <div style=' display: @(showSuggestions ? "block" : "none");'>
                         @if (showSuggestions)
                         {
@@ -110,6 +112,7 @@ else
             
 
                     <button style="margin-bottom:10px; margin-top:10px;" class="btn btn-sm btn-primary" @onclick="QuestionButtonPressed">@buttonContent</button>
+
 
                     <!--<h5>Score: @questions_right/@questions_asked</h5> <p></p>-->
                     <h5>Score: @big_list.totalCorrect/@big_list.totalAsked</h5> <p></p>
@@ -141,6 +144,7 @@ else
     private string? testWord;
     private List<string> testWordAnswer = new List<string>();
     private ElementReference entryBox;
+    private bool right;
 
     private bool InPlay = false;
     mode selectMode = new mode();
@@ -203,7 +207,7 @@ else
         {
             UpdateLocalStorage();
         }
-        
+
     }
 
 
@@ -331,6 +335,17 @@ else
     }
 
 
+    // MOVE ONTO NEXT QUESTION AUTOMATICALLY
+
+    public async Task MoveAuto()
+    {
+        await Task.Delay(1000);
+        if (buttonContent == "Next")
+        {
+            QuestionButtonPressed();
+        }
+    }
+
 
     // NEXT BUTTON PRESSED
 
@@ -341,7 +356,7 @@ else
         {
             if (!Q_Answered)
             {
-                bool right = check();
+                right = check();
                 Q_Answered = true;
                 buttonContent = "Next";
                 if (right)
@@ -362,6 +377,7 @@ else
                     await resultAnim("incorrect");
                 }
                 ReadLocalStorage();
+                await MoveAuto();
             }
             else
             {
@@ -416,6 +432,9 @@ else
         results.totalCorrect = 0;
     }
 
+
+    // RESULTS POPUP
+
     async Task ShowModal()
     {
         var options = new ModalOptions()
@@ -437,7 +456,7 @@ else
 
     public class mode
     {
-        public string? Mode { get; set; }
+        public string? Mode { get; set; }      // E to L or L to E
         public bool Success { get; set; } = true;
     }
 }
